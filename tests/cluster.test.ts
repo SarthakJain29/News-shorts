@@ -59,3 +59,15 @@ describe("cluster", () => {
     expect(sameStory(a, cluster(items.slice(4), now)[0])).toBe(false);
   });
 });
+
+describe("enrich", () => {
+  it("adds matching coverage from other outlets in the global pool", async () => {
+    const { enrich } = await import("../pipeline/cluster");
+    const base = cluster([item({ outlet: "BBC News", url: "https://bbc.co.uk/1", title: "Binance reveals how hackers stole $6.3bn in crypto heist" })], now)[0];
+    const pool = [
+      item({ outlet: "NPR", url: "https://npr.org/9", title: "Hackers stole $6.3bn from Binance in crypto heist" }),
+      item({ outlet: "DW", url: "https://dw.com/5", title: "Rare comet visible this weekend" }),
+    ];
+    expect(enrich(base, pool).outlets).toEqual(["BBC News", "NPR"]);
+  });
+});

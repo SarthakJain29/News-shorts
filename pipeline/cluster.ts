@@ -66,7 +66,7 @@ export interface Cluster {
   latest: string;
 }
 
-function similar(a: RawItem, b: RawItem): boolean {
+export function similar(a: RawItem, b: RawItem): boolean {
   const ta = tokens(a.title);
   const tb = tokens(b.title);
   const titleSim = jaccard(ta, tb);
@@ -111,6 +111,20 @@ export function cluster(items: RawItem[], now = Date.now()): Cluster[] {
     clusters.push({ id: hashId(g.map((x) => canonicalUrl(x.url)).sort()[0]), items: g, outlets, score, latest });
   }
   return clusters.sort((a, b) => b.score - a.score || b.latest.localeCompare(a.latest));
+}
+
+/**
+ * Pull in matching articles from other tracks' feeds (e.g. a world desk covering a politics story)
+ * so each short can cite — and compare — more outlets.
+ */
+export function enrich(c: Cluster, pool: RawItem[]): Cluster {
+  const have = new Set(c.items.map((i) => canonicalUrl(i.url)));
+  const extra = pool.filter((p) => !have.has(canonicalUrl(p.url)) && !c.outlets.includes(p.outlet) && c.items.some((i) => similar(i, p)));
+  const byOutlet = new Map<string, RawItem>();
+  for (const e of extra) if (!byOutlet.has(e.outlet)) byOutlet.set(e.outlet, e);
+  if (byOutlet.size === 0) return c;
+  const items = [...c.items, ...byOutlet.values()];
+  return { ...c, items, outlets: [...new Set(items.map((i) => i.outlet))] };
 }
 
 /** True if two clusters cover the same story (used to avoid cross-track repeats). */

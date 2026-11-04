@@ -9,7 +9,7 @@
 import { existsSync, readdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { TRACK_IDS, type Short, type ShortsFeed, type TrackId } from "../src/lib/types";
-import { cluster, dedupe, sameStory, type Cluster } from "./cluster";
+import { cluster, dedupe, enrich, sameStory, type Cluster } from "./cluster";
 import { FEEDS } from "./feeds";
 import { completeWithFallback, providerChain } from "./llm";
 import { fetchFeed, type RawItem } from "./rss";
@@ -88,9 +88,12 @@ async function main() {
   console.log(`News Shorts pipeline — tracks: ${tracks.join(", ")} | writer: ${mock || !chain.length ? "offline mock" : chain.map((p) => `${p.name}:${p.model}`).join(" → ")} | tts: ${noTts ? "off" : `gemini (budget ${ttsBudget})`}`);
 
   const picked: { track: TrackId; c: Cluster }[] = [];
+  const ingested = new Map<TrackId, RawItem[]>();
+  await Promise.all(tracks.map(async (t) => ingested.set(t, await ingest(t))));
+  const pool = [...ingested.values()].flat();
   for (const track of tracks) {
-    const items = await ingest(track);
-    const clusters = cluster(items);
+    const items = ingested.get(track) ?? [];
+    const clusters = cluster(items).map((c) => enrich(c, pool));
     let n = 0;
     for (const c of clusters) {
       if (n >= maxPerTrack) break;
