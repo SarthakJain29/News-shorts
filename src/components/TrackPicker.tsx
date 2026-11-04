@@ -29,8 +29,8 @@ export function Onboarding({ selected, onToggle, counts, onStart }: { selected: 
         <p className="mono-chip">news / shorts</p>
         <h1 className="onb-title">
           The news,<br />
-          <em>in 60 seconds</em>
-          <br />a swipe.
+          <em>60 seconds</em>
+          <br />at a time.
         </h1>
         <p className="onb-sub">Original, narrated explainers built from multiple reputable outlets. Pick what you care about.</p>
       </div>

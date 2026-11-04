@@ -22,7 +22,7 @@ export interface Playback {
   playFull: () => void;
 }
 
-const SPEECH_WPS = 2.6;
+const SPEECH_WPS = 2.5; // matches the pipeline estimate so listed durations agree
 
 function pickVoice(): SpeechSynthesisVoice | null {
   if (typeof window === "undefined" || !("speechSynthesis" in window)) return null;

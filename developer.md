@@ -190,8 +190,11 @@ CI (`.github/workflows/ci.yml`) runs typecheck, lint, tests and build on PRs.
 - Tests: 39 vitest tests covering RSS parsing, clustering, the script guards, timeline, playlist, the LLM fallback and WAV helpers. Typecheck and lint are clean; the production build passes.
 - GitHub Actions: scheduled pipeline (every 6 h, commits data) and CI.
 
+- README with real screenshots (`docs/screenshots`, captured via `npm run screenshots`) and a Mermaid architecture diagram.
+- PR opened from `claude/news-shorts-pwa-bs4t1d` to `main` (not merged).
+
 ### In progress
-- README screenshots and final PR.
+- Nothing. v1 is complete; pick up from "Next" below.
 
 ### Next (roadmap)
 1. Forced alignment with Groq Whisper word timestamps for exact captions.
