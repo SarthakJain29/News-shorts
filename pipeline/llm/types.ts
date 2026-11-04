@@ -27,3 +27,4 @@ export class LlmError extends Error {
     super(message);
   }
 }
+export type Env = Record<string, string | undefined>;

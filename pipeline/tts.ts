@@ -81,7 +81,7 @@ export function probeDuration(publicPath: string): number {
 /** Disable a model for the rest of the run once it reports exhausted quota. */
 const exhausted = new Set<string>();
 
-export async function synthesize(text: string, env = process.env): Promise<TtsResult> {
+export async function synthesize(text: string, env: Record<string, string | undefined> = process.env): Promise<TtsResult> {
   const key = env.GEMINI_API_KEY;
   if (!key) throw new Error("GEMINI_API_KEY missing");
   const voice = env.GEMINI_TTS_VOICE || "Kore";

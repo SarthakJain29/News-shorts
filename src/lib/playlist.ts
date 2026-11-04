@@ -1,4 +1,8 @@
+import { buildTimeline } from "./timeline";
 import type { Short, TrackId } from "./types";
+
+/** Catch-up plays the first beats of each story: hook + what happened. */
+export const CATCHUP_BEATS = 4;
 
 export function durationOf(s: Short): number {
   return s.audio?.durationSec || s.estDurationSec || 60;
@@ -30,14 +34,14 @@ export function buildFeed(shorts: Short[], tracks: TrackId[], seen: Set<string> 
  * "Catch me up in 3 minutes": the most important story from each chosen track first,
  * then fill greedily with the next-best stories while staying inside the time budget.
  */
-export function catchUp(shorts: Short[], tracks: TrackId[], budgetSec = 180): Short[] {
+export function catchUp(shorts: Short[], tracks: TrackId[], budgetSec = 180, beats = CATCHUP_BEATS): Short[] {
   const pool = buildFeed(shorts.filter((s) => s.provider !== "mock"), tracks);
   const fallback = pool.length ? pool : buildFeed(shorts, tracks);
   const out: Short[] = [];
   let used = 0;
   const tryAdd = (s: Short) => {
     if (out.includes(s)) return;
-    const d = durationOf(s);
+    const d = clipDuration(s, beats);
     if (used + d <= budgetSec + 10) {
       out.push(s);
       used += d;
@@ -49,6 +53,13 @@ export function catchUp(shorts: Short[], tracks: TrackId[], budgetSec = 180): Sh
   for (const s of fallback) tryAdd(s);
   if (out.length === 0 && fallback[0]) out.push(fallback[0]);
   return out;
+}
+
+/** Length of a short when only its first `beats` segments are played. */
+export function clipDuration(s: Short, beats?: number): number {
+  const full = durationOf(s);
+  if (!beats || beats >= s.segments.length) return full;
+  return buildTimeline(s.segments, full)[beats - 1].end;
 }
 
 export function totalDuration(list: Short[]): number {

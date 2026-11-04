@@ -1,6 +1,6 @@
-import { LlmError, type LlmProvider, type LlmRequest } from "./types";
+import { LlmError, type Env, type LlmProvider, type LlmRequest } from "./types";
 
-export function groqProvider(env = process.env): LlmProvider {
+export function groqProvider(env: Env = process.env): LlmProvider {
   const key = env.GROQ_API_KEY;
   const model = env.GROQ_MODEL || "openai/gpt-oss-120b";
   return {

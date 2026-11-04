@@ -1,0 +1,1689 @@
+{
+  "generatedAt": "2026-11-04T20:57:50.360Z",
+  "mode": "live",
+  "shorts": [
+    {
+      "id": "technology-17t5szl",
+      "track": "technology",
+      "title": "Inside the Six Billion Dollar Binance Hack",
+      "hook": "Hackers stole six point three billion dollars from Binance using fake job interviews and malware.",
+      "segments": [
+        {
+          "text": "Hackers stole six point three billion dollars from Binance using fake job interviews and malware. The massive cryptocurrency exchange breach unfolded over several months this year.",
+          "visual": {
+            "kind": "headline",
+            "text": "Massive Crypto Exchange Heist"
+          }
+        },
+        {
+          "text": "The massive cryptocurrency exchange breach unfolded over several months this year. Binance revealed that the complex cyber attack began back in the month of June.",
+          "visual": {
+            "kind": "number",
+            "value": "$6.3bn",
+            "label": "Total stolen in heist"
+          }
+        },
+        {
+          "text": "Binance revealed that the complex cyber attack began back in the month of June. Hackers tricked an engineer through legitimate job hunting platforms into downloading malicious software.",
+          "visual": null
+        },
+        {
+          "text": "Hackers tricked an engineer through legitimate job hunting platforms into downloading malicious software. They also utilized an internal artificial intelligence tool during the multi-step operation.",
+          "visual": null
+        },
+        {
+          "text": "They also utilized an internal artificial intelligence tool during the multi-step operation. The attackers eventually raided hot wallets where the massive amounts of digital currency reside.",
+          "visual": {
+            "kind": "headline",
+            "text": "Malware And Fake Interviews"
+          }
+        },
+        {
+          "text": "The attackers eventually raided hot wallets where the massive amounts of digital currency reside. Hot wallets are digital storage spaces connected to the internet for fast transactions.",
+          "visual": null
+        },
+        {
+          "text": "Hot wallets are digital storage spaces connected to the internet for fast transactions. This incident highlights severe security vulnerabilities targeting cryptocurrency platform employees through recruitment scams.",
+          "visual": {
+            "kind": "headline",
+            "text": "Growing Recruitment Scams"
+          }
+        },
+        {
+          "text": "This incident highlights severe security vulnerabilities targeting cryptocurrency platform employees through recruitment scams. Observers will monitor how the company recovers and updates its internal security protocols.",
+          "visual": null
+        }
+      ],
+      "whyItMatters": "This massive breach demonstrates how sophisticated social engineering and malware can compromise even the largest digital finance platforms. It raises serious questions about employee security and the protection of vast digital asset reserves.",
+      "context": "Context if you're new to this: Cryptocurrency exchanges are digital marketplaces where users buy and sell virtual currencies. Hot wallets are online storage systems used by these platforms to process transactions quickly, making them primary targets for hackers.",
+      "coverage": [
+        {
+          "outlet": "The Guardian",
+          "angle": "Focused broadly on the timeline of malware, recruitment scams, and the internal AI tool used in the heist.",
+          "url": "https://www.theguardian.com/business/2026/nov/03/hackers-63bn-binance-heist-malware-bogus-job-interviews-cryptocurrency"
+        },
+        {
+          "outlet": "BBC News",
+          "angle": "Emphasized the specific method of contacting an engineer through a legitimate job hunting platform for bogus interviews.",
+          "url": "https://www.bbc.co.uk/news/articles/ck5ynwz9gy67o?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "The Guardian",
+          "title": "Hackers behind $6.3bn Binance heist ‘used malware and bogus job interviews’",
+          "url": "https://www.theguardian.com/business/2026/nov/03/hackers-63bn-binance-heist-malware-bogus-job-interviews-cryptocurrency",
+          "publishedAt": "2026-11-03T19:00:23.000Z"
+        },
+        {
+          "outlet": "BBC News",
+          "title": "Binance says fake job interviews used as part of $6.3bn crypto hack",
+          "url": "https://www.bbc.co.uk/news/articles/ck5ynwz9gy67o?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-11-03T16:19:29.000Z"
+        }
+      ],
+      "location": null,
+      "publishedAt": "2026-11-03T19:00:23.000Z",
+      "generatedAt": "2026-11-04T20:54:51.874Z",
+      "estDurationSec": 83,
+      "audio": {
+        "src": "/audio/z22lfv5xi012.mp3",
+        "durationSec": 82.1,
+        "model": "gemini-3.8-flash-lite-tts",
+        "voice": "Kore"
+      },
+      "provider": "gemini"
+    },
+    {
+      "id": "technology-fc1ean",
+      "track": "technology",
+      "title": "A Therapist Recommends Tossing This New Amazon Gadget",
+      "hook": "Do your personal electronic gadgets cause you more mental stress than actual joy?",
+      "segments": [
+        {
+          "text": "Do your personal electronic gadgets cause you more mental stress than actual joy? A technology reviewer discusses her recent experiences with a controversial new device.",
+          "visual": {
+            "kind": "headline",
+            "text": "New Amazon Device Tested"
+          }
+        },
+        {
+          "text": "A technology reviewer discusses her recent experiences with a controversial new device. She even jokes that her therapist suggested throwing the hardware right out the window.",
+          "visual": null
+        },
+        {
+          "text": "She even jokes that her therapist suggested throwing the hardware right out the window. The product in question is a specialized machine created by retail giant Amazon.",
+          "visual": {
+            "kind": "headline",
+            "text": "Amazon Bee Frontier"
+          }
+        },
+        {
+          "text": "The product in question is a specialized machine created by retail giant Amazon. This particular model carries the unusual name of Bee Frontier and promises major lifestyle changes.",
+          "visual": null
+        },
+        {
+          "text": "This particular model carries the unusual name of Bee Frontier and promises major lifestyle changes. These wellness gizmos frequently claim they can completely transform our daily habits and routines.",
+          "visual": {
+            "kind": "headline",
+            "text": "Wellness Gizmos Tested"
+          }
+        },
+        {
+          "text": "These wellness gizmos frequently claim they can completely transform our daily habits and routines. Reviewers often test these bold promises to see how they affect real people.",
+          "visual": null
+        },
+        {
+          "text": "Reviewers often test these bold promises to see how they affect real people. When smart devices fail to satisfy, they can quickly become sources of frustration instead.",
+          "visual": {
+            "kind": "headline",
+            "text": "Daily Life Impact"
+          }
+        },
+        {
+          "text": "When smart devices fail to satisfy, they can quickly become sources of frustration instead. Audiences should watch for upcoming reviews to see if this trend improves over time.",
+          "visual": null
+        }
+      ],
+      "whyItMatters": "Consumer technology should reduce stress rather than create it. When gadgets demand too much attention, users are right to question their true value.",
+      "context": "New consumer electronics frequently promise to improve daily well-being. However, real-world testing often reveals that many devices fail to deliver on those high expectations.",
+      "coverage": [],
+      "sources": [
+        {
+          "outlet": "The Verge",
+          "title": "My therapist thinks I should chuck the Amazon Bee Frontier out a window",
+          "url": "https://www.theverge.com/column/1026464/optimizer-amazon-bee-frontier-ambient-listening-wearables",
+          "publishedAt": "2026-11-04T20:43:15.000Z"
+        }
+      ],
+      "location": null,
+      "publishedAt": "2026-11-04T20:43:15.000Z",
+      "generatedAt": "2026-11-04T20:54:57.645Z",
+      "estDurationSec": 87,
+      "audio": {
+        "src": "/audio/je5k4i1pcw50p.mp3",
+        "durationSec": 71.6,
+        "model": "gemini-3.8-flash-lite-tts",
+        "voice": "Kore"
+      },
+      "provider": "gemini"
+    },
+    {
+      "id": "technology-13di9wy",
+      "track": "technology",
+      "title": "DreamHost Breach Exposes Customer Inboxes",
+      "hook": "Hackers spent months silently stealing customer files from web hosting provider DreamHost.",
+      "segments": [
+        {
+          "text": "Hackers spent months silently stealing customer files from web hosting provider DreamHost. The company revealed a deliberate security breach hit its systems.",
+          "visual": {
+            "kind": "headline",
+            "text": "DreamHost Data Breach Exposed"
+          }
+        },
+        {
+          "text": "Intruders managed to access sensitive customer emails during the prolonged campaign. They exploited an unknown software vulnerability to slip inside the network undetected.",
+          "visual": null
+        },
+        {
+          "text": "Intruders managed to access sensitive customer emails during the prolonged campaign. They exploited an unknown software vulnerability to slip inside the network undetected.",
+          "visual": null
+        },
+        {
+          "text": "Intruders managed to access sensitive customer emails during the prolonged campaign. They exploited an unknown software vulnerability to slip inside the network undetected.",
+          "visual": null
+        },
+        {
+          "text": "Web hosts like DreamHost manage websites and store private data for clients. When security fails here, entire digital businesses face serious exposure risks.",
+          "visual": {
+            "kind": "headline",
+            "text": "Web Hosting Security Risks"
+          }
+        },
+        {
+          "text": "Web hosts like DreamHost manage websites and store private data for clients. When security fails here, entire digital businesses face serious exposure risks.",
+          "visual": null
+        },
+        {
+          "text": "Everyday users trust these platforms to keep personal files safe. Having private inboxes compromised threatens personal privacy and digital security.",
+          "visual": null
+        },
+        {
+          "text": "Experts will monitor how the company secures its infrastructure moving forward. Users should watch for updates regarding affected account credentials.",
+          "visual": {
+            "kind": "headline",
+            "text": "What Happens Next"
+          }
+        }
+      ],
+      "whyItMatters": "Web hosting breaches put private customer communications directly into unauthorized hands. This compromises personal privacy and exposes sensitive data stored online.",
+      "context": "DreamHost is a major web hosting provider that stores files and manages email accounts for numerous clients. Security vulnerabilities in such platforms can lead to widespread data exposure.",
+      "coverage": [],
+      "sources": [
+        {
+          "outlet": "TechCrunch",
+          "title": "Hackers stole DreamHost customer files and inboxes during months-long attack",
+          "url": "https://techcrunch.com/2026/11/04/hackers-stole-dreamhost-customer-files-and-inboxes-during-months-long-attack/",
+          "publishedAt": "2026-11-04T20:36:57.000Z"
+        }
+      ],
+      "location": null,
+      "publishedAt": "2026-11-04T20:36:57.000Z",
+      "generatedAt": "2026-11-04T20:54:59.736Z",
+      "estDurationSec": 71,
+      "audio": {
+        "src": "/audio/1s9y4lf1ukh0vq.mp3",
+        "durationSec": 89.4,
+        "model": "gemini-3.8-flash-lite-tts",
+        "voice": "Kore"
+      },
+      "provider": "gemini"
+    },
+    {
+      "id": "sports-1bbhxqi",
+      "track": "sports",
+      "title": "Detroit Lions Linebacker Jack Campbell Updates Injury Recovery",
+      "hook": "Detroit Lions linebacker Jack Campbell shares an encouraging update after suffering a scary neck injury.",
+      "segments": [
+        {
+          "text": "Detroit Lions linebacker Jack Campbell shares an encouraging update after suffering a scary neck injury during a game.",
+          "visual": {
+            "kind": "headline",
+            "text": "Lions Linebacker Jack Campbell Updates Recovery"
+          }
+        },
+        {
+          "text": "The twenty-six-year-old player says he currently has full movement in his lower body. He is also making steady progress with movement in his upper body.",
+          "visual": null
+        },
+        {
+          "text": "Campbell released a public statement on Wednesday detailing his current physical condition. He expressed strong optimism regarding his ongoing recovery process in the hospital.",
+          "visual": null
+        },
+        {
+          "text": "Medical staff treated the professional athlete directly on the field for nine minutes last Sunday. Both teams watched anxiously while he received urgent medical attention.",
+          "visual": null
+        },
+        {
+          "text": "The defensive player sustained the serious injury while attempting a routine tackle during the matchup. Paramedics transported him away from the stadium for further hospital evaluation.",
+          "visual": null
+        },
+        {
+          "text": "Neck injuries in professional football carry significant risks regarding spinal health. Medical teams follow strict protocols whenever a player experiences such trauma on the field.",
+          "visual": null
+        },
+        {
+          "text": "Health updates from professional athletes remind fans about the physical toll of contact sports. Safety protocols remain a major focus for leagues and medical experts everywhere.",
+          "visual": null
+        },
+        {
+          "text": "Fans and teammates will continue watching for further medical updates on his rehabilitation. Recovery timelines remain uncertain as the talented linebacker heals from his injuries.",
+          "visual": null
+        }
+      ],
+      "whyItMatters": "Severe athletic injuries highlight the physical dangers inherent in professional contact sports. They also spark important conversations regarding player safety and emergency medical protocols on the field.",
+      "context": "Context if you're new to this: Jack Campbell plays as a linebacker for the Detroit Lions in the National Football League. Neck injuries require immediate, specialized medical evaluation to prevent permanent spinal damage.",
+      "coverage": [],
+      "sources": [
+        {
+          "outlet": "ESPN",
+          "title": "Lions' Campbell has full movement in lower body after neck injury",
+          "url": "https://www.espn.com/nfl/story/_/id/50380067/lions-lb-campbell-full-movement-lower-body-neck-injury",
+          "publishedAt": "2026-11-04T19:55:24.000Z"
+        },
+        {
+          "outlet": "BBC Sport",
+          "title": "Campbell has full lower body movement after neck injury",
+          "url": "https://www.bbc.co.uk/sport/american-football/articles/c9rky3j0p7rvo?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-11-04T18:44:34.000Z"
+        },
+        {
+          "outlet": "The Guardian",
+          "title": "Lions’ Jack Campbell making progress on movement in upper body after injury during game",
+          "url": "https://www.theguardian.com/sport/2026/nov/04/jack-campbell-injury-update-nfl",
+          "publishedAt": "2026-11-04T18:14:23.000Z"
+        }
+      ],
+      "location": {
+        "place": "Detroit",
+        "lat": 42.3314,
+        "lon": -83.0458
+      },
+      "publishedAt": "2026-11-04T19:55:24.000Z",
+      "generatedAt": "2026-11-04T20:55:02.477Z",
+      "estDurationSec": 78,
+      "audio": {
+        "src": "/audio/hvx8nfbg7yni.mp3",
+        "durationSec": 84.6,
+        "model": "gemini-3.8-flash-lite-tts",
+        "voice": "Kore"
+      },
+      "provider": "gemini"
+    },
+    {
+      "id": "sports-191kvnf",
+      "track": "sports",
+      "title": "Deontay Wilder and Jai Opetaia to Fight in Cardiff",
+      "hook": "Heavyweight star Deontay Wilder returns to the ring next month in a major bout.",
+      "segments": [
+        {
+          "text": "Heavyweight star Deontay Wilder returns to the ring next month in a major bout. He will face undefeated Jai Opetaia on December eleventh.",
+          "visual": {
+            "kind": "headline",
+            "text": "Wilder Faces Opetaia in Cardiff"
+          }
+        },
+        {
+          "text": "The high-profile matchup takes place in Cardiff, Wales. Organizers announced the bout will serve as part of the undercard.",
+          "visual": {
+            "kind": "map",
+            "place": "Cardiff",
+            "lat": 51.4816,
+            "lon": -3.1791
+          }
+        },
+        {
+          "text": "Both fighters share space on a massive night of boxing. Tyson Fury and Anthony Joshua headline the main event at the stadium.",
+          "visual": null
+        },
+        {
+          "text": "Fans around the world will not need traditional television to watch the action. Netflix plans to stream the entire card globally.",
+          "visual": null
+        },
+        {
+          "text": "Deontay Wilder brings immense knockout power to the contest. The American has secured forty-three of his victories by knockout over his career.",
+          "visual": {
+            "kind": "number",
+            "value": "43",
+            "label": "Career Knockouts"
+          }
+        },
+        {
+          "text": "His opponent steps up significantly in weight for the challenge. Jai Opetaia enters this bout as an undefeated Australian cruiserweight world champion.",
+          "visual": null
+        },
+        {
+          "text": "Streaming this event globally on Netflix highlights how combat sports reach audiences today. Fans can watch major fights directly through digital subscription platforms.",
+          "visual": null
+        },
+        {
+          "text": "Keep an eye on ticket sales and final pre-fight press events. December is fast approaching for this massive stadium showdown.",
+          "visual": null
+        }
+      ],
+      "whyItMatters": "This bout brings together two elite fighters on one of the biggest boxing cards of the year. Global streaming makes it easy for audiences everywhere to watch the action live.",
+      "context": "Deontay Wilder is a former world heavyweight champion known for his knockout power. Jai Opetaia moves up from the cruiserweight division to test himself against heavyweight opposition.",
+      "coverage": [],
+      "sources": [
+        {
+          "outlet": "The Guardian",
+          "title": "Deontay Wilder to face unbeaten Opetaia on Fury v Joshua undercard in Cardiff",
+          "url": "https://www.theguardian.com/sport/2026/nov/04/deontay-wilder-jai-opetaia-fury-joshua-undercard-cardiff-boxing",
+          "publishedAt": "2026-11-04T18:53:42.000Z"
+        },
+        {
+          "outlet": "BBC Sport",
+          "title": "Wilder to fight Opetaia on Fury v Joshua undercard",
+          "url": "https://www.bbc.co.uk/sport/boxing/articles/cj62ye5e37p1o?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-11-04T16:54:28.000Z"
+        }
+      ],
+      "location": {
+        "place": "Cardiff",
+        "lat": 51.4816,
+        "lon": -3.1791
+      },
+      "publishedAt": "2026-11-04T18:53:42.000Z",
+      "generatedAt": "2026-11-04T20:55:04.814Z",
+      "estDurationSec": 69,
+      "audio": {
+        "src": "/audio/74xl19ul7u78.mp3",
+        "durationSec": 71.8,
+        "model": "gemini-3.8-flash-lite-tts",
+        "voice": "Kore"
+      },
+      "provider": "gemini"
+    },
+    {
+      "id": "sports-1b8te7n",
+      "track": "sports",
+      "title": "Jodie Burrage Receives Support After Threats",
+      "hook": "British tennis player Jodie Burrage faces horrifying online death threats.",
+      "segments": [
+        {
+          "text": "British tennis player Jodie Burrage faces horrifying online death threats. Women's Tennis Association staff are stepping in to help her.",
+          "visual": {
+            "kind": "headline",
+            "text": "WTA Offers Support After Threats"
+          }
+        },
+        {
+          "text": "The twenty-seven year old athlete received abusive messages on Instagram. This wave of online hatred followed her tough defeat in India.",
+          "visual": null
+        },
+        {
+          "text": "She lost a close first round match at the Chennai Open. Local player Vaishnavi Adkar claimed victory in that grueling three set battle.",
+          "visual": {
+            "kind": "map",
+            "place": "Chennai",
+            "lat": 13.0827,
+            "lon": 80.2707
+          }
+        },
+        {
+          "text": "Burrage made the bold decision to publicly share the hateful messages. Her openness highlights the severe toxicity athletes frequently face online.",
+          "visual": null
+        },
+        {
+          "text": "This tournament appearance marked her return to the main Women's Tennis Association Tour. Tour officials immediately offered extra assistance upon learning of the abuse.",
+          "visual": null
+        },
+        {
+          "text": "Online harassment of sports stars after losses remains a massive problem. Athletes across all major sports deal with threatening messages daily.",
+          "visual": {
+            "kind": "headline",
+            "text": "Rising Abuse in Professional Sports"
+          }
+        },
+        {
+          "text": "Protecting mental health and online safety is becoming a top priority. Governing bodies are under pressure to punish abusive users severely.",
+          "visual": null
+        },
+        {
+          "text": "Watch for further Women's Tennis Association policy updates regarding digital safety. Authorities will determine if any legal actions follow these threats.",
+          "visual": null
+        }
+      ],
+      "whyItMatters": "Online abuse of athletes has reached alarming levels worldwide. Sports organizations must implement stronger protections to safeguard player well-being.",
+      "context": "Context if you're new to this: Professional athletes often receive severe direct messages from disgruntled gamblers or angry fans after losing matches. Governing bodies provide mental health resources to help players cope with this digital toxicity.",
+      "coverage": [],
+      "sources": [
+        {
+          "outlet": "BBC Sport",
+          "title": "Burrage receives support after online death threats",
+          "url": "https://www.bbc.co.uk/sport/tennis/articles/cw073lpllk43o?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-11-04T18:41:34.000Z"
+        },
+        {
+          "outlet": "The Guardian",
+          "title": "Jodie Burrage offered support by WTA after death threats and online abuse",
+          "url": "https://www.theguardian.com/sport/2026/nov/04/jodie-burrage-tennis-offered-support-by-wta-after-death-threats-and-online-abuse",
+          "publishedAt": "2026-11-04T12:55:19.000Z"
+        }
+      ],
+      "location": {
+        "place": "Chennai",
+        "lat": 13.0827,
+        "lon": 80.2707
+      },
+      "publishedAt": "2026-11-04T18:41:34.000Z",
+      "generatedAt": "2026-11-04T20:55:07.206Z",
+      "estDurationSec": 69,
+      "audio": {
+        "src": "/audio/q1kmrh1pnnb3w.mp3",
+        "durationSec": 72.6,
+        "model": "gemini-3.8-flash-tts",
+        "voice": "Kore"
+      },
+      "provider": "gemini"
+    },
+    {
+      "id": "finance-r8goq5",
+      "track": "finance",
+      "title": "Major Canva Restructure Cuts Over One Thousand Jobs",
+      "hook": "Design giant Canva is cutting or moving more than twelve hundred jobs globally.",
+      "segments": [
+        {
+          "text": "Design giant Canva is cutting or moving more than twelve hundred jobs globally. Chief Executive Officer Melanie Perkins called this the toughest moment in the company's history.",
+          "visual": {
+            "kind": "number",
+            "value": "1,200+",
+            "label": "Jobs Affected"
+          }
+        },
+        {
+          "text": "Chief Executive Officer Melanie Perkins called this the toughest moment in the company's history. The sweeping restructure impacts twenty-two percent of the firm's total worldwide workforce.",
+          "visual": null
+        },
+        {
+          "text": "The sweeping restructure impacts twenty-two percent of the firm's total worldwide workforce. Employees who originally built the Australian-founded platform are among those facing layoffs or relocation.",
+          "visual": {
+            "kind": "number",
+            "value": "22%",
+            "label": "Global Workforce Cut"
+          }
+        },
+        {
+          "text": "Employees who originally built the Australian-founded platform are among those facing layoffs or relocation. This major corporate shift mirrors a broader trend across the entire technology sector.",
+          "visual": null
+        },
+        {
+          "text": "This major corporate shift mirrors a broader trend across the entire technology sector. Software companies everywhere are currently grappling with significant changes and cost reductions.",
+          "visual": {
+            "kind": "headline",
+            "text": "Tech Sector Restructuring"
+          }
+        },
+        {
+          "text": "Software companies everywhere are currently grappling with significant changes and cost reductions. The thirteen-year-old design platform now faces a completely new operational reality moving forward.",
+          "visual": null
+        },
+        {
+          "text": "The thirteen-year-old design platform now faces a completely new operational reality moving forward. Large tech layoffs directly impact workers and signal shifting economic priorities within software giants.",
+          "visual": null
+        },
+        {
+          "text": "Large tech layoffs directly impact workers and signal shifting economic priorities within software giants. Observers will monitor how the company handles its remaining workforce and future product updates.",
+          "visual": null
+        }
+      ],
+      "whyItMatters": "Mass layoffs at major technology companies affect thousands of workers and signal economic shifts across the digital industry. These cuts show how even successful software platforms are reevaluating their staffing levels.",
+      "context": "Context if you're new to this: Canva is an Australian-founded technology company that provides a popular online design platform used globally. The firm has grown rapidly over thirteen years before implementing this major restructure.",
+      "coverage": [
+        {
+          "outlet": "The Guardian",
+          "angle": "Emphasized that the cuts affect twenty-two percent of the global workforce and impact staff who built the platform.",
+          "url": "https://www.theguardian.com/australia-news/2026/nov/04/canva-layoffs-job-cuts-restructure"
+        },
+        {
+          "outlet": "BBC News",
+          "angle": "Focused on the chief executive's statement that the company experienced its hardest year yet.",
+          "url": "https://www.bbc.co.uk/news/articles/cw77pg7neydmo?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "The Guardian",
+          "title": "Canva layoffs: design giant to cut or relocate more than 1,200 jobs in major restructure",
+          "url": "https://www.theguardian.com/australia-news/2026/nov/04/canva-layoffs-job-cuts-restructure",
+          "publishedAt": "2026-11-04T00:14:49.000Z"
+        },
+        {
+          "outlet": "BBC News",
+          "title": "Canva announces major job cuts after 'our hardest year yet'",
+          "url": "https://www.bbc.co.uk/news/articles/cw77pg7neydmo?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-11-04T00:09:35.000Z"
+        }
+      ],
+      "location": {
+        "place": "Australia",
+        "lat": -25.2744,
+        "lon": 133.7751
+      },
+      "publishedAt": "2026-11-04T00:14:49.000Z",
+      "generatedAt": "2026-11-04T20:55:10.053Z",
+      "estDurationSec": 84,
+      "audio": {
+        "src": "/audio/1ssbhmz1d5i9ta.mp3",
+        "durationSec": 104.6,
+        "model": "gemini-3.8-flash-tts",
+        "voice": "Kore"
+      },
+      "provider": "gemini"
+    },
+    {
+      "id": "finance-131fry6",
+      "track": "finance",
+      "title": "Social Security Faces Tough Choices",
+      "hook": "Democratic election wins bring the future of Social Security back into focus.",
+      "segments": [
+        {
+          "text": "Democratic election victories have revived a very difficult political question. Lawmakers now face hard choices about how to fund the massive retirement system.",
+          "visual": {
+            "kind": "headline",
+            "text": "Social Security Funding Debate"
+          }
+        },
+        {
+          "text": "Following the recent major election results, leaders must address looming financial shortfalls. Every proposed solution to save the program involves painful compromises.",
+          "visual": null
+        },
+        {
+          "text": "Fixing the system will require difficult decisions that affect millions of citizens. Officials are searching for viable paths forward to ensure long-term stability.",
+          "visual": null
+        },
+        {
+          "text": "Lawmakers have floated many different ideas to keep the fund afloat. However, none of these potential strategies will be painless for taxpayers or beneficiaries.",
+          "visual": null
+        },
+        {
+          "text": "Social Security provides vital financial support to retired and disabled Americans. The program relies on payroll taxes collected from current workers to pay current benefits.",
+          "visual": null
+        },
+        {
+          "text": "Demographic shifts and rising costs have put intense pressure on the trust funds. Without legislative action, future payouts could face automatic and severe cuts.",
+          "visual": null
+        },
+        {
+          "text": "Every working person has a direct stake in the outcome of this debate. The eventual policy changes will impact retirement security and household budgets nationwide.",
+          "visual": null
+        },
+        {
+          "text": "Watch for newly elected officials to propose specific funding legislation in the coming months. The debate over who bears the cost is just beginning.",
+          "visual": null
+        }
+      ],
+      "whyItMatters": "Social Security is a primary financial lifeline for millions of retirees and disabled individuals. Decisions made by lawmakers will directly impact the future financial stability of American households.",
+      "context": "Social Security is a federal government program funded largely through dedicated payroll taxes. It provides critical monthly income to retired workers, survivors, and disabled individuals across the United States.",
+      "coverage": [],
+      "sources": [
+        {
+          "outlet": "MarketWatch",
+          "title": "Democrats’ big election win revives a difficult Social Security question: Who pays?",
+          "url": "https://www.marketwatch.com/story/democrats-big-election-win-revives-a-difficult-social-security-question-who-pays-17ba9448?mod=mw_rss_topstories",
+          "publishedAt": "2026-11-04T20:47:00.000Z"
+        }
+      ],
+      "location": {
+        "place": "United States",
+        "lat": 38.8951,
+        "lon": -77.0364
+      },
+      "publishedAt": "2026-11-04T20:47:00.000Z",
+      "generatedAt": "2026-11-04T20:55:12.405Z",
+      "estDurationSec": 76,
+      "audio": {
+        "src": "/audio/1bv914kqnvx9h.mp3",
+        "durationSec": 77.9,
+        "model": "gemini-3.8-flash-tts",
+        "voice": "Kore"
+      },
+      "provider": "gemini"
+    },
+    {
+      "id": "finance-uw0v5m",
+      "track": "finance",
+      "title": "McDonald's Tests New Value Menu",
+      "hook": "McDonald's is rethinking its menu as cheap meal deals intensify.",
+      "segments": [
+        {
+          "text": "McDonald's is rethinking its menu as cheap meal deals intensify. The famous burger chain wants to give customers a clear and compelling reason to buy.",
+          "visual": {
+            "kind": "headline",
+            "text": "McDonald's Tests Value Menu"
+          }
+        },
+        {
+          "text": "The massive fast-food company is currently testing a brand new value menu. This move comes as major competitors battle intensely over budget-conscious food shoppers.",
+          "visual": null
+        },
+        {
+          "text": "Executives at the restaurant giant believe their current offerings need a complete overhaul. They want to ensure diners easily understand the pricing and savings available.",
+          "visual": null
+        },
+        {
+          "text": "Fast-food brands across the country have been fighting fiercely for months. They are rolling out various discount promotions to attract everyday consumers back.",
+          "visual": null
+        },
+        {
+          "text": "Budget menus have long been a crucial tool for fast-food chains. They draw in price-sensitive families and students looking for quick, affordable meals.",
+          "visual": null
+        },
+        {
+          "text": "However, rising operational costs have made offering cheap meals difficult for franchise owners. Companies must balance low prices with maintaining their profit margins.",
+          "visual": null
+        },
+        {
+          "text": "For regular eaters, these ongoing discount battles mean more affordable dining options. Consumers can expect better deals as restaurants try to win their business.",
+          "visual": null
+        },
+        {
+          "text": "We will watch to see if this test expands nationwide. Analysts will track whether these lower prices successfully bring back frequent fast-food buyers.",
+          "visual": null
+        }
+      ],
+      "whyItMatters": "Intense competition among fast-food giants directly impacts what everyday families pay for quick meals. When major brands change their discount menus, shoppers often get better deals on their food.",
+      "context": "Fast-food companies frequently adjust their pricing strategies to attract budget-conscious consumers during tough economic periods. Value menus are a primary battleground for winning over everyday diners.",
+      "coverage": [],
+      "sources": [
+        {
+          "outlet": "MarketWatch",
+          "title": "McDonald’s tests new value menu as fast-food discount wars heat up",
+          "url": "https://www.marketwatch.com/story/mcdonalds-tests-new-value-menu-as-fast-food-discount-wars-heat-up-bfc57caf?mod=mw_rss_topstories",
+          "publishedAt": "2026-11-04T20:41:00.000Z"
+        }
+      ],
+      "location": {
+        "place": "United States",
+        "lat": 37.0902,
+        "lon": -95.7129
+      },
+      "publishedAt": "2026-11-04T20:41:00.000Z",
+      "generatedAt": "2026-11-04T20:55:14.903Z",
+      "estDurationSec": 76,
+      "audio": null,
+      "provider": "gemini"
+    },
+    {
+      "id": "politics-vp0nrq",
+      "track": "politics",
+      "title": "Prime Minister Links Cost of Living to US Iran Conflict",
+      "hook": "United Kingdom Prime Minister Andy Burnham says American midterm election results offer a chance to tackle global living costs.",
+      "segments": [
+        {
+          "text": "United Kingdom Prime Minister Andy Burnham says American midterm election results offer a chance to tackle global living costs.",
+          "visual": {
+            "kind": "headline",
+            "text": "Prime Minister Eyes Cost of Living"
+          }
+        },
+        {
+          "text": "Speaking after the voting concluded, the Prime Minister argued that the international community must unite to address everyday financial pressures.",
+          "visual": null
+        },
+        {
+          "text": "He stated that domestic prices will not drop significantly until the ongoing conflict between the United States and Iran reaches a resolution.",
+          "visual": null
+        },
+        {
+          "text": "Louise Haigh stood in for the Prime Minister at the start of the proceedings, noting the upcoming Remembrance Sunday silence.",
+          "visual": null
+        },
+        {
+          "text": "The Prime Minister highlighted the link between international military engagements and the financial burdens felt by households across the country.",
+          "visual": {
+            "kind": "headline",
+            "text": "Iran Conflict Impacts Prices"
+          }
+        },
+        {
+          "text": "Energy and goods prices remain a central concern for citizens as global supply chains continue to feel the strain of foreign conflicts.",
+          "visual": null
+        },
+        {
+          "text": "Voters care deeply about how international events directly influence the cost of everyday goods and their household budgets.",
+          "visual": null
+        },
+        {
+          "text": "Observers will monitor whether shifting political dynamics abroad lead to any tangible changes in government policy regarding the conflict.",
+          "visual": {
+            "kind": "headline",
+            "text": "What Happens Next"
+          }
+        }
+      ],
+      "whyItMatters": "Global conflicts directly affect household budgets by driving up prices for everyday goods. Understanding these connections helps citizens see how foreign policy impacts their personal finances.",
+      "context": "Prime Minister Andy Burnham leads the United Kingdom government, where domestic economic pressures often intersect with foreign policy decisions. Recent United States political developments have brought international cost of living debates back to the forefront.",
+      "coverage": [
+        {
+          "outlet": "The Guardian",
+          "angle": "Highlighted the Prime Minister's remarks on utilizing US midterm outcomes to refocus international attention on ending the Iran war and living costs.",
+          "url": "https://www.theguardian.com/politics/live/2026/nov/04/ed-miliband-andy-burnham-king-charles-labour-louise-haigh-alex-burghart-pmqs-conservatives-uk-politics-latest-news"
+        },
+        {
+          "outlet": "BBC News",
+          "angle": "Focused on the Prime Minister's assertion that domestic prices cannot fall until the military conflict involving the United States is resolved.",
+          "url": "https://www.bbc.co.uk/news/articles/c6kgl0xk8en9o?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "The Guardian",
+          "title": "UK politics: Burnham says US midterm results have created ‘opportunity’ for world to focus on cost of living and ending Iran war – as it happened",
+          "url": "https://www.theguardian.com/politics/live/2026/nov/04/ed-miliband-andy-burnham-king-charles-labour-louise-haigh-alex-burghart-pmqs-conservatives-uk-politics-latest-news",
+          "publishedAt": "2026-11-04T17:01:31.000Z"
+        },
+        {
+          "outlet": "BBC News",
+          "title": "Time to focus on cost of living, says PM after US election results",
+          "url": "https://www.bbc.co.uk/news/articles/c6kgl0xk8en9o?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-11-04T15:35:09.000Z"
+        }
+      ],
+      "location": {
+        "place": "London, United Kingdom",
+        "lat": 51.5074,
+        "lon": -0.1278
+      },
+      "publishedAt": "2026-11-04T17:01:31.000Z",
+      "generatedAt": "2026-11-04T20:55:17.568Z",
+      "estDurationSec": 64,
+      "audio": null,
+      "provider": "gemini"
+    },
+    {
+      "id": "politics-1uz4e5l",
+      "track": "politics",
+      "title": "DeSantis Reacts to Midterm Losses",
+      "hook": "Outgoing Florida Governor Ron DeSantis delivered a stark assessment of recent election results.",
+      "segments": [
+        {
+          "text": "Outgoing Florida Governor Ron DeSantis delivered a stark assessment of recent election results. He characterized national Republican setbacks as a severe party wipeout.",
+          "visual": {
+            "kind": "headline",
+            "text": "DeSantis Assesses Midterm Wipeout"
+          }
+        },
+        {
+          "text": "DeSantis described the nationwide outcome for Republicans as a near extinction event. He pointed to widespread defeats across the country during the midterms.",
+          "visual": null
+        },
+        {
+          "text": "In contrast to the national trend, DeSantis highlighted his own state. He noted that Florida managed to avoid the sweeping losses seen elsewhere.",
+          "visual": {
+            "kind": "map",
+            "place": "Florida",
+            "lat": 27.6648,
+            "lon": -81.5158
+          }
+        },
+        {
+          "text": "The comments come as the governor prepares to leave office. His remarks focus heavily on the diverging political paths between Florida and the rest of the nation.",
+          "visual": null
+        },
+        {
+          "text": "Midterm elections historically serve as a referendum on the party currently holding the White House. Both political parties invest heavily in these crucial congressional races.",
+          "visual": null
+        },
+        {
+          "text": "National voting outcomes shape the legislative agenda in Washington. State-level successes can redefine party strategies moving toward future presidential cycles.",
+          "visual": null
+        },
+        {
+          "text": "Election outcomes directly impact policy priorities that affect everyday citizens. Voters watch these shifts to understand how future laws might alter their communities.",
+          "visual": null
+        },
+        {
+          "text": "Observers will monitor how national party leaders respond to these severe setbacks. Future strategy adjustments could redefine political campaigns nationwide.",
+          "visual": null
+        }
+      ],
+      "whyItMatters": "Midterm results reshape the balance of power in Washington and influence future legislation. Party leaders must analyze these outcomes to prepare effective strategies for upcoming election cycles.",
+      "context": "Midterm elections occur halfway through a presidential term to elect members of Congress. These contests often signal shifts in public support for the sitting administration.",
+      "coverage": [
+        {
+          "outlet": "Fox News",
+          "angle": "Highlighted the outgoing governor's sharp criticism of national election outcomes while emphasizing his home state's contrasting success.",
+          "url": "https://www.foxnews.com/politics/desantis-calls-gop-midterm-losses-extinction-level-event-explains-why-florida-survived"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "Fox News",
+          "title": "DeSantis calls GOP midterm losses 'extinction-level event' — and explains why Florida survived",
+          "url": "https://www.foxnews.com/politics/desantis-calls-gop-midterm-losses-extinction-level-event-explains-why-florida-survived",
+          "publishedAt": "2026-11-04T18:10:10.000Z"
+        }
+      ],
+      "location": {
+        "place": "Florida",
+        "lat": 27.6648,
+        "lon": -81.5158
+      },
+      "publishedAt": "2026-11-04T18:10:10.000Z",
+      "generatedAt": "2026-11-04T20:55:20.576Z",
+      "estDurationSec": 74,
+      "audio": null,
+      "provider": "gemini"
+    },
+    {
+      "id": "politics-5f15ei",
+      "track": "politics",
+      "title": "Democrats Win Control of Congress",
+      "hook": "Democrats take control of Congress in the 2026 midterm elections following a historic wave.",
+      "segments": [
+        {
+          "text": "Democrats took control of both the House and the Senate during the 2026 midterm elections. They flipped seats across multiple states.",
+          "visual": {
+            "kind": "headline",
+            "text": "Democrats Take Congress"
+          }
+        },
+        {
+          "text": "The results mark a major shift in power in Washington. Voters delivered a sweeping victory to the Democratic party.",
+          "visual": null
+        },
+        {
+          "text": "President Donald Trump saw his job approval rating fall significantly. Polling data shows his approval sank down to thirty-eight percent.",
+          "visual": {
+            "kind": "number",
+            "value": "38%",
+            "label": "President Trump's Approval"
+          }
+        },
+        {
+          "text": "Economic pressures weighed heavily on voters at the ballot box. Persistent inflation and high gas prices hurt Republican candidates across the nation.",
+          "visual": null
+        },
+        {
+          "text": "New trade policies and tariffs also became central issues during the campaign. Ongoing conflict involving Iran added to voter concerns.",
+          "visual": null
+        },
+        {
+          "text": "Midterm elections historically serve as a referendum on the sitting president. Voters often use these contests to signal their dissatisfaction.",
+          "visual": null
+        },
+        {
+          "text": "This shift in congressional control will directly impact future federal legislation. Lawmakers will now face a divided government in Washington.",
+          "visual": null
+        },
+        {
+          "text": "All eyes now turn to how the new congressional majority will govern. Observers are watching for upcoming policy clashes with the White House.",
+          "visual": null
+        }
+      ],
+      "whyItMatters": "Control of Congress determines which laws get passed and shapes the national political agenda. A shift in power alters the balance between the legislative branch and the executive branch.",
+      "context": "Midterm elections take place midway through a president's four-year term. Voters decide all seats in the House of Representatives and about one-third of the Senate.",
+      "coverage": [
+        {
+          "outlet": "Fox News",
+          "angle": "Reported on how economic pressures and low presidential approval drove a historic Democratic sweep of Congress.",
+          "url": "https://www.foxnews.com/politics/voter-poll-democrats-take-control-senate"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "Fox News",
+          "title": "Fox News Voter Poll: How Democrats took control of the Senate",
+          "url": "https://www.foxnews.com/politics/voter-poll-democrats-take-control-senate",
+          "publishedAt": "2026-11-04T17:13:22.000Z"
+        }
+      ],
+      "location": {
+        "place": "Washington, D.C.",
+        "lat": 38.8951,
+        "lon": -77.0364
+      },
+      "publishedAt": "2026-11-04T17:13:22.000Z",
+      "generatedAt": "2026-11-04T20:55:22.810Z",
+      "estDurationSec": 66,
+      "audio": null,
+      "provider": "gemini"
+    },
+    {
+      "id": "world-rc66ps",
+      "track": "world",
+      "title": "South Africa Local Elections",
+      "hook": "Voters in South Africa head to the polls today in high-stakes local elections.",
+      "segments": [
+        {
+          "text": "Voters in South Africa head to the polls today in high-stakes local elections. Citizens are casting their ballots amid widespread public frustration.",
+          "visual": {
+            "kind": "headline",
+            "text": "South Africa Local Elections"
+          }
+        },
+        {
+          "text": "The ruling African National Congress party faces a harsh reality check at the ballot box. Polls indicate support could drop significantly.",
+          "visual": null
+        },
+        {
+          "text": "Voters across the country express deep discontent with basic public services. Communities are struggling with frequent water outages and ongoing power cuts.",
+          "visual": {
+            "kind": "map",
+            "place": "South Africa",
+            "lat": -30.5595,
+            "lon": 22.9375
+          }
+        },
+        {
+          "text": "Crumbling local infrastructure has left many residents tired of poor living conditions. Daily life is heavily disrupted by these utility failures.",
+          "visual": null
+        },
+        {
+          "text": "The African National Congress has governed the country since nineteen ninety-four. Nelson Mandela famously led the liberation movement into power back then.",
+          "visual": {
+            "kind": "timeline",
+            "items": [
+              {
+                "when": "1994",
+                "what": "ANC takes power"
+              },
+              {
+                "when": "Today",
+                "what": "Local elections begin"
+              }
+            ]
+          }
+        },
+        {
+          "text": "Decades of political dominance are now colliding with severe economic and administrative challenges. Party leadership is under intense pressure to reverse this decline.",
+          "visual": null
+        },
+        {
+          "text": "For ordinary citizens, these elections directly impact the reliability of their taps and lights. Local governance dictates whether daily essential needs are actually met.",
+          "visual": null
+        },
+        {
+          "text": "As vote counts continue, everyone is watching to see the final tally. The results will reveal whether public anger translates into lost political control.",
+          "visual": null
+        }
+      ],
+      "whyItMatters": "Local elections decide who manages basic utilities like water and electricity. The outcome tests whether the ruling party can retain public trust amid severe infrastructure failures.",
+      "context": "The African National Congress led South Africa out of apartheid in 1994 under Nelson Mandela. In recent years, the party has faced growing criticism over failing public infrastructure and services.",
+      "coverage": [
+        {
+          "outlet": "The Guardian",
+          "angle": "Focused on the potential for the party to receive less than a third of the vote.",
+          "url": "https://www.theguardian.com/world/2026/nov/04/anc-south-africa-local-elections-water-outages-power-cuts"
+        },
+        {
+          "outlet": "BBC News",
+          "angle": "Emphasized direct resident complaints about the declining quality of local services.",
+          "url": "https://www.bbc.co.uk/news/articles/cr4g1x6l77xyo?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "The Guardian",
+          "title": "ANC faces anger over poor services as South Africans vote in local elections",
+          "url": "https://www.theguardian.com/world/2026/nov/04/anc-south-africa-local-elections-water-outages-power-cuts",
+          "publishedAt": "2026-11-04T14:50:47.000Z"
+        },
+        {
+          "outlet": "BBC News",
+          "title": "ANC under pressure to reverse South Africa decline",
+          "url": "https://www.bbc.co.uk/news/articles/cr4g1x6l77xyo?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-11-04T11:47:44.000Z"
+        },
+        {
+          "outlet": "DW",
+          "title": "Why South Africa's local elections matter",
+          "url": "https://www.dw.com/en/why-south-africa-s-local-elections-matter/a-79842695?maca=en-rss-en-world-4025-rdf",
+          "publishedAt": "2026-11-03T15:06:00.000Z"
+        }
+      ],
+      "location": {
+        "place": "South Africa",
+        "lat": -30.5595,
+        "lon": 22.9375
+      },
+      "publishedAt": "2026-11-04T14:50:47.000Z",
+      "generatedAt": "2026-11-04T20:55:25.359Z",
+      "estDurationSec": 72,
+      "audio": null,
+      "provider": "gemini"
+    },
+    {
+      "id": "world-1o0zmo8",
+      "track": "world",
+      "title": "Democrats Win US Midterms",
+      "hook": "Control of Congress shifts after a major midterm defeat for Republicans.",
+      "segments": [
+        {
+          "text": "Control of Congress shifts after a major midterm defeat for Republicans. President Donald Trump’s party suffered significant losses in Tuesday's elections.",
+          "visual": {
+            "kind": "headline",
+            "text": "Democrats Take Congress"
+          }
+        },
+        {
+          "text": "Democratic candidates swept to victory across the United States. They successfully took control of both chambers of Congress.",
+          "visual": null
+        },
+        {
+          "text": "President Trump acknowledged the crushing defeat. He noted that the ongoing war on Iran contributed to the poor results.",
+          "visual": null
+        },
+        {
+          "text": "People in Iran celebrated the outcome of the American elections. Meanwhile, US financial markets reacted positively to the change in power.",
+          "visual": null
+        },
+        {
+          "text": "Major stock indexes like the Nasdaq and Dow opened higher following the results. President Trump accepted the outcome of the vote.",
+          "visual": null
+        },
+        {
+          "text": "Economic anxieties heavily influenced voters during the midterm cycle. High oil prices, mounting debt, and trade tariffs were central issues.",
+          "visual": null
+        },
+        {
+          "text": "Ordinary citizens felt the pinch of these economic pressures. The election results show voters wanted a different approach to financial challenges.",
+          "visual": null
+        },
+        {
+          "text": "Observers will watch how the newly empowered Democrats handle the economy. Future policies on trade and energy remain key areas of focus.",
+          "visual": null
+        }
+      ],
+      "whyItMatters": "A shift in congressional control directly impacts national policy, government spending, and the legislative agenda. These changes shape economic conditions that affect everyday life across the country.",
+      "context": "Midterm elections take place midway through a president's four-year term. They decide control of the legislative branch, which writes federal laws and approves policies.",
+      "coverage": [
+        {
+          "outlet": "Al Jazeera",
+          "angle": "Focused on international reactions, including celebrations in Iran and rising US stock markets.",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/11/4/iranians-celebrate-democrat-victory-in-us-midterms?traffic_source=rss"
+        },
+        {
+          "outlet": "DW",
+          "angle": "Emphasized broad takeaways for foreign policy, the European Union, and domestic economic pressures.",
+          "url": "https://www.dw.com/en/winners-losers-the-eu-five-takeaways-from-the-us-midterms/a-79858901?maca=en-rss-en-world-4025-rdf"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "DW",
+          "title": "Winners, losers, the EU: Five takeaways from the US midterms",
+          "url": "https://www.dw.com/en/winners-losers-the-eu-five-takeaways-from-the-us-midterms/a-79858901?maca=en-rss-en-world-4025-rdf",
+          "publishedAt": "2026-11-04T20:27:00.000Z"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Iranians celebrate Democrat victory in US midterms",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/11/4/iranians-celebrate-democrat-victory-in-us-midterms?traffic_source=rss",
+          "publishedAt": "2026-11-04T19:59:14.000Z"
+        }
+      ],
+      "location": {
+        "place": "United States",
+        "lat": 38.8951,
+        "lon": -77.0364
+      },
+      "publishedAt": "2026-11-04T20:27:00.000Z",
+      "generatedAt": "2026-11-04T20:55:27.656Z",
+      "estDurationSec": 65,
+      "audio": null,
+      "provider": "gemini"
+    },
+    {
+      "id": "world-1g6767d",
+      "track": "world",
+      "title": "Keeper Speaks After Fatal Clash",
+      "hook": "A football goalkeeper is dealing with unimaginable pain following a tragic pitch collision.",
+      "segments": [
+        {
+          "text": "A football goalkeeper is dealing with unimaginable pain following a tragic pitch collision. Jesus Owono shared his profound sorrow after a recent on-field tragedy.",
+          "visual": {
+            "kind": "headline",
+            "text": "Tragic Pitch Collision"
+          }
+        },
+        {
+          "text": "Jesus de Miguel tragically passed away following an accidental collision during a match. The forward suffered severe injuries when he collided with the opposing goalkeeper.",
+          "visual": null
+        },
+        {
+          "text": "The fatal accident took place during a game between Tenerife and Football Club Andorra. Medical staff fought to save the player, but he ultimately succumbed to his injuries.",
+          "visual": {
+            "kind": "map",
+            "place": "Andorra",
+            "lat": 42.5063,
+            "lon": 1.5218
+          }
+        },
+        {
+          "text": "Following the tragic event, Football Club Andorra released a personal statement on behalf of their goalkeeper. He described the aftermath as the hardest period of his entire life.",
+          "visual": null
+        },
+        {
+          "text": "Goalkeeper Jesus Owono expressed deep grief and offered condolences to the grieving family. The sports community has rallied together to support everyone affected by this sudden loss.",
+          "visual": {
+            "kind": "headline",
+            "text": "Community Mourns Player"
+          }
+        },
+        {
+          "text": "Accidents like this remind us how high the physical risks can be in professional sports. Players put their bodies on the line every time they step onto the field.",
+          "visual": null
+        },
+        {
+          "text": "Such tragedies deeply shake sports fans and athletes worldwide who share a passion for the game. Mental health support for players involved in fatal incidents is now crucial.",
+          "visual": null
+        },
+        {
+          "text": "Authorities and sports officials are reviewing the incident to offer guidance moving forward. We will continue monitoring updates as the football community processes this difficult loss.",
+          "visual": null
+        }
+      ],
+      "whyItMatters": "This tragic accident highlights the sudden and severe physical dangers athletes face in professional sports. It also brings urgent attention to the heavy emotional toll placed on surviving players involved in fatal incidents.",
+      "context": "Context if you're new to this: Jesus de Miguel was a forward for Tenerife, while Jesus Owono plays as a goalkeeper for Football Club Andorra. Collisions during matches are common, but they rarely result in fatal injuries.",
+      "coverage": [
+        {
+          "outlet": "Al Jazeera",
+          "angle": "Highlighted the emotional toll and personal quotes from the goalkeeper regarding the hardest days of his life.",
+          "url": "https://www.aljazeera.com/sports/2026/11/4/owono-enduring-hardest-days-of-my-life-after-de-miguel-death?traffic_source=rss"
+        },
+        {
+          "outlet": "BBC News",
+          "angle": "Focused on the official club statement released by Football Club Andorra detailing the goalkeeper's sorrow.",
+          "url": "https://www.bbc.co.uk/sport/football/articles/c6zxjz40l280o?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Owono enduring ‘hardest days of my life’ after De Miguel death",
+          "url": "https://www.aljazeera.com/sports/2026/11/4/owono-enduring-hardest-days-of-my-life-after-de-miguel-death?traffic_source=rss",
+          "publishedAt": "2026-11-04T17:05:12.000Z"
+        },
+        {
+          "outlet": "BBC News",
+          "title": "'Most difficult days of my life' for keeper Owono",
+          "url": "https://www.bbc.co.uk/sport/football/articles/c6zxjz40l280o?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-11-04T16:40:38.000Z"
+        }
+      ],
+      "location": {
+        "place": "Andorra",
+        "lat": 42.5063,
+        "lon": 1.5218
+      },
+      "publishedAt": "2026-11-04T17:05:12.000Z",
+      "generatedAt": "2026-11-04T20:55:30.422Z",
+      "estDurationSec": 86,
+      "audio": null,
+      "provider": "gemini"
+    },
+    {
+      "id": "india-118ckj9",
+      "track": "india",
+      "title": "Rahul Gandhi Criticizes Punjab Chief Minister Over Drugs",
+      "hook": "Rahul Gandhi launched a sharp attack on Punjab Chief Minister Bhagwant Mann.",
+      "segments": [
+        {
+          "text": "Rahul Gandhi launched a sharp attack on Punjab Chief Minister Bhagwant Mann. He claimed he could smell alcohol on the leader's breath during a meeting.",
+          "visual": {
+            "kind": "headline",
+            "text": "Rahul Gandhi Targets Bhagwant Mann"
+          }
+        },
+        {
+          "text": "The remarks directly target the state's leadership over the ongoing drug crisis. Gandhi argued that Punjab requires a chief minister who truly understands this heavy suffering.",
+          "visual": null
+        },
+        {
+          "text": "The opposition leader stressed that the state needs someone personally committed to fixing the issue. The Aam Aadmi Party quickly reacted to the serious allegations made today.",
+          "visual": {
+            "kind": "headline",
+            "text": "Allegations Over Drug Crisis"
+          }
+        },
+        {
+          "text": "Political tensions are rising sharply in the region following the public confrontation. Both parties are trading sharp accusations as local leaders respond to the remarks.",
+          "visual": null
+        },
+        {
+          "text": "Punjab has struggled with widespread drug addiction and drug trafficking for many years. Political figures frequently clash over who is responsible for failing to solve it.",
+          "visual": {
+            "kind": "headline",
+            "text": "Punjab Drug Crisis History"
+          }
+        },
+        {
+          "text": "The ruling Aam Aadmi Party holds power in the state and faces constant scrutiny. Critics often accuse state officials of not doing enough to protect vulnerable communities.",
+          "visual": null
+        },
+        {
+          "text": "For ordinary citizens, the drug epidemic destroys families and hurts the local economy daily. Effective leadership on this issue directly impacts public safety and youth futures.",
+          "visual": {
+            "kind": "headline",
+            "text": "Impact on Ordinary Citizens"
+          }
+        },
+        {
+          "text": "Watch for further statements from the Aam Aadmi Party as they counter these claims. Public demonstrations and political fallout are expected to continue across the state.",
+          "visual": null
+        }
+      ],
+      "whyItMatters": "The drug crisis is a major political and social issue in Punjab. Direct personal attacks between prominent leaders highlight deep divisions over how to govern the state.",
+      "context": "Context if you're new to this: Bhagwant Mann leads Punjab under the Aam Aadmi Party banner. Rahul Gandhi is a prominent national opposition figure from the Indian National Congress.",
+      "coverage": [
+        {
+          "outlet": "NDTV",
+          "angle": "Focused on Rahul Gandhi's remarks and the subsequent reaction from the Aam Aadmi Party.",
+          "url": "https://www.ndtv.com/india-news/could-smell-alcohol-on-him-rahul-gandhi-attacks-bhagwant-mann-in-punjab-sangrur-aap-reacts-12284020#publisher=newsstand"
+        },
+        {
+          "outlet": "Times of India",
+          "angle": "Highlighted the specific alcohol claim made against the Punjab Chief Minister.",
+          "url": "https://timesofindia.indiatimes.com/india/you-could-smell-alcohol-on-his-breath-rahul-gandhi-targets-bhagwant-mann-over-drug-menace/articleshow/135535423.cms"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "NDTV",
+          "title": "\"Could Smell Alcohol On Him\": Rahul Gandhi Attacks Bhagwant Mann, AAP Reacts",
+          "url": "https://www.ndtv.com/india-news/could-smell-alcohol-on-him-rahul-gandhi-attacks-bhagwant-mann-in-punjab-sangrur-aap-reacts-12284020#publisher=newsstand",
+          "publishedAt": "2026-11-04T18:34:59.000Z"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "‘You could smell alcohol on his breath’: Rahul Gandhi targets Bhagwant Mann over drug menace",
+          "url": "https://timesofindia.indiatimes.com/india/you-could-smell-alcohol-on-his-breath-rahul-gandhi-targets-bhagwant-mann-over-drug-menace/articleshow/135535423.cms",
+          "publishedAt": "2026-11-04T10:32:36.000Z"
+        }
+      ],
+      "location": {
+        "place": "Punjab, India",
+        "lat": 31.1471,
+        "lon": 75.3412
+      },
+      "publishedAt": "2026-11-04T18:34:59.000Z",
+      "generatedAt": "2026-11-04T20:55:33.037Z",
+      "estDurationSec": 83,
+      "audio": null,
+      "provider": "gemini"
+    },
+    {
+      "id": "india-1k8sos2",
+      "track": "india",
+      "title": "High Court denies bail to former judge in Twisha Sharma murder case",
+      "hook": "A former judge stays behind bars as the high court slams down her bail request.",
+      "segments": [
+        {
+          "text": "A former judge’s bail request was denied, keeping her behind bars in a high‑profile murder case. The decision shocked legal observers across India.",
+          "visual": {
+            "kind": "headline",
+            "text": "Bail Denied"
+          }
+        },
+        {
+          "text": "A single bench of the Madhya Pradesh High Court, headed by Justice Ajay Kumar Nirankari, denied Giribala Singh’s bail on October twenty‑six. The case involves Twisha Sharma’s death.",
+          "visual": null
+        },
+        {
+          "text": "Prosecution argued the accused remains a flight risk and could tamper with evidence, while defence claimed she deserves liberty pending trial.",
+          "visual": null
+        },
+        {
+          "text": "The hearing took place in Jabalpur, the administrative hub of Madhya Pradesh, where the high court regularly handles criminal appeals of this magnitude.",
+          "visual": {
+            "kind": "map",
+            "place": "Jabalpur, Madhya Pradesh, India",
+            "lat": 23.1815,
+            "lon": 79.9864
+          }
+        },
+        {
+          "text": "Twisha Sharma, a teenage student, was found dead in 2024 under suspicious circumstances, sparking nationwide protests demanding justice and police accountability.",
+          "visual": {
+            "kind": "headline",
+            "text": "Twisha Sharma Death"
+          }
+        },
+        {
+          "text": "Giribala Singh, a former district judge, was arrested after investigators linked her to the alleged cover‑up, alleging she interfered with the investigation.",
+          "visual": {
+            "kind": "headline",
+            "text": "Former Judge Arrested"
+          }
+        },
+        {
+          "text": "The bail denial underscores the judiciary’s stance on accountability, signalling that even senior legal officials can face strict scrutiny when implicated in crimes.",
+          "visual": null
+        },
+        {
+          "text": "Watch for the upcoming trial schedule, possible appeals to the Supreme Court, and reactions from civil‑rights groups demanding transparent proceedings.",
+          "visual": {
+            "kind": "timeline",
+            "items": [
+              {
+                "when": "TBD",
+                "what": "Trial date"
+              },
+              {
+                "when": "Later",
+                "what": "Potential Supreme Court appeal"
+              }
+            ]
+          }
+        }
+      ],
+      "whyItMatters": "Keeping the former judge in custody shows the courts are willing to act against powerful insiders. It reassures the public that justice can reach even high‑ranking officials.",
+      "context": "Twisha Sharma’s 2024 death sparked massive protests across India, with calls for an impartial investigation. Authorities later arrested former district judge Giribala Singh, alleging she helped conceal evidence. The bail hearing was the latest legal hurdle in the case.",
+      "coverage": [],
+      "sources": [
+        {
+          "outlet": "The Indian Express",
+          "title": "Twisha death case: MP High Court rejects former judge Giribala’s bail plea",
+          "url": "https://indianexpress.com/article/india/mp-high-court-rejects-bail-former-judge-giribala-singh-twisha-sharma-death-case-cbi-10950932/",
+          "publishedAt": "2026-11-04T15:00:02.000Z"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "High Court Rejects Giribala Singh's Bail In Twisha Sharma Death Case",
+          "url": "https://www.ndtv.com/india-news/madhya-pradesh-high-court-rejects-giribala-singhs-bail-in-twisha-sharma-death-case-12283498#publisher=newsstand",
+          "publishedAt": "2026-11-04T14:53:05.000Z"
+        }
+      ],
+      "location": {
+        "place": "Jabalpur, Madhya Pradesh, India",
+        "lat": 23.1815,
+        "lon": 79.9864
+      },
+      "publishedAt": "2026-11-04T15:00:02.000Z",
+      "generatedAt": "2026-11-04T20:55:39.442Z",
+      "estDurationSec": 72,
+      "audio": null,
+      "provider": "groq"
+    },
+    {
+      "id": "india-1omb8jk",
+      "track": "india",
+      "title": "Board Exams 2027 Schedules Approaching",
+      "hook": "Students across India are gearing up for the upcoming board examinations.",
+      "segments": [
+        {
+          "text": "Students across India are gearing up for the upcoming board examinations. Major educational boards are preparing to release their official timetables for next year.",
+          "visual": {
+            "kind": "headline",
+            "text": "Board Exam Timetables 2027"
+          }
+        },
+        {
+          "text": "The Council for the Indian School Certificate Examinations announced that students can soon access exam schedules online. Officials will publish the complete timetable directly through their main website.",
+          "visual": {
+            "kind": "headline",
+            "text": "CISCE Schedule Release"
+          }
+        },
+        {
+          "text": "Candidates planning to take the annual high school assessments will find the downloadable PDF online. This allows pupils to organize their study plans well ahead of time.",
+          "visual": null
+        },
+        {
+          "text": "Meanwhile, the Central Board of Secondary Education is also preparing its schedule. Authorities plan to release similar timetable details for tenth and twelfth grade students very soon.",
+          "visual": {
+            "kind": "headline",
+            "text": "CBSE Updates"
+          }
+        },
+        {
+          "text": "These annual evaluations serve as major milestones in the Indian education system. Millions of teenagers take these tests every year to complete their secondary schooling.",
+          "visual": null
+        },
+        {
+          "text": "Educational boards traditionally publish these dates months in advance. This gives schools and families adequate time to prepare students for the rigorous testing period.",
+          "visual": null
+        },
+        {
+          "text": "Families rely heavily on these exact dates to plan vacations, tutoring, and personal schedules. Knowing the timeline helps reduce anxiety for both students and parents.",
+          "visual": null
+        },
+        {
+          "text": "Students should monitor official websites closely for the final PDF downloads. We will keep track of any new updates as the examination dates approach.",
+          "visual": {
+            "kind": "headline",
+            "text": "Check Official Websites"
+          }
+        }
+      ],
+      "whyItMatters": "Board exam schedules dictate the academic rhythm for millions of households across the country. Timely release of these dates ensures students can prepare effectively without unnecessary stress.",
+      "context": "Context if you're new to this: Major educational authorities in India conduct centralized board exams annually for high school students. These scores often play a critical role in college admissions and future career paths.",
+      "coverage": [],
+      "sources": [
+        {
+          "outlet": "NDTV",
+          "title": "CISCE Class 10, 12 Date Sheet LIVE: Direct Link To Download ICSE, ISC Timetable PDF",
+          "url": "https://www.ndtv.com/education/cisce-class-10-12-date-sheet-live-direct-link-to-download-icse-isc-timetable-pdf-12280802#publisher=newsstand",
+          "publishedAt": "2026-11-04T14:24:10.000Z"
+        }
+      ],
+      "location": {
+        "place": "India",
+        "lat": 20.5937,
+        "lon": 78.9629
+      },
+      "publishedAt": "2026-11-04T14:24:10.000Z",
+      "generatedAt": "2026-11-04T20:55:42.075Z",
+      "estDurationSec": 82,
+      "audio": null,
+      "provider": "gemini"
+    },
+    {
+      "id": "science-1lit7my",
+      "track": "science",
+      "title": "NASA Funds New Space Relay Concepts",
+      "hook": "NASA just picked three private companies to design advanced communication relay systems for future space missions.",
+      "segments": [
+        {
+          "text": "The National Aeronautics and Space Administration announced three separate awards on Wednesday. These contracts focus on developing high frequency radio band capabilities for spacecraft.",
+          "visual": {
+            "kind": "headline",
+            "text": "New Space Relay Contracts"
+          }
+        },
+        {
+          "text": "Selected firms will design concepts compatible with currently operating missions. This approach guarantees uninterrupted service for existing spacecraft without needing costly onboard upgrades.",
+          "visual": null
+        },
+        {
+          "text": "Winning companies must deliver comprehensive end to end solutions. That includes ground infrastructure, launch services, orbital hardware, and daily mission operations.",
+          "visual": null
+        },
+        {
+          "text": "Space relay networks act as crucial bridges for data transmission. They allow distant explorers to send critical telemetry and scientific discoveries back to Earth.",
+          "visual": {
+            "kind": "headline",
+            "text": "Bridging Space and Earth"
+          }
+        },
+        {
+          "text": "Older spacecraft often use older radio frequencies to communicate. Updating fleets in orbit is risky, making compatible relay networks essential for ongoing mission success.",
+          "visual": null
+        },
+        {
+          "text": "Reliable space communication underpins almost every modern scientific breakthrough. Better relays mean faster data delivery from deep space and improved tracking capabilities.",
+          "visual": null
+        },
+        {
+          "text": "We will soon see how these three companies approach the engineering challenges. Observers should watch for initial design reviews and upcoming contract milestones.",
+          "visual": null
+        }
+      ],
+      "whyItMatters": "Reliable communication networks keep orbital science missions running smoothly. These new relay concepts protect existing investments while preparing for future data demands.",
+      "context": "Spacecraft rely on dedicated networks to transmit data to ground stations on Earth. Upgrading these systems usually requires modifying hardware in orbit, which is extremely difficult and expensive.",
+      "coverage": [],
+      "sources": [
+        {
+          "outlet": "NASA",
+          "title": "NASA Announces Ka-Band Satellite Relay Awards for Space Communications",
+          "url": "https://www.nasa.gov/news-release/nasa-announces-ka-band-satellite-relay-awards-for-space-communications/",
+          "publishedAt": "2026-11-04T18:00:02.000Z"
+        }
+      ],
+      "location": {
+        "place": "Washington, D.C.",
+        "lat": 38.8951,
+        "lon": -77.0364
+      },
+      "publishedAt": "2026-11-04T18:00:02.000Z",
+      "generatedAt": "2026-11-04T20:55:44.339Z",
+      "estDurationSec": 64,
+      "audio": null,
+      "provider": "gemini"
+    },
+    {
+      "id": "science-9sdaxr",
+      "track": "science",
+      "title": "New Tech Aims for Safe Moon Landings",
+      "hook": "Spacecraft might soon land on distant worlds all by themselves.",
+      "segments": [
+        {
+          "text": "Spacecraft might soon land on distant worlds all by themselves. A recent test brings automated planetary landings one step closer to reality.",
+          "visual": {
+            "kind": "headline",
+            "text": "Autonomous Planetary Landings"
+          }
+        },
+        {
+          "text": "The National Aeronautics and Space Administration successfully tested advanced navigation technology. An uncrewed drone carried the specialized guidance payload during a recent flight test.",
+          "visual": null
+        },
+        {
+          "text": "The National Aeronautics and Space Administration successfully tested advanced navigation technology. An uncrewed drone carried the specialized guidance payload during a recent flight test.",
+          "visual": {
+            "kind": "headline",
+            "text": "Successful Drone Flight Test"
+          }
+        },
+        {
+          "text": "The drone completed simulated lunar descent maneuvers on August twenty-seventh. This trial helps engineers evaluate how well the system spots safe touchdown areas.",
+          "visual": null
+        },
+        {
+          "text": "Safe landings require avoiding hazards like rocks and craters. Automated systems make these critical safety decisions without waiting for instructions from Earth.",
+          "visual": null
+        },
+        {
+          "text": "Safe landings require avoiding hazards like rocks and craters. Automated systems make these critical safety decisions without waiting for instructions from Earth.",
+          "visual": {
+            "kind": "headline",
+            "text": "Avoiding Surface Hazards"
+          }
+        },
+        {
+          "text": "Reliable landing technology is essential for future crewed missions. Astronauts need dependable systems to touch down safely on the Moon and other planets.",
+          "visual": null
+        },
+        {
+          "text": "Engineers will continue refining the navigation payload for actual space missions. Observers can watch for upcoming flight tests as the hardware matures.",
+          "visual": {
+            "kind": "headline",
+            "text": "Next Steps for Navigation"
+          }
+        }
+      ],
+      "whyItMatters": "Future space exploration relies on automated technology to keep astronauts safe. Reliable landing systems ensure spacecraft can reach uncharted surfaces without human intervention.",
+      "context": "Landing safely on celestial bodies is exceptionally difficult due to communication delays with Earth. Space agencies develop autonomous guidance systems so vehicles can spot and avoid surface hazards independently.",
+      "coverage": [],
+      "sources": [
+        {
+          "outlet": "NASA",
+          "title": "NASA Navigation Experiment Shows Promise for Planetary Landings",
+          "url": "https://www.nasa.gov/centers-and-facilities/armstrong/nasa-navigation-experiment-shows-promise-for-planetary-landings/",
+          "publishedAt": "2026-11-04T16:52:43.000Z"
+        }
+      ],
+      "location": {
+        "place": "Moon",
+        "lat": 0,
+        "lon": 0
+      },
+      "publishedAt": "2026-11-04T16:52:43.000Z",
+      "generatedAt": "2026-11-04T20:55:46.694Z",
+      "estDurationSec": 73,
+      "audio": null,
+      "provider": "gemini"
+    },
+    {
+      "id": "science-kzm3k2",
+      "track": "science",
+      "title": "Students Power NASA Inspiration Tour",
+      "hook": "Space Grant students are driving NASA's nationwide tour.",
+      "segments": [
+        {
+          "text": "Space Grant students are driving NASA's nationwide tour. They connect the public with American leadership in space.",
+          "visual": {
+            "kind": "headline",
+            "text": "Students Power NASA Tour"
+          }
+        },
+        {
+          "text": "The Inspiration Tour shares the excitement of space exploration across the country. It brings students right into the heart of the action.",
+          "visual": null
+        },
+        {
+          "text": "Academic institutions and industry experts join forces during these nationwide stops. Participants experience aeronautical innovation firsthand.",
+          "visual": null
+        },
+        {
+          "text": "One recent stop brought the outreach effort directly to Iowa. NASA Administrator Jared participated in the local events.",
+          "visual": {
+            "kind": "map",
+            "place": "Iowa",
+            "lat": 41.878,
+            "lon": -93.097
+          }
+        },
+        {
+          "text": "The Space Grant program supports student involvement in science initiatives. These programs build bridges between academia and government space agencies.",
+          "visual": null
+        },
+        {
+          "text": "Such outreach efforts have a long history of inspiring future scientists. They showcase the people and technologies behind American space missions.",
+          "visual": null
+        },
+        {
+          "text": "These events spark curiosity for students interested in science careers. They make complex aeronautical innovations accessible to ordinary citizens.",
+          "visual": null
+        },
+        {
+          "text": "Watch for future tour stops as the agency visits more states. Additional student programs will likely be announced soon.",
+          "visual": null
+        }
+      ],
+      "whyItMatters": "Public outreach programs inspire the next generation of scientists and engineers. Connecting students with active space missions helps sustain technological innovation nationwide.",
+      "context": "Context if you're new to this: The National Aeronautics and Space Administration regularly conducts public outreach to showcase aerospace technology. Student programs provide hands-on experience for learners entering scientific fields.",
+      "coverage": [],
+      "sources": [
+        {
+          "outlet": "NASA",
+          "title": "NASA Space Grant Students Fuel Agency’s Inspiration Tour",
+          "url": "https://www.nasa.gov/learning-resources/nasa-space-grant-students-fuel-agencys-inspiration-tour/",
+          "publishedAt": "2026-11-04T16:16:41.000Z"
+        }
+      ],
+      "location": {
+        "place": "Iowa",
+        "lat": 41.878,
+        "lon": -93.097
+      },
+      "publishedAt": "2026-11-04T16:16:41.000Z",
+      "generatedAt": "2026-11-04T20:55:48.815Z",
+      "estDurationSec": 61,
+      "audio": null,
+      "provider": "gemini"
+    }
+  ]
+}

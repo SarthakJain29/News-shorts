@@ -1,6 +1,6 @@
 import { geminiProvider } from "./gemini";
 import { groqProvider } from "./groq";
-import type { LlmProvider, LlmRequest, LlmResponse } from "./types";
+import type { Env, LlmProvider, LlmRequest, LlmResponse } from "./types";
 
 export * from "./types";
 
@@ -8,7 +8,7 @@ export * from "./types";
  * Ordered provider chain. LLM_PROVIDER picks the preferred one; others act as fallbacks.
  * Returns an empty chain when no keys exist — callers then use the deterministic mock writer.
  */
-export function providerChain(env = process.env): LlmProvider[] {
+export function providerChain(env: Env = process.env): LlmProvider[] {
   const all = [geminiProvider(env), groqProvider(env)];
   const pref = (env.LLM_PROVIDER || "auto").toLowerCase();
   if (pref === "mock") return [];

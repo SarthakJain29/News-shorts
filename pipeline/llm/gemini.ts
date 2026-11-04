@@ -1,8 +1,8 @@
-import { LlmError, type LlmProvider, type LlmRequest } from "./types";
+import { LlmError, type Env, type LlmProvider, type LlmRequest } from "./types";
 
 const BASE = "https://generativelanguage.googleapis.com/v1beta/models";
 
-export function geminiProvider(env = process.env): LlmProvider {
+export function geminiProvider(env: Env = process.env): LlmProvider {
   const key = env.GEMINI_API_KEY;
   const models = (env.GEMINI_TEXT_MODEL || "gemini-3.5-flash-lite,gemini-flash-lite-latest,gemini-2.5-flash-lite")
     .split(",")
