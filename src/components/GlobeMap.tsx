@@ -6,7 +6,7 @@ import type { Feature, FeatureCollection, Geometry } from "geojson";
 type Countries = FeatureCollection<Geometry, { name: string }>;
 let cached: Promise<Countries> | null = null;
 
-function loadCountries(): Promise<Countries> {
+export function preloadCountries(): Promise<Countries> {
   cached ??= Promise.all([import("world-atlas/countries-110m.json"), import("topojson-client")]).then(([topo, tc]) => {
     const t = (topo.default ?? topo) as unknown as Parameters<typeof tc.feature>[0] & { objects: { countries: Parameters<typeof tc.feature>[1] } };
     return tc.feature(t, t.objects.countries) as unknown as Countries;
@@ -14,41 +14,34 @@ function loadCountries(): Promise<Countries> {
   return cached;
 }
 
-/** Orthographic globe that spins to the story's location — generated in-app from Natural Earth data. */
-export default function GlobeMap({ lat, lon, place, size = 300 }: { lat: number; lon: number; place: string; size?: number }) {
-  const [world, setWorld] = useState<Countries | null>(null);
-  const [rot, setRot] = useState<[number, number]>([-lon + 70, -lat * 0.4]);
+const SPIN_SEC = 1.6;
 
+/**
+ * Orthographic globe that spins to the story location — generated in-app from Natural Earth data.
+ * `t` is seconds since the scene appeared, so the motion is a pure function of playback time (pauses with the
+ * narration and renders identically frame-by-frame for video export).
+ */
+export default function GlobeMap({ lat, lon, place, t, size = 300 }: { lat: number; lon: number; place: string; t: number; size?: number }) {
+  const [world, setWorld] = useState<Countries | null>(null);
   useEffect(() => {
     let alive = true;
-    loadCountries().then((w) => alive && setWorld(w));
+    preloadCountries().then((w) => alive && setWorld(w));
     return () => {
       alive = false;
     };
   }, []);
 
-  useEffect(() => {
-    const from: [number, number] = [-lon + 70, -lat * 0.4];
-    const to: [number, number] = [-lon, -lat * 0.85];
-    const t0 = performance.now();
-    let id = 0;
-    const step = (now: number) => {
-      const k = Math.min(1, (now - t0) / 1600);
-      const e = 1 - Math.pow(1 - k, 3);
-      setRot([from[0] + (to[0] - from[0]) * e, from[1] + (to[1] - from[1]) * e]);
-      if (k < 1) id = requestAnimationFrame(step);
-    };
-    id = requestAnimationFrame(step);
-    return () => cancelAnimationFrame(id);
-  }, [lat, lon]);
+  const k = Math.min(1, Math.max(0, t / SPIN_SEC));
+  const e = 1 - Math.pow(1 - k, 3);
+  const rot: [number, number] = [-lon + 70 + (-70) * e, -lat * 0.4 + (-lat * 0.85 + lat * 0.4) * e];
 
-  const projection = useMemo(() => geoOrthographic().scale(size / 2 - 4).translate([size / 2, size / 2]).rotate([rot[0], rot[1]]).clipAngle(90), [rot, size]);
+  const projection = useMemo(() => geoOrthographic().scale(size / 2 - 4).translate([size / 2, size / 2]).rotate(rot).clipAngle(90), [rot[0], rot[1], size]); // eslint-disable-line react-hooks/exhaustive-deps
   const path = geoPath(projection);
   const hit = useMemo(() => world?.features.find((f) => geoContains(f as Feature, [lon, lat])), [world, lat, lon]);
   const pt = projection([lon, lat]);
 
   return (
-    <figure className="globe" aria-label={`Map: ${place}`}>
+    <figure className="globe" aria-label={`Map: ${place}`} data-ready={world ? "1" : undefined}>
       <svg viewBox={`0 0 ${size} ${size}`} width="100%" height="100%" role="img">
         <defs>
           <radialGradient id="globe-shade" cx="35%" cy="30%" r="75%">
@@ -63,7 +56,7 @@ export default function GlobeMap({ lat, lon, place, size = 300 }: { lat: number;
         ))}
         <circle cx={size / 2} cy={size / 2} r={size / 2 - 4} fill="url(#globe-shade)" pointerEvents="none" />
         {pt && (
-          <g transform={`translate(${pt[0]},${pt[1]})`}>
+          <g transform={`translate(${pt[0]},${pt[1]})`} opacity={k}>
             <circle r="18" className="globe-ping" />
             <circle r="6" className="globe-dot" />
           </g>

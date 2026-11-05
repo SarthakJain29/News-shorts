@@ -3,9 +3,10 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { buildFeed, catchUp, CATCHUP_BEATS, clipDuration, formatClock } from "@/lib/playlist";
+import { availableLangs, LANGS, localize } from "@/lib/i18n";
 import { KEYS, useStored } from "@/lib/store";
 import { TRACKS } from "@/lib/tracks";
-import { TRACK_IDS, type Short, type TrackId } from "@/lib/types";
+import { TRACK_IDS, type Lang, type Short, type TrackId } from "@/lib/types";
 import { IconArrowDown, IconBolt, IconBookmark, IconClose, IconSliders } from "./Icons";
 import { ShortCard } from "./ShortCard";
 import { Onboarding, TrackGrid } from "./TrackPicker";
@@ -16,8 +17,10 @@ interface Prefs {
   muted: boolean;
   captions: boolean;
   onboarded: boolean;
+  /** Preferred language for stories that have a translation (Hindi for the India track). */
+  lang?: Lang;
 }
-const DEFAULT_PREFS: Prefs = { muted: false, captions: true, onboarded: false };
+const DEFAULT_PREFS: Prefs = { muted: false, captions: true, onboarded: false, lang: "en" };
 const NO_TRACKS: TrackId[] = [];
 const NO_IDS: string[] = [];
 
@@ -47,6 +50,11 @@ export function FeedApp({ shorts, mode, startId, generatedAt, dataMode }: { shor
   const scroller = useRef<HTMLDivElement>(null);
   const router = useRouter();
 
+  const lang: Lang = prefs.lang ?? "en";
+  const original = useMemo(() => new Map(shorts.map((s) => [s.id, s])), [shorts]);
+  const localized = useMemo(() => shorts.map((s) => localize(s, lang)), [shorts, lang]);
+  const setLang = useCallback((l: Lang) => setPrefs((p) => ({ ...p, lang: l })), [setPrefs]);
+
   const counts = useMemo(() => {
     const c: Partial<Record<TrackId, number>> = {};
     for (const s of shorts) c[s.track] = (c[s.track] ?? 0) + 1;
@@ -57,14 +65,14 @@ export function FeedApp({ shorts, mode, startId, generatedAt, dataMode }: { shor
   const [seenAtStart] = useState(() => new Set(seen));
   const list = useMemo(() => {
     const chosen = tracks.length ? tracks : [...TRACK_IDS];
-    if (mode === "catchup") return catchUp(shorts, chosen);
-    const feed = buildFeed(shorts, chosen, seenAtStart);
+    if (mode === "catchup") return catchUp(localized, chosen);
+    const feed = buildFeed(localized, chosen, seenAtStart);
     if (startId) {
-      const s = shorts.find((x) => x.id === startId);
+      const s = localized.find((x) => x.id === startId);
       if (s) return [s, ...feed.filter((x) => x.id !== startId)];
     }
     return feed;
-  }, [shorts, tracks, mode, startId, seenAtStart]);
+  }, [localized, tracks, mode, startId, seenAtStart]);
 
   const needsOnboarding = hydrated && mode === "feed" && !startId && (!prefs.onboarded || tracks.length === 0);
   const needsGesture = hydrated && !needsOnboarding && !gestured;
@@ -194,6 +202,8 @@ export function FeedApp({ shorts, mode, startId, generatedAt, dataMode }: { shor
               {Math.abs(i - active) <= 1 ? (
                 <ShortCard
                   short={s}
+                  langs={availableLangs(original.get(s.id) ?? s)}
+                  onLang={setLang}
                   active={i === active && gestured}
                   clip={clip}
                   muted={prefs.muted}
@@ -256,6 +266,15 @@ export function FeedApp({ shorts, mode, startId, generatedAt, dataMode }: { shor
                 <button className="icon-btn ghost" onClick={() => setPicker(false)} aria-label="Close"><IconClose /></button>
               </header>
               <TrackGrid selected={tracks} onToggle={toggleTrack} counts={counts} />
+              <div className="field">
+                <span className="field-label">Language</span>
+                <span className="lang-seg" role="group" aria-label="Language">
+                  {LANGS.map((l) => (
+                    <button key={l.id} className={lang === l.id ? "on" : ""} onClick={() => setLang(l.id)} aria-pressed={lang === l.id} lang={l.id}>{l.native}</button>
+                  ))}
+                </span>
+                <p className="field-hint">Hindi script and voice are available for India-track stories. Everything else stays in English.</p>
+              </div>
               <button className="cta" onClick={() => { setPicker(false); goTo(0); }} disabled={!tracks.length}>Done</button>
             </section>
           </div>

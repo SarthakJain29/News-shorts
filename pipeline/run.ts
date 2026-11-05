@@ -168,10 +168,27 @@ async function main() {
     }
   }
 
+  // Moving to object storage: upload narration that still lives in public/audio and point the data at the bucket.
+  if (store.kind === "s3") {
+    for (const s of shorts)
+      for (const a of [s.audio, s.i18n?.hi?.audio]) {
+        const local = a?.src.startsWith("/audio/") ? path.join(process.cwd(), "public", a.src) : null;
+        if (a && local && existsSync(local)) {
+          try {
+            a.src = await store.publish(local);
+            console.log(`  ↑ uploaded ${path.basename(local)}`);
+          } catch (e) {
+            console.warn(`  ! upload ${path.basename(local)}: ${(e as Error).message.slice(0, 140)}`);
+          }
+        }
+      }
+  }
+
   // 3. Narration: every short, lead stories first, cached by content hash, optional wall-clock budget.
   if (chain.length) {
     const jobs: Job[] = [];
     for (const s of shorts) {
+      if (s.provider === "mock" && !mock) continue; // offline-writer placeholder: rewritten next run, not worth narrating
       const rank = rankOf.get(s.id) ?? 99;
       if (!s.audio || args.has("renarrate")) jobs.push({ short: s, lang: "en", rank });
       if (s.i18n?.hi && (!s.i18n.hi.audio || args.has("renarrate"))) jobs.push({ short: s, lang: "hi", rank });

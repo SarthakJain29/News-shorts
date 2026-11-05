@@ -2,12 +2,16 @@ name: Prepare shorts
 
 on:
   schedule:
-    - cron: "17 */6 * * *" # every 6 hours (UTC); stays inside free TTS quotas
+    - cron: "17 */8 * * *" # 3×/day (UTC). Public repos have unlimited Actions minutes; private repos: ~1,650 of 2,000 free min/month
   workflow_dispatch:
     inputs:
       max:
         description: "Stories per track"
         default: "3"
+      fresh:
+        description: "Rewrite every script (ignore the 72 h cache)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -19,21 +23,39 @@ concurrency:
 jobs:
   pipeline:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 90
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 22
           cache: npm
-      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+      # espeak-ng: Hindi grapheme-to-phoneme for Kokoro. ffmpeg: MP3 encoding + Whisper input decoding.
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq espeak-ng ffmpeg
       - run: npm ci
+      # Kokoro (92 MB) and MiniLM (22 MB) weights download once, then come from this cache.
+      - uses: actions/cache@v4
+        with:
+          path: pipeline/.cache/models
+          key: models-${{ hashFiles('package-lock.json') }}
+          restore-keys: models-
+      - uses: actions/cache@v4
+        with:
+          path: pipeline/.cache/embeddings.json
+          key: embeddings-${{ github.run_id }}
+          restore-keys: embeddings-
       - name: Run pipeline
         env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
-          TTS_MAX_PER_RUN: "4"
-        run: npx tsx pipeline/run.ts --max=${{ inputs.max || '3' }}
+          # Optional: object storage for audio (see developer.md). Leave unset to commit MP3s to public/audio.
+          S3_ENDPOINT: ${{ secrets.S3_ENDPOINT }}
+          S3_BUCKET: ${{ secrets.S3_BUCKET }}
+          S3_ACCESS_KEY_ID: ${{ secrets.S3_ACCESS_KEY_ID }}
+          S3_SECRET_ACCESS_KEY: ${{ secrets.S3_SECRET_ACCESS_KEY }}
+          AUDIO_PUBLIC_URL: ${{ secrets.AUDIO_PUBLIC_URL }}
+          # Stop narrating after 45 min; anything left is picked up (incrementally, from cache) by the next run.
+          NARRATE_BUDGET_MIN: "45"
+        run: npx tsx pipeline/run.ts --max=${{ inputs.max || '3' }} ${{ inputs.fresh && '--fresh' || '' }}
       - name: Commit new shorts
         run: |
           git config user.name "news-shorts-bot"

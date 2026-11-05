@@ -182,7 +182,10 @@ export function draftToShort(raw: unknown, track: TrackId, c: Cluster, provider:
   if (words < 120) throw new Error(`Script too short (${words} words) — write 160–210 words total, 7–9 segments of 20–28 words`);
   if (words > 260) throw new Error(`Script too long (${words} words) — write 160–210 words total`);
   const orig = originalityReport(narration, c.items.flatMap((i) => [i.title, i.summary]));
-  if (!orig.ok) throw new Error(`Originality guard failed (shared5=${orig.shared5.toFixed(2)}, runs=${orig.copiedRuns.length})`);
+  if (!orig.ok) {
+    const what = orig.copiedRuns.length ? `you copied this run of words from a source: "${orig.copiedRuns.slice(0, 2).join('" and "')}"` : `${Math.round(orig.shared5 * 100)}% of your 5-word phrases appear in the sources`;
+    throw new Error(`Originality guard failed: ${what}. Rewrite those parts in completely different words and structure`);
+  }
 
   const segments: Segment[] = draft.segments.map((s) => ({ text: s.text.trim(), visual: sanitizeVisual(s.visual, sourceText) }));
   const sources = sourcesOf(c);

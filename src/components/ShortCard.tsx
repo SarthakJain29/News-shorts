@@ -1,10 +1,11 @@
 "use client";
 import { memo, useEffect, useState } from "react";
 import { usePlayback } from "@/hooks/usePlayback";
-import { activeVisual } from "@/lib/timeline";
+import { activeVisual, visualCues } from "@/lib/timeline";
 import { TRACKS } from "@/lib/tracks";
 import { formatClock, timeAgo } from "@/lib/playlist";
-import type { Short } from "@/lib/types";
+import { LANGS } from "@/lib/i18n";
+import type { Lang, Short } from "@/lib/types";
 import { Captions } from "./Captions";
 import { IconBookmark, IconCC, IconPause, IconPlay, IconRestart, IconShare, IconSources, IconSpark, IconVolume } from "./Icons";
 import { MotionBackground } from "./MotionBackground";
@@ -12,7 +13,11 @@ import { Scene } from "./Scene";
 import { StorySheet, type SheetTab } from "./Sheet";
 
 export interface ShortCardProps {
-  short: Short;
+  /** Already localised for the viewer's language. */
+  short: Short & { lang?: Lang };
+  /** Languages this story is available in (the language switch shows when there is more than one). */
+  langs?: Lang[];
+  onLang?: (l: Lang) => void;
   active: boolean;
   muted: boolean;
   captions: boolean;
@@ -35,6 +40,7 @@ function ShortCardImpl(p: ShortCardProps) {
   const pb = usePlayback(short, { active: p.active && !sheet, muted: p.muted, onEnded: p.onEnded, clip: p.clip });
   const seg = pb.timeline[pb.segIndex];
   const { visual, from } = activeVisual(pb.timeline, Math.max(0, pb.segIndex));
+  const cues = from >= 0 ? visualCues(pb.timeline, from) : null;
 
   const { toggle } = pb;
   useEffect(() => {
@@ -79,11 +85,16 @@ function ShortCardImpl(p: ShortCardProps) {
       <header className="short-meta">
         <span className="track-chip">{t.label}</span>
         {p.badge && <span className="mono-chip hot">{p.badge}</span>}
-        <span className="meta-dim">{short.sources.length > 1 ? `${short.sources.length} outlets` : short.sources[0]?.outlet} · {timeAgo(short.publishedAt)}</span>
+        {short.sources.length > 1 ? (
+          <button className="outlets-chip" onClick={() => openSheet("coverage")} aria-label={`How ${short.sources.length} outlets covered this`}>{short.sources.length} outlets ›</button>
+        ) : (
+          <span className="meta-dim">{short.sources[0]?.outlet}</span>
+        )}
+        <span className="meta-dim">{timeAgo(short.publishedAt)}</span>
       </header>
 
       <div className="stage">
-        <Scene visual={visual} title={short.title} trackLabel={t.label} keyId={`${short.id}-${from}`} play={p.active} />
+        <Scene visual={visual} title={short.title} trackLabel={t.label} keyId={`${short.id}-${short.lang ?? "en"}-${from}`} time={pb.time} cues={cues} />
       </div>
 
       <div className="tapzones" aria-hidden>
@@ -111,8 +122,17 @@ function ShortCardImpl(p: ShortCardProps) {
       <footer className="short-foot">
         <h2 className="short-title">{short.title}</h2>
         <div className="foot-row">
-          <button className="pill solid" onClick={() => openSheet("why")}><IconSpark width={16} height={16} /> Why it matters</button>
-          <button className="pill" onClick={() => openSheet("context")}>New to this?</button>
+          <button className="pill solid" onClick={() => openSheet("why")}><IconSpark width={16} height={16} /> {short.lang === "hi" ? "क्यों ज़रूरी है" : "Why it matters"}</button>
+          <button className="pill" onClick={() => openSheet("context")}>{short.lang === "hi" ? "नए हैं?" : "New to this?"}</button>
+          {p.langs && p.langs.length > 1 && (
+            <span className="lang-seg" role="group" aria-label="Language">
+              {p.langs.map((l) => (
+                <button key={l} className={l === (short.lang ?? "en") ? "on" : ""} onClick={() => p.onLang?.(l)} aria-pressed={l === (short.lang ?? "en")} lang={l}>
+                  {l === "en" ? "EN" : LANGS.find((x) => x.id === l)?.native.slice(0, 2)}
+                </button>
+              ))}
+            </span>
+          )}
         </div>
         <div className="foot-row dim">
           <button className="mini-btn" onClick={pb.toggle} aria-label={pb.playing ? "Pause" : "Play"}>{pb.playing ? <IconPause width={16} height={16} /> : <IconPlay width={16} height={16} />}</button>

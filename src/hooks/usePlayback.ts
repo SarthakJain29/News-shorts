@@ -1,7 +1,8 @@
 "use client";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { speechLang } from "@/lib/i18n";
 import { buildTimeline, segmentIndexAt, type TimedSegment } from "@/lib/timeline";
-import type { Short } from "@/lib/types";
+import type { Lang, Short } from "@/lib/types";
 
 export type Engine = "neural" | "device" | "silent";
 
@@ -24,9 +25,9 @@ export interface Playback {
 
 const SPEECH_WPS = 2.5; // matches the pipeline estimate so listed durations agree
 
-function pickVoice(): SpeechSynthesisVoice | null {
+function pickVoice(lang: Lang): SpeechSynthesisVoice | null {
   if (typeof window === "undefined" || !("speechSynthesis" in window)) return null;
-  const voices = window.speechSynthesis.getVoices().filter((v) => /^en(-|_|$)/i.test(v.lang));
+  const voices = window.speechSynthesis.getVoices().filter((v) => new RegExp(`^${lang}(-|_|$)`, "i").test(v.lang));
   const rank = (v: SpeechSynthesisVoice) =>
     (/natural|neural|premium|enhanced/i.test(v.name) ? 8 : 0) +
     (/google|samantha|daniel|serena|aria|jenny|guy|libby|sonia/i.test(v.name) ? 4 : 0) +
@@ -42,14 +43,15 @@ function pickVoice(): SpeechSynthesisVoice | null {
  *            boundary until the utterance finishes, and boundary events refine word position
  *  - silent: muted / no speech support — a plain clock so captions & visuals still play
  */
-export function usePlayback(short: Short, opts: { active: boolean; muted: boolean; onEnded?: () => void; clip?: number }): Playback {
+export function usePlayback(short: Short & { lang?: Lang }, opts: { active: boolean; muted: boolean; onEnded?: () => void; clip?: number }): Playback {
   const { active, muted, onEnded } = opts;
   const hasSpeech = typeof window !== "undefined" && "speechSynthesis" in window;
   const engine: Engine = short.audio ? "neural" : muted || !hasSpeech ? "silent" : "device";
 
   const [audioDur, setAudioDur] = useState<number | null>(null);
   const fullDuration = short.audio ? audioDur || short.audio.durationSec : short.estDurationSec * (2.5 / SPEECH_WPS);
-  const fullTimeline = useMemo(() => buildTimeline(short.segments, fullDuration), [short.segments, fullDuration]);
+  const wordTimes = short.audio?.wordTimes;
+  const fullTimeline = useMemo(() => buildTimeline(short.segments, fullDuration, 0.15, wordTimes), [short.segments, fullDuration, wordTimes]);
   const [unclipped, setUnclipped] = useState(false);
   const clipN = !unclipped && opts.clip ? Math.min(opts.clip, fullTimeline.length) : fullTimeline.length;
   const timeline = useMemo(() => fullTimeline.slice(0, clipN), [fullTimeline, clipN]);
@@ -103,8 +105,10 @@ export function usePlayback(short: Short, opts: { active: boolean; muted: boolea
       if (!seg || !hasSpeech) return;
       window.speechSynthesis.cancel();
       const u = new SpeechSynthesisUtterance(seg.text);
-      const v = pickVoice();
+      const lang = short.lang ?? "en";
+      const v = pickVoice(lang);
       if (v) u.voice = v;
+      u.lang = speechLang(lang);
       u.rate = 1.04;
       u.pitch = 1;
       clock.current.spokenSeg = i;
@@ -122,7 +126,7 @@ export function usePlayback(short: Short, opts: { active: boolean; muted: boolea
       };
       window.speechSynthesis.speak(u);
     },
-    [timeline, hasSpeech],
+    [timeline, hasSpeech, short.lang],
   );
 
   const play = useCallback(() => {

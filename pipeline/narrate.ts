@@ -30,7 +30,10 @@ export function keyFor(segments: string[], lang: Lang, env: Env, chain: TtsProvi
 export async function narrate(segments: string[], lang: Lang, ctx: NarrateContext): Promise<NarrationAudio> {
   const key = keyFor(segments, lang, ctx.env, ctx.chain);
   const known = ctx.known.get(key);
-  if (known && (await ctx.store.exists(path.basename(known.src)))) return known;
+  if (known) {
+    const src = await ctx.store.exists(path.basename(known.src));
+    if (src) return { ...known, src }; // adopt the store's current public URL (local path ↔ bucket URL)
+  }
 
   const hint = segments[0]?.slice(0, 200);
   const local = await findLocal(ctx.store, key);

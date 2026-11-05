@@ -1,0 +1,35 @@
+name: Export MP4
+
+# Run from the Actions tab: renders any short to a 1080×1920 MP4 (+ post caption) you can download and upload to
+# YouTube Shorts / Instagram Reels / TikTok.
+on:
+  workflow_dispatch:
+    inputs:
+      id:
+        description: "Short id (see the app's story sheet, or `npm run export:video -- --list`)"
+        required: true
+      lang:
+        description: "en or hi"
+        default: "en"
+      fps:
+        description: "Frames per second"
+        default: "30"
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+      - run: npm ci
+      - run: npm i --no-save playwright && npx playwright install --with-deps chromium
+      - run: node scripts/export-video.mjs "${{ inputs.id }}" --lang=${{ inputs.lang }} --fps=${{ inputs.fps }} --out=exports
+      - uses: actions/upload-artifact@v4
+        with:
+          name: short-${{ inputs.id }}-${{ inputs.lang }}
+          path: exports/
