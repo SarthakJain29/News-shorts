@@ -106,6 +106,7 @@ pipeline/ (Node, run by cron)                              src/ (Next.js app, st
   - **originality guard:** rejects any 8-word run copied from a source or >12% shared 5-grams; the rejection quotes the offending phrase back to the model, up to 3 attempts, then the offline writer;
   - **number grounding:** on-screen figures, charts and comparisons are dropped unless every number appears in the source text;
   - zod schema validation and a word-count window;
+  - **story check:** the writer must name any outlet whose article is about a *different* event (automatic clustering can merge loosely related headlines); those outlets are dropped from sources and the comparison, and their facts aren't used;
   - **coverage comparison:** per outlet an `angle` and a 2–4 word `emphasis`, plus a one-sentence `agreement` and `differences` for the whole story, based only on the per-outlet snippets. Politics prompts enforce neutral framing and attribution.
 - **Hindi** (`pipeline/translate.ts`, India track by default): the LLM adapts *our own* English script (never the source articles) into spoken Devanagari, numbers written as Hindi words so the voice reads them correctly. Validation: same segment count, ≥80% Devanagari letters, sane length. Visuals are translated for text labels only: kind, numbers, chart values and map coordinates are pinned to the grounded originals.
 - **Narration** (`pipeline/narrate.ts`): cache lookup by content hash (text + language + voice + engine) → synthesise segment by segment (Kokoro) → trim silence, add 0.14 s sentence / 0.32 s segment gaps, peak-normalise → MP3 48 kbps (ffmpeg) → publish to the store → Whisper → word timings. Hindi G2P uses the system `espeak-ng` and then the same Kokoro model with a Hindi voice (the JS `phonemizer` package only ships English voices).
@@ -208,9 +209,11 @@ Other S3-compatible options work with the same variables (Backblaze B2, Supabase
 - **Narration speed on small runners:** Kokoro is ~1.8× realtime on 4 cores and slower on 2. The time budget makes this incremental rather than failing, but a cold start spans two runs.
 - **Voice quality:** Kokoro is good but audibly synthetic; Hindi is graded lower than English by its authors. The Gemini provider (optional) sounds better when quota is available.
 - **Hindi timing:** Whisper normalises Hindi spellings (nukta, conjuncts), so ≈70–95% of words match; the rest are interpolated inside their exact segment window, which keeps error small. Hindi stories are also long (≈100 s). Hindi script quality is whatever the free LLM produces: read before posting.
+- **LLM factual slips:** numbers on screen are grounded, but descriptive details in the narration are not machine-checked (e.g. a wrong job title for a public figure). Every short shows its sources and an "AI can make mistakes" note.
+- **Partial runs:** `--tracks=x` keeps the other tracks' shorts from the previous feed, but clusters are built only from the chosen tracks' feeds, so the picks can differ from a full run.
 - **Clustering is still imperfect.** Many stories are single-outlet because feeds simply don't overlap. At 0.60 a few loosely related items merge; tune `EMBED_THRESHOLD`.
 - **Originality guard vs. the LLM:** some stories need all 3 attempts and a few fall back to the offline writer (shown as "offline"; they're rewritten on the next run and are never narrated).
-- **Video export is slow** (≈0.1–0.2 s per frame on a free CPU; a 90 s short at 30 fps takes ~5–8 min, longer while another heavy job runs). Lower `--fps` for drafts. Backdrop blur is only approximated in headless Chromium.
+- **Video export takes ~5 min for a 64 s short at 30 fps** on 4 CPU cores (≈0.16 s per 1080×1920 frame, measured: 313 s). Rasterisation is the cost, so extra parallel pages did not help (`--workers` is there for bigger machines). Use `--fps=24` for drafts. The render view swaps blur and blend effects for look-alike cheap paints, so exports are a touch flatter than the app.
 - **Web Speech quality varies by device**, and iOS Safari's `speechSynthesis.pause()` is unreliable (pause cancels and the segment restarts on resume). Autoplay needs one tap before sound.
 - **No UI localisation:** only the story text, narration and a few card labels switch to Hindi; the app chrome stays English.
 - Some feeds block bots or rate-limit (CNBC 403, Phys.org 429 were replaced with NPR). Failing feeds are logged and skipped.
@@ -234,6 +237,7 @@ Other S3-compatible options work with the same variables (Backblaze B2, Supabase
 - **Fixed v1 bug:** the Gemini TTS prefix ("Read this as a warm, clear, upbeat news presenter…") was *spoken aloud* at the start of every Gemini narration. It was found by running Whisper over the audio. The Gemini provider now sends the plain text only; the old audio is gone from the dataset.
 - **Clustering threshold 0.60, average linkage, max 14 per cluster:** see §1.4.
 - **Track assignment by feed votes** instead of per-track clustering, so a story carried by BBC World, the Guardian's politics desk and NPR becomes one multi-outlet short (not three single-outlet ones).
+- **LLM story check on top of clustering:** embeddings at 0.60 occasionally merge two different events on the same topic. In the first refresh, "Trump blames Iran war for losses" and "Hegseth's future…" were merged and the "agreement" sentence papered over it. Rather than raise the threshold (losing real multi-outlet stories), the writer now flags unrelated outlets in the same call, at no extra cost.
 - **Coverage view:** per-outlet `angle` + `emphasis` label + the outlet's own headline link, a "where they agree" card and a "where they differ" card. We deliberately do **not** attach political-lean labels to outlets (contested; would need a third-party rating source).
 - **Hindi is adapted from our English script**, not from the articles, so the originality guarantees carry over; only the India track by default (`HINDI_TRACKS`).
 - **Narration priority = rank within track** (lead stories first, English before Hindi at equal rank), then the time budget cuts off the tail. Lead stories are exactly what every "catch me up" playlist starts with.
@@ -255,7 +259,7 @@ Other S3-compatible options work with the same variables (Backblaze B2, Supabase
 | Node `fetch` ignored the sandbox proxy (HTTP 403 on feeds, HF) | Read the proxy docs | `NODE_USE_ENV_PROXY=1` in the npm scripts. Nothing needed elsewhere. |
 | S3/R2 upload **not tested against a real bucket** | Implemented SigV4, verified it against the AWS docs' worked example; unit-tested the PUT with a mocked `fetch` | **You:** create a bucket (§4), set the five env vars, run once, and check that one MP3 plays from the bucket URL. |
 | GitHub Actions workflows **not run** | Validated YAML; reproduced each step in a clean clone (see Progress) | Workflows can only be dispatched once they're on the default branch. **You:** merge, add `GROQ_API_KEY`, set workflow permissions to read/write, press *Run workflow*. |
-| Export is slow in the sandbox | Measured while Kokoro was using all cores | Works; drafts via `--fps=15`. |
+| Export was ~0.8 s/frame at first | Profiled: Playwright screenshot overhead, then software rasterisation of big blurred/blended layers. Tried DevTools capture (4× faster but only at CSS pixels unless clipped at 2×), 4 parallel workers (no gain), cheaper paints in the render view (−45%) | ~0.16 s/frame: a 64 s short exports in ~5 min. Nothing needed. |
 
 ---
 
@@ -269,9 +273,9 @@ Other S3-compatible options work with the same variables (Backblaze B2, Supabase
   3. **Embedding clustering** with a local MiniLM model (lexical fallback), global across tracks; **new coverage view** (agree / differ cards, per-outlet emphasis + headline link, tappable "N outlets" chip).
   4. **Hindi** for the India track: Groq adaptation of our script + Kokoro Hindi voice; per-user language switch (card pill and tracks sheet); Devanagari font self-hosted; device voice uses `hi-IN`.
   5. **MP4 export:** `npm run export:video` and an Actions workflow; also writes a post caption with source credits.
-  6. **Dataset refreshed:** @@N_SHORTS@@ shorts (@@N_NARR@@ narrated by Kokoro, @@N_HI@@ with Hindi, @@N_WT@@ with exact word timings); screenshots updated.
+  6. **Dataset refreshed:** 21 shorts (all 21 written by Groq and narrated by Kokoro, all with Whisper-aligned word timings; 3 India stories also in Hindi with their own narration; 19 of 21 cite 2+ outlets and 18 carry an agree/differ comparison). It was produced by a full run and then an incremental run that reused 16 shorts straight from cache; screenshots updated.
   7. **Storage:** `AudioStore` (local/git or S3-compatible), SigV4 signer, upload-and-rewrite migration, documented R2 setup.
-- **Tests:** @@N_TESTS@@ vitest tests (RSS, clustering incl. semantic + picks, embedding cache, script guards, alignment, timeline + cues, playlist, LLM fallback and retry-after, TTS text/audio utils, storage + SigV4 vector, narration cache, Hindi validation and localisation). Typecheck, lint and production build are clean.
+- **Tests:** 88 vitest tests (RSS, clustering incl. semantic + picks, embedding cache, script guards, alignment, timeline + cues, playlist, LLM fallback and retry-after, TTS text/audio utils, storage + SigV4 vector, narration cache, Hindi validation and localisation). Typecheck, lint and production build are clean.
 - **Clean-room check:** @@CLEANROOM@@
 
 ### In progress

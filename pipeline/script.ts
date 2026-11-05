@@ -37,6 +37,7 @@ export const scriptSchema = z.object({
     .optional()
     .default([]),
   agreement: z.string().max(300).optional().nullable(),
+  unrelatedOutlets: z.array(z.string()).optional().default([]),
   differences: z.string().max(360).optional().nullable(),
   location: z
     .object({ place: z.string(), lat: z.number().min(-90).max(90), lon: z.number().min(-180).max(180) })
@@ -68,6 +69,7 @@ export function buildPrompt(track: TrackId, c: Cluster): { system: string; user:
     isPolitics
       ? "This is POLITICS: use strictly neutral framing. Attribute claims to who made them. Avoid loaded words. Give each side's stated position fairly. Always fill `coverage`, `agreement` and `differences` (when 2+ outlets)."
       : "When 2+ outlets cover the story, fill `coverage` (one entry per outlet), `agreement` and `differences`.",
+    "STORY CHECK: the articles were grouped automatically and the grouping can be wrong. Decide which event most of them are about. List in `unrelatedOutlets` every outlet whose article is about a DIFFERENT event (same broad topic is not enough), and do not use its facts anywhere.",
     "COVERAGE COMPARISON RULES: base it only on the per-outlet headlines/snippets provided. `angle` = one sentence, in your own words, on what that outlet emphasised or how it framed the story. `emphasis` = a 2–4 word label (e.g. \"economic impact\", \"legal angle\", \"human cost\"). `agreement` = one sentence on the facts every outlet reports. `differences` = one sentence on where emphasis, framing or detail differs; if the snippets show no meaningful difference say so plainly. Never quote, never invent details an outlet did not report, never judge which outlet is right.",
     "Return ONLY a JSON object matching the requested schema.",
   ].join("\n");
@@ -95,6 +97,7 @@ JSON schema:
   "coverage": [ { "outlet": string (exactly as listed above), "angle": string, "emphasis": string } ] ([] if only one outlet),
   "agreement": string ("" if only one outlet),
   "differences": string ("" if only one outlet),
+  "unrelatedOutlets": [ string ] (outlets whose article is about a different event; usually []),
   "location": { "place": string, "lat": number, "lon": number } | null (main place the story is about)
 }
 Visual is one of:
@@ -188,7 +191,11 @@ export function draftToShort(raw: unknown, track: TrackId, c: Cluster, provider:
   }
 
   const segments: Segment[] = draft.segments.map((s) => ({ text: s.text.trim(), visual: sanitizeVisual(s.visual, sourceText) }));
-  const sources = sourcesOf(c);
+  // Drop outlets the writer judged to be about a different event (an automatic-clustering false merge).
+  const unrelated = new Set(draft.unrelatedOutlets.map((o) => o.toLowerCase()));
+  const all = sourcesOf(c);
+  const kept = all.filter((s) => !unrelated.has(s.outlet.toLowerCase()));
+  const sources = kept.length ? kept : all.slice(0, 1);
   const seenOutlets = new Set<string>();
   const coverage: Coverage[] = [];
   for (const cv of draft.coverage) {

@@ -42,6 +42,9 @@ export default function RenderStage({ short }: { short: Short }) {
   const t = TRACKS[short.track];
 
   useEffect(() => {
+    // Ambient animations exist from the first paint: pin them to video time 0 so any worker, starting at any frame,
+    // computes the same phase.
+    for (const a of document.getAnimations()) if (!starts.has(a)) starts.set(a, 0);
     window.__render = {
       duration,
       async setTime(next: number) {

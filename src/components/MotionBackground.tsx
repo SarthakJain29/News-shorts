@@ -22,7 +22,7 @@ export function MotionBackground({ track, id, intensity = 1 }: { track: TrackId;
   return (
     <div className="motion-bg" aria-hidden style={{ ["--c1" as string]: t.color, ["--c2" as string]: t.color2, opacity: intensity }}>
       {blobs.map((b, i) => (
-        <span key={i} className={`blob b${i}`} style={{ left: b.left, top: b.top, width: b.size, height: b.size, background: b.color, animationDuration: b.dur, animationDelay: b.delay }} />
+        <span key={i} className={`blob b${i}`} style={{ left: b.left, top: b.top, width: b.size, height: b.size, ["--blob" as string]: b.color, animationDuration: b.dur, animationDelay: b.delay }} />
       ))}
       <span className="rings" />
       <span className="grain" />

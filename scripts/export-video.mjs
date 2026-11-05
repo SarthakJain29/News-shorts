@@ -15,7 +15,7 @@
  */
 import { spawn, spawnSync } from "node:child_process";
 import { createRequire } from "node:module";
-import { existsSync, mkdirSync, readFileSync, statSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, rmSync, statSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import path from "node:path";
 
@@ -75,7 +75,9 @@ let server = null;
 async function ensureServer() {
   if (base) return;
   base = `http://localhost:${port}`;
-  const stale = !existsSync(".next/BUILD_ID") || (existsSync("data/shorts.json") && statSync("data/shorts.json").mtimeMs > statSync(".next/BUILD_ID").mtimeMs);
+  // Rebuild when there is no build, or the data the static /render pages were generated from changed since.
+  const built = existsSync(".next/BUILD_ID") ? statSync(".next/BUILD_ID").mtimeMs : 0;
+  const stale = !built || ["data/shorts.json", "data/mock-shorts.json"].some((f) => existsSync(f) && statSync(f).mtimeMs > built);
   if (stale) {
     console.log("Building the app (data changed or no build yet)…");
     run("npx", ["next", "build"]);
@@ -100,42 +102,75 @@ mkdirSync(outDir, { recursive: true });
 const name = `${short.id}${lang === "en" ? "" : `-${lang}`}`;
 const outFile = path.join(outDir, `${name}.mp4`);
 
+// Chromium already rasterises one page on several threads; extra workers rarely help on small machines.
+const workers = Math.max(1, Number(flag("workers", 1)));
+const url = `${base}/render/${encodeURIComponent(short.id)}${lang === "en" ? "" : `?lang=${lang}`}`;
 const browser = await chromium.launch();
-try {
-  const page = await (await browser.newContext({ viewport: { width: 540, height: 960 }, deviceScaleFactor: 2 })).newPage();
-  page.on("pageerror", (e) => console.error("page error:", e.message));
-  await page.goto(`${base}/render/${encodeURIComponent(short.id)}${lang === "en" ? "" : `?lang=${lang}`}`);
-  await page.waitForFunction(() => window.__render, null, { timeout: 30000 });
-  const duration = await page.evaluate(() => window.__render.duration);
-  const seconds = (limit || duration + 0.8);
-  const frames = Math.ceil(seconds * fps);
-  console.log(`Rendering ${short.id} [${lang}] — ${seconds.toFixed(1)}s, ${frames} frames @ ${fps} fps${audioFile ? " + narration" : " (no narration available: silent video)"}`);
+const encode = (out, input = ["-f", "image2pipe", "-framerate", String(fps), "-c:v", "mjpeg", "-i", "-"]) =>
+  spawn("ffmpeg", ["-y", "-loglevel", "error", ...input, "-c:v", "libx264", "-preset", "veryfast", "-crf", "19", "-pix_fmt", "yuv420p", "-r", String(fps), out], { stdio: ["pipe", "inherit", "inherit"] });
+const finished = (proc) => new Promise((resolve, reject) => { proc.on("exit", (c) => (c === 0 ? resolve() : reject(new Error(`ffmpeg exited ${c}`)))); proc.on("error", reject); });
 
-  const ff = spawn(
-    "ffmpeg",
-    [
-      "-y", "-loglevel", "error",
-      "-f", "image2pipe", "-framerate", String(fps), "-c:v", "mjpeg", "-i", "-",
-      ...(audioFile ? ["-i", audioFile] : []),
-      "-c:v", "libx264", "-preset", "veryfast", "-crf", "19", "-pix_fmt", "yuv420p", "-r", String(fps),
-      ...(audioFile ? ["-c:a", "aac", "-b:a", "128k", "-af", "apad", "-t", String(seconds)] : ["-t", String(seconds)]),
-      "-movflags", "+faststart", outFile,
-    ],
-    { stdio: ["pipe", "inherit", "inherit"] },
-  );
-  const done = new Promise((resolve, reject) => {
-    ff.on("exit", (c) => (c === 0 ? resolve() : reject(new Error(`ffmpeg exited ${c}`))));
-    ff.on("error", reject);
-  });
+try {
+  // Probe duration once.
+  const probe = await (await browser.newContext({ viewport: { width: 540, height: 960 } })).newPage();
+  await probe.goto(url);
+  await probe.waitForFunction(() => window.__render, null, { timeout: 30000 });
+  const duration = await probe.evaluate(() => window.__render.duration);
+  await probe.context().close();
+  const seconds = limit || duration + 0.8;
+  const frames = Math.ceil(seconds * fps);
+  const n = Math.min(workers, Math.max(1, Math.floor(frames / fps))); // at least 1 s per worker
+  console.log(`Rendering ${short.id} [${lang}] — ${seconds.toFixed(1)}s, ${frames} frames @ ${fps} fps on ${n} worker${n > 1 ? "s" : ""}${audioFile ? " + narration" : " (no narration available: silent video)"}`);
+
+  const tmp = path.join(tmpdir(), `ns-export-${process.pid}`);
+  mkdirSync(tmp, { recursive: true });
   const t0 = Date.now();
-  for (let i = 0; i < frames; i++) {
-    await page.evaluate((time) => window.__render.setTime(time), i / fps);
-    const jpg = await page.screenshot({ type: "jpeg", quality: 92 });
-    if (!ff.stdin.write(jpg)) await new Promise((r) => ff.stdin.once("drain", r));
-    if (i % (fps * 5) === 0 && i) console.log(`  ${Math.round((i / frames) * 100)}%  (${((Date.now() - t0) / 1000).toFixed(0)}s)`);
-  }
-  ff.stdin.end();
-  await done;
+  let doneFrames = 0;
+  let lastLog = 0;
+
+  // Each worker renders a contiguous frame range in its own page (its own renderer process → its own CPU core).
+  const parts = await Promise.all(
+    Array.from({ length: n }, async (_, w) => {
+      const from = Math.floor((w * frames) / n);
+      const to = Math.floor(((w + 1) * frames) / n);
+      const context = await browser.newContext({ viewport: { width: 540, height: 960 }, deviceScaleFactor: 2 });
+      const page = await context.newPage();
+      page.on("pageerror", (e) => console.error(`page error (worker ${w}):`, e.message));
+      await page.goto(url);
+      await page.waitForFunction(() => window.__render, null, { timeout: 30000 });
+      // Warm up through the 2 s before this range so in-flight entrance animations are in the right state.
+      for (let i = Math.max(0, from - 2 * fps); i < from; i++) await page.evaluate((t) => window.__render.setTime(t), i / fps);
+      const cdp = await context.newCDPSession(page);
+      const out = path.join(tmp, `part-${String(w).padStart(2, "0")}.mp4`);
+      const ff = encode(out);
+      const exited = finished(ff);
+      for (let i = from; i < to; i++) {
+        await page.evaluate((t) => window.__render.setTime(t), i / fps);
+        // Raw DevTools capture at 2× (1080×1920); faster than page.screenshot(), which re-stabilises the page each call.
+        const { data } = await cdp.send("Page.captureScreenshot", { format: "jpeg", quality: 92, optimizeForSpeed: true, clip: { x: 0, y: 0, width: 540, height: 960, scale: 2 } });
+        if (!ff.stdin.write(Buffer.from(data, "base64"))) await new Promise((r) => ff.stdin.once("drain", r));
+        doneFrames++;
+        if (Date.now() - lastLog > 10000) {
+          lastLog = Date.now();
+          console.log(`  ${Math.round((doneFrames / frames) * 100)}%  (${((Date.now() - t0) / 1000).toFixed(0)}s)`);
+        }
+      }
+      ff.stdin.end();
+      await exited;
+      await context.close();
+      return out;
+    }),
+  );
+
+  // Join the parts (stream copy) and add the narration.
+  const list = path.join(tmp, "parts.txt");
+  writeFileSync(list, parts.map((p) => `file '${p}'`).join("\n") + "\n");
+  run("ffmpeg", [
+    "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", list,
+    ...(audioFile ? ["-i", audioFile, "-c:a", "aac", "-b:a", "128k", "-af", "apad"] : []),
+    "-c:v", "copy", "-t", String(seconds), "-movflags", "+faststart", outFile,
+  ]);
+  rmSync(tmp, { recursive: true, force: true });
   console.log(`✓ ${outFile}  (${(statSync(outFile).size / 1e6).toFixed(1)} MB, ${((Date.now() - t0) / 1000).toFixed(0)}s)`);
 } finally {
   await browser.close();

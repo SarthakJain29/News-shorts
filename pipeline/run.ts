@@ -215,7 +215,10 @@ async function main() {
     }
   }
 
-  const feed: ShortsFeed = { generatedAt: new Date().toISOString(), mode: mock ? "mock" : "live", shorts };
+  // A partial run (--tracks) keeps the other tracks' shorts from the previous feed.
+  const untouched = [...existing.values()].filter((s) => !tracks.includes(s.track));
+  if (untouched.length) console.log(`  = kept ${untouched.length} shorts from tracks not in this run`);
+  const feed: ShortsFeed = { generatedAt: new Date().toISOString(), mode: mock ? "mock" : "live", shorts: [...shorts, ...untouched] };
   writeFileSync(OUT, stringifyFeed(feed));
 
   // Prune local narration files nobody references any more (object storage is left alone).
@@ -226,9 +229,8 @@ async function main() {
     for (const f of readdirSync(store.dir)) if (/\.(mp3|wav)$/.test(f) && !keep.has(f)) rmSync(path.join(store.dir, f));
   }
 
-  const narrated = shorts.filter((s) => s.audio).length;
-  const hi = shorts.filter((s) => s.i18n?.hi).length;
-  console.log(`✓ wrote ${shorts.length} shorts (${narrated} narrated, ${hi} with Hindi, ${shorts.filter((s) => s.audio?.wordTimes).length} with exact word timings) → data/shorts.json`);
+  const all = feed.shorts;
+  console.log(`✓ wrote ${all.length} shorts (${all.filter((s) => s.audio).length} narrated, ${all.filter((s) => s.i18n?.hi).length} with Hindi, ${all.filter((s) => s.audio?.wordTimes).length} with exact word timings) → data/shorts.json`);
 }
 
 main().catch((e) => {

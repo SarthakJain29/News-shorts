@@ -108,7 +108,7 @@ button:disabled { opacity: 0.4; cursor: not-allowed; }
   content: ""; position: absolute; inset: 0;
   background: linear-gradient(to bottom, rgba(7, 7, 11, 0.55) 0%, transparent 22%, transparent 48%, rgba(7, 7, 11, 0.86) 78%, rgba(7, 7, 11, 0.96) 100%);
 }
-.blob { position: absolute; border-radius: 50%; filter: blur(70px); opacity: 0.55; mix-blend-mode: screen; transform: translate(-50%, -50%); animation: drift 18s ease-in-out infinite alternate; }
+.blob { position: absolute; border-radius: 50%; background: var(--blob); filter: blur(70px); opacity: 0.55; mix-blend-mode: screen; transform: translate(-50%, -50%); animation: drift 18s ease-in-out infinite alternate; }
 .blob.b1 { opacity: 0.4; animation-name: drift2; }
 .blob.b2 { opacity: 0.3; animation-name: drift3; }
 @keyframes drift { 0% { transform: translate(-50%, -50%) scale(1); } 100% { transform: translate(-30%, -62%) scale(1.25); } }
@@ -365,3 +365,11 @@ button:disabled { opacity: 0.4; cursor: not-allowed; }
 .export-hint a { text-decoration: underline; }
 .export-hint .cmd { display: flex; gap: 8px; align-items: center; margin-top: 10px; }
 .export-hint code { font-family: var(--mono); font-size: 12px; padding: 8px 10px; border-radius: 10px; background: rgba(0, 0, 0, 0.35); color: var(--paper); overflow-x: auto; white-space: nowrap; flex: 1; }
+
+/* Export renders in software (no GPU): swap the expensive filters for look-alike cheap paints. */
+.render-frame .blob { filter: none; background: radial-gradient(closest-side, var(--blob), color-mix(in srgb, var(--blob) 35%, transparent) 55%, transparent); }
+.render-frame *, .render-frame *::before, .render-frame *::after { backdrop-filter: none !important; -webkit-backdrop-filter: none !important; }
+.render-frame .caption-line { text-shadow: 0 2px 10px rgba(0, 0, 0, 0.45); }
+.render-frame .rings { animation: none !important; }
+.render-frame .grain { mix-blend-mode: normal; opacity: 0.05; }
+.render-frame .blob { mix-blend-mode: normal; }

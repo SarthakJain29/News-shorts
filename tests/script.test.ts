@@ -88,3 +88,16 @@ describe("prompts & offline writer", () => {
     expect(m.sources).toHaveLength(2);
   });
 });
+
+describe("story check", () => {
+  it("drops outlets the writer flags as covering a different event", () => {
+    const s = draftToShort({ ...goodDraft, unrelatedOutlets: ["BBC News"] }, "technology", binanceCluster, "groq");
+    expect(s.sources.map((x) => x.outlet)).toEqual(["The Guardian"]);
+    expect(s.coverage).toEqual([]); // the only coverage entry was BBC's
+    expect(s.coverageSummary).toBeNull();
+  });
+  it("never drops every source", () => {
+    const s = draftToShort({ ...goodDraft, unrelatedOutlets: ["BBC News", "The Guardian"] }, "technology", binanceCluster, "groq");
+    expect(s.sources).toHaveLength(1);
+  });
+});
