@@ -1,0 +1,2739 @@
+{
+  "generatedAt": "2026-11-05T07:49:50.938Z",
+  "mode": "mock",
+  "shorts": [
+    {
+      "id": "politics-rc3570",
+      "track": "politics",
+      "title": "Democrats Take Congress, Schumer Plans Senate Overhaul",
+      "hook": "Democrats just seized control of Congress, and Senate leader Chuck Schumer is already mapping a sweeping agenda.",
+      "segments": [
+        {
+          "text": "Democrats just seized control of Congress, and Senate leader Chuck Schumer is already mapping a sweeping agenda. He says the new Senate will reflect voters’ priorities for the first time.",
+          "visual": {
+            "kind": "headline",
+            "text": "Democratic Win"
+          }
+        },
+        {
+          "text": "On November 3, voters turned in record numbers, giving Democrats majorities in both the House and Senate, ending years of Republican control in Washington for the first time.",
+          "visual": {
+            "kind": "map",
+            "place": "Washington, D.C.",
+            "lat": 38.9072,
+            "lon": -77.0369
+          }
+        },
+        {
+          "text": "In his first speech after the win, Schumer declared a 'generational remake' of the Senate, urging Democrats to deliver on clear voter priorities through bold legislation.",
+          "visual": {
+            "kind": "headline",
+            "text": "Generational remake"
+          }
+        },
+        {
+          "text": "The Senate minority leader, serving since 1999, has guided the chamber through multiple elections, but faces internal dissent from five newly elected Democrats skeptical of his leadership still.",
+          "visual": null
+        },
+        {
+          "text": "With Democrats in charge, policy shifts could affect health care costs, student loan relief, and climate regulations, directly impacting everyday American households over the next years.",
+          "visual": null
+        },
+        {
+          "text": "Schumer also signaled he will seek re‑election as majority leader, a move that could shape committee assignments and the legislative agenda for the next two years ahead.",
+          "visual": null
+        },
+        {
+          "text": "Watch for the upcoming caucus vote on Schumer’s leadership, and for negotiations with the House on budget priorities, as both chambers set their legislative calendars this summer.",
+          "visual": {
+            "kind": "timeline",
+            "items": [
+              {
+                "when": "Nov 2026",
+                "what": "Caucus vote on leadership"
+              },
+              {
+                "when": "Dec 2026",
+                "what": "Budget negotiations"
+              }
+            ]
+          }
+        },
+        {
+          "text": "The outcome will determine how quickly Democrats can act on promises and how internal party dynamics will influence the next Congress’s direction.",
+          "visual": null
+        }
+      ],
+      "whyItMatters": "Control of Congress lets Democrats shape laws on health care, education and climate that affect daily life. Schumer’s leadership will guide which bills move forward.",
+      "context": "In the 2026 midterm elections, Democrats won both chambers of Congress, ending a decade of Republican majorities. Chuck Schumer, the Senate minority leader since 1999, became the de facto leader of the Senate.",
+      "coverage": [
+        {
+          "outlet": "NPR",
+          "angle": "Highlighted Schumer’s call for a generational remake and delivering voter priorities",
+          "url": "https://www.npr.org/2026/11/04/g-s1-151833/2026-midterms-chuck-schumer-senate-democrats",
+          "emphasis": "policy agenda",
+          "headline": "Chuck Schumer heralds Democrats' 'generational remake' of Senate",
+          "publishedAt": "2026-11-04T18:37:34.000Z"
+        },
+        {
+          "outlet": "Fox News",
+          "angle": "Focused on Schumer’s claim he will be re‑elected as majority leader despite opposition",
+          "url": "https://www.foxnews.com/politics/chuck-schumer-sweeping-democratic-midterm-victories-reelected-majority-leader",
+          "emphasis": "leadership battle",
+          "headline": "Chuck Schumer after sweeping Democratic midterm victories: 'I'll be re-elected as majority leader'",
+          "publishedAt": "2026-11-04T18:26:40.000Z"
+        }
+      ],
+      "coverageSummary": {
+        "agreement": "Both outlets report Schumer said he will be re‑elected as majority leader and noted five new Democratic senators oppose his bid.",
+        "differences": "NPR emphasized the broader legislative agenda, while Fox News stressed the internal leadership contest."
+      },
+      "sources": [
+        {
+          "outlet": "NPR",
+          "title": "Chuck Schumer heralds Democrats' 'generational remake' of Senate",
+          "url": "https://www.npr.org/2026/11/04/g-s1-151833/2026-midterms-chuck-schumer-senate-democrats",
+          "publishedAt": "2026-11-04T18:37:34.000Z"
+        },
+        {
+          "outlet": "Fox News",
+          "title": "Chuck Schumer after sweeping Democratic midterm victories: 'I'll be re-elected as majority leader'",
+          "url": "https://www.foxnews.com/politics/chuck-schumer-sweeping-democratic-midterm-victories-reelected-majority-leader",
+          "publishedAt": "2026-11-04T18:26:40.000Z"
+        }
+      ],
+      "location": {
+        "place": "Washington, D.C.",
+        "lat": 38.9072,
+        "lon": -77.0369
+      },
+      "publishedAt": "2026-11-04T18:37:34.000Z",
+      "generatedAt": "2026-11-05T07:19:33.176Z",
+      "estDurationSec": 86,
+      "audio": {
+        "src": "/audio/671aa3c62729ee50.mp3",
+        "durationSec": 88.9,
+        "model": "Kokoro-82M",
+        "voice": "af_heart",
+        "key": "671aa3c62729ee50",
+        "lang": "en",
+        "wordTimes": [0, 0.53, 0.53, 0.81, 0.81, 1.2, 1.2, 1.63, 1.63, 1.81, 1.81, 2.44, 2.44, 2.67, 2.67, 3.05, 3.05, 3.44, 3.44, 3.77, 3.77, 4.2, 4.2, 4.38, 4.38, 4.81, 4.81, 5.24, 5.24, 5.42, 5.42, 5.9, 5.9, 6.59, 6.59, 6.77, 6.77, 7.05, 7.05, 7.28, 7.28, 7.51, 7.51, 7.89, 7.89, 8.17, 8.17, 8.6, 8.6, 8.98, 8.98, 9.57, 9.57, 9.8, 9.8, 10.03, 10.03, 10.36, 10.36, 10.94, 11.24, 11.32, 11.32, 11.66, 11.66, 12.3, 12.3, 12.88, 12.88, 13.36, 13.36, 13.64, 13.64, 13.92, 13.92, 14.94, 14.94, 15.16, 15.16, 15.68, 15.68, 16.44, 16.44, 16.66, 16.66, 16.84, 16.84, 17.06, 17.06, 17.34, 17.34, 17.78, 17.78, 18.34, 18.34, 18.94, 18.94, 19.3, 19.3, 19.52, 19.52, 19.92, 19.92, 20.46, 20.46, 20.74, 20.74, 21.18, 21.18, 21.56, 21.56, 21.7, 21.7, 21.98, 21.98, 22.3, 22.32, 22.88, 22.88, 23, 23, 23.32, 23.32, 23.68, 23.68, 23.98, 23.98, 24.16, 24.16, 24.54, 24.54, 25.16, 25.16, 25.62, 25.62, 25.8, 25.8, 26.4, 26.4, 26.9, 26.9, 27.18, 27.18, 27.3, 27.3, 27.56, 27.56, 28.48, 28.48, 28.82, 28.82, 29.34, 29.34, 29.64, 29.64, 29.92, 29.92, 30.32, 30.32, 30.66, 30.66, 31.26, 31.26, 31.88, 31.88, 32.26, 32.26, 32.86, 33.49, 33.62, 33.62, 33.88, 33.88, 34.36, 34.36, 34.94, 34.94, 35.44, 35.44, 35.74, 35.74, 37.24, 37.24, 37.34, 37.34, 37.66, 37.66, 37.92, 37.92, 38.14, 38.14, 38.58, 38.58, 39.04, 39.04, 39.56, 39.56, 40.46, 40.46, 40.84, 40.84, 41.46, 41.46, 41.94, 41.94, 42.4, 42.4, 42.88, 42.88, 43.28, 43.28, 43.76, 43.76, 44.36, 44.36, 44.84, 44.84, 45.34, 45.34, 45.46, 45.46, 45.88, 45.88, 46.28, 46.3, 46.88, 46.88, 47.36, 47.36, 47.68, 47.68, 48.46, 48.46, 48.96, 48.96, 49.42, 49.42, 49.64, 49.64, 49.96, 49.96, 50.24, 50.24, 50.42, 50.42, 51.16, 51.16, 51.74, 51.74, 52, 52, 52.62, 52.62, 52.88, 52.88, 53.22, 53.22, 54.24, 54.24, 54.92, 54.92, 55.6, 55.6, 56.06, 56.06, 56.66, 56.66, 57.26, 57.26, 57.5, 57.5, 57.64, 57.64, 57.82, 57.82, 58.2, 58.2, 59.04, 59.04, 59.48, 59.48, 60, 60, 60.2, 60.2, 60.32, 60.32, 60.58, 60.58, 61.16, 61.16, 61.58, 61.58, 62.02, 62.02, 62.58, 62.58, 63.1, 63.1, 63.34, 63.34, 63.58, 63.58, 63.72, 63.72, 64.06, 64.06, 64.46, 64.46, 65.06, 65.06, 65.66, 65.66, 65.76, 65.76, 66.2, 66.2, 66.76, 66.76, 67.16, 67.16, 67.3, 67.3, 67.5, 67.5, 67.76, 67.76, 68.06, 68.06, 68.3, 68.88, 69.1, 69.1, 69.34, 69.34, 69.5, 69.5, 69.98, 69.98, 70.36, 70.36, 70.7, 70.7, 70.92, 70.92, 71.46, 71.46, 71.84, 71.84, 72.56, 72.56, 72.7, 72.7, 73.22, 73.22, 73.82, 73.82, 73.94, 73.94, 74.2, 74.2, 74.44, 74.44, 74.78, 74.78, 75.68, 75.68, 76.14, 76.14, 76.46, 76.46, 76.9, 76.9, 77.3, 77.3, 77.48, 77.48, 78, 78, 78.76, 78.76, 79.02, 79.02, 79.3, 79.3, 79.9, 79.9, 80.3, 80.3, 80.54, 80.54, 81, 81, 81.38, 81.38, 81.76, 81.76, 82.12, 82.12, 82.54, 82.54, 82.78, 82.78, 83, 83, 83.76, 83.76, 84.22, 84.22, 84.36, 84.36, 84.82, 84.82, 85.22, 85.22, 85.82, 85.82, 86.28, 86.28, 86.76, 86.76, 87, 87, 87.3, 87.3, 87.9, 87.9, 88.8],
+        "align": "whisper-groq"
+      },
+      "provider": "groq"
+    },
+    {
+      "id": "politics-102h9dy",
+      "track": "politics",
+      "title": "2026 Midterms: GOP Loses House, Democrats Gain Majority",
+      "hook": "The 2026 midterm elections just flipped the political landscape, sending the GOP into a historic defeat and the Democrats seized control of the House.",
+      "segments": [
+        {
+          "text": "On election night, voters across the nation turned out in record numbers, casting ballots that would reshape federal leadership for the next two years.",
+          "visual": {
+            "kind": "headline",
+            "text": "Nationwide Vote"
+          }
+        },
+        {
+          "text": "The Democratic Party secured a majority in the House, while the Senate remains split, setting up a divided Congress and a new legislative agenda.",
+          "visual": {
+            "kind": "headline",
+            "text": "House Majority"
+          }
+        },
+        {
+          "text": "President-elect Joe Biden will now work with a majority of lawmakers to push his priorities, including climate action and infrastructure and more.",
+          "visual": {
+            "kind": "headline",
+            "text": "Biden's Agenda"
+          }
+        },
+        {
+          "text": "The GOP had held the House since 2018, but voter turnout and shifting demographics tipped the balance in favor of Democrats.",
+          "visual": {
+            "kind": "headline",
+            "text": "GOP House Hold"
+          }
+        },
+        {
+          "text": "Key races in battleground states like Ohio, Pennsylvania, and Arizona swung decisively, reflecting national concerns over the economy and pandemic recovery and public health.",
+          "visual": {
+            "kind": "headline",
+            "text": "Battleground Swings"
+          }
+        },
+        {
+          "text": "For ordinary citizens, the shift means new leadership on healthcare, taxes, and social services, potentially changing how benefits are delivered and how they are funded.",
+          "visual": null
+        },
+        {
+          "text": "Next steps include the House's confirmation of Biden's cabinet, the Senate's vote on key bills, and the first joint session to elect a new Speaker.",
+          "visual": {
+            "kind": "headline",
+            "text": "Next Legislative Steps"
+          }
+        }
+      ],
+      "whyItMatters": "The change in congressional control will affect policies on healthcare, taxes, and social services, altering how benefits are delivered and funded. It also sets the stage for the President’s agenda to take shape.",
+      "context": "The 2026 midterm elections determined the composition of the U.S. House of Representatives. The Democratic Party won a majority, ending the GOP’s control that began in 2018. The Senate remains split, creating a divided Congress.",
+      "coverage": [
+        {
+          "outlet": "Fox News",
+          "angle": "Foreign leaders react to GOP loss",
+          "url": "https://www.foxnews.com/politics/gops-midterm-defeat-sparks-bold-claims-from-foreign-leaders-whove-clashed-trump",
+          "emphasis": "international reaction",
+          "headline": "GOP's midterm defeat sparks bold claims from foreign leaders who've clashed with Trump",
+          "publishedAt": "2026-11-04T18:11:14.000Z"
+        },
+        {
+          "outlet": "Politico",
+          "angle": "Historic blue wave in domestic politics",
+          "url": "https://www.politico.com/news/2026/11/03/midterms-blue-wave-gop-wipeout-01147461",
+          "emphasis": "domestic shift",
+          "headline": "Voters pummel GOP out of power",
+          "publishedAt": "2026-11-04T04:19:40.000Z"
+        }
+      ],
+      "coverageSummary": {
+        "agreement": "Both outlets report that the GOP lost control of the House in the 2026 midterm elections.",
+        "differences": "Fox News highlights reactions from foreign leaders, while Politico focuses on the domestic \"blue wave\" narrative."
+      },
+      "sources": [
+        {
+          "outlet": "Fox News",
+          "title": "GOP's midterm defeat sparks bold claims from foreign leaders who've clashed with Trump",
+          "url": "https://www.foxnews.com/politics/gops-midterm-defeat-sparks-bold-claims-from-foreign-leaders-whove-clashed-trump",
+          "publishedAt": "2026-11-04T18:11:14.000Z"
+        },
+        {
+          "outlet": "Politico",
+          "title": "Voters pummel GOP out of power",
+          "url": "https://www.politico.com/news/2026/11/03/midterms-blue-wave-gop-wipeout-01147461",
+          "publishedAt": "2026-11-04T04:19:40.000Z"
+        }
+      ],
+      "location": {
+        "place": "United States",
+        "lat": 38.9072,
+        "lon": -77.0369
+      },
+      "publishedAt": "2026-11-04T18:11:14.000Z",
+      "generatedAt": "2026-11-05T07:48:22.147Z",
+      "estDurationSec": 66,
+      "audio": {
+        "src": "/audio/602083a75a07f641.mp3",
+        "durationSec": 67.5,
+        "model": "Kokoro-82M",
+        "voice": "af_heart",
+        "key": "602083a75a07f641",
+        "lang": "en",
+        "wordTimes": [0, 0.04, 0.02, 0.09, 0.09, 0.15, 0.15, 0.2, 0.2, 0.25, 0.2, 8.9, 8.9, 8.95, 8.95, 9, 9, 9.04, 9.03, 9.07, 9.06, 9.11, 9.11, 9.19, 9.19, 9.25, 9.25, 9.31, 9.31, 9.35, 9.34, 9.39, 9.39, 9.45, 9.45, 9.5, 9.5, 9.58, 9.58, 9.62, 9.61, 9.65, 9.65, 9.69, 9.68, 9.72, 9.71, 9.8, 9.71, 9.75, 9.71, 9.75, 9.71, 9.78, 9.78, 10.18, 10.18, 10.42, 10.42, 10.8, 10.8, 11.08, 11.08, 11.18, 11.18, 12.08, 12.08, 12.16, 12.16, 12.3, 12.3, 12.54, 12.54, 13.02, 13.02, 13.62, 13.62, 14.04, 14.04, 14.24, 14.24, 14.34, 14.34, 14.82, 14.82, 15.24, 15.24, 15.76, 15.76, 15.88, 15.88, 16.04, 16.04, 16.58, 16.58, 17.18, 17.68, 18.32, 18.32, 18.74, 18.74, 19.14, 19.14, 19.7, 19.7, 19.94, 19.94, 20.26, 20.26, 20.44, 20.44, 20.54, 20.54, 20.92, 20.92, 21.18, 21.18, 21.48, 21.48, 21.96, 21.96, 22.18, 22.18, 22.36, 22.36, 22.86, 22.86, 23.92, 23.92, 24.38, 24.38, 24.84, 24.84, 25.18, 25.18, 25.7, 25.7, 26.38, 26.38, 26.64, 26.68, 27.24, 27.24, 27.84, 27.84, 28.12, 28.12, 28.32, 28.32, 28.48, 28.48, 28.6, 28.6, 28.9, 28.9, 29.82, 29.82, 30.24, 30.24, 30.58, 30.58, 30.94, 30.94, 31.44, 31.44, 31.78, 31.78, 32.34, 32.34, 33, 33, 33.16, 33.16, 33.5, 33.5, 33.76, 33.76, 34.06, 34.06, 34.32, 34.32, 34.68, 35.38, 35.62, 35.62, 36, 36, 36.32, 36.32, 36.96, 36.96, 37.32, 37.32, 37.62, 37.62, 38.66, 38.66, 39.16, 39.16, 40.02, 40.02, 40.46, 40.46, 41.12, 41.12, 41.8, 41.8, 42.72, 42.72, 43.2, 43.2, 43.72, 43.72, 44.12, 44.12, 44.26, 44.26, 44.7, 44.7, 45.08, 45.08, 45.46, 45.46, 46, 46, 46.6, 46.6, 46.86, 46.86, 47.38, 47.78, 47.88, 47.88, 48.3, 48.3, 49.34, 49.34, 49.44, 49.44, 49.7, 49.7, 50.08, 50.08, 50.34, 50.34, 50.74, 50.74, 51.1, 51.1, 51.36, 52.06, 52.74, 52.74, 52.86, 52.86, 53.1, 53.1, 53.7, 53.7, 54.72, 54.72, 55.36, 55.36, 55.66, 55.66, 56.1, 56.1, 56.32, 56.32, 56.66, 56.66, 57.28, 57.28, 57.42, 57.42, 57.62, 57.62, 57.8, 57.8, 58.14, 58.14, 58.92, 58.92, 59.26, 59.26, 59.66, 59.66, 59.88, 59.88, 60.24, 60.24, 60.62, 60.62, 61.08, 61.08, 61.56, 61.56, 62.32, 62.32, 62.56, 62.56, 62.96, 62.96, 63.18, 63.18, 63.42, 63.42, 63.66, 63.66, 64.16, 64.16, 64.56, 64.56, 64.7, 64.7, 64.9, 64.9, 65.22, 65.22, 65.54, 65.54, 65.9, 65.9, 66.2, 66.2, 66.4, 66.4, 66.5, 66.5, 67.1],
+        "align": "whisper-groq"
+      },
+      "provider": "groq"
+    },
+    {
+      "id": "politics-1ywp7kl",
+      "track": "politics",
+      "title": "Britain Moves Toward Formal Apology for Slave Trade",
+      "hook": "Britain is moving toward a formal apology for its role in the trans‑Atlantic slave trade, sparking debate over history, responsibility, and future action.",
+      "segments": [
+        {
+          "text": "On November 5, the UK government announced it would begin time‑bound talks with former slave‑owners’ descendants to discuss an apology.",
+          "visual": {
+            "kind": "headline",
+            "text": "UK to Begin Time‑Bound Talks"
+          }
+        },
+        {
+          "text": "The Foreign Secretary, David Cameron, said the talks would address historical wrongs and aim for reconciliation, while keeping the process open.",
+          "visual": null
+        },
+        {
+          "text": "The UK has not yet set a date for the apology, but diplomats emphasize urgency, noting the issue remains unresolved and politically sensitive.",
+          "visual": {
+            "kind": "timeline",
+            "items": [
+              {
+                "when": "Nov 5",
+                "what": "UK announces talks"
+              },
+              {
+                "when": "TBD",
+                "what": "Apology date to be set"
+              }
+            ]
+          }
+        },
+        {
+          "text": "Britain’s slave‑owning past dates back to the 17th century, with the empire profiting from forced labor and the abolition movement ending slavery in 1833.",
+          "visual": null
+        },
+        {
+          "text": "An apology would be a symbolic act, acknowledging centuries of exploitation and offering a formal statement of remorse, without necessarily implying financial compensation.",
+          "visual": null
+        },
+        {
+          "text": "For ordinary citizens, the apology could influence national identity, education curricula, and public discussions about race, while also potentially affecting diplomatic relations with former colonies.",
+          "visual": {
+            "kind": "map",
+            "place": "United Kingdom",
+            "lat": 51.5074,
+            "lon": -0.1278
+          }
+        },
+        {
+          "text": "Watch for the official apology date, the terms of the talks, and how Parliament debates the proposal, as the UK navigates its colonial legacy.",
+          "visual": {
+            "kind": "headline",
+            "text": "Watch the Apology Date"
+          }
+        }
+      ],
+      "whyItMatters": "An apology would acknowledge Britain's historical role in slavery and could shape national identity and public discourse. It may also influence diplomatic ties with former colonies.",
+      "context": "Britain's involvement in the trans‑Atlantic slave trade began in the 17th century, with the empire profiting from forced labor. Slavery was abolished in the UK in 1833, but the legacy remains contentious.",
+      "coverage": [
+        {
+          "outlet": "BBC News",
+          "angle": "UK commits to time‑bound talks on slavery apology",
+          "url": "https://www.bbc.co.uk/news/articles/cqdr872jkk7vo?at_medium=RSS&at_campaign=rss",
+          "emphasis": "political urgency",
+          "headline": "UK commits to 'time-bound' talks on slavery apology",
+          "publishedAt": "2026-11-05T02:17:18.000Z"
+        }
+      ],
+      "coverageSummary": null,
+      "sources": [
+        {
+          "outlet": "BBC News",
+          "title": "UK commits to 'time-bound' talks on slavery apology",
+          "url": "https://www.bbc.co.uk/news/articles/cqdr872jkk7vo?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-11-05T02:17:18.000Z"
+        }
+      ],
+      "location": {
+        "place": "United Kingdom",
+        "lat": 51.5074,
+        "lon": -0.1278
+      },
+      "publishedAt": "2026-11-05T02:17:18.000Z",
+      "generatedAt": "2026-11-05T07:48:33.825Z",
+      "estDurationSec": 64,
+      "audio": {
+        "src": "/audio/5dde7487c9357b14.mp3",
+        "durationSec": 72,
+        "model": "Kokoro-82M",
+        "voice": "af_heart",
+        "key": "5dde7487c9357b14",
+        "lang": "en",
+        "wordTimes": [0, 0.04, 0.02, 0.09, 0.09, 0.15, 0.09, 9, 9, 9.04, 9.02, 9.09, 9.09, 9.16, 9.16, 9.2, 9.18, 9.22, 9.22, 9.26, 9.26, 9.33, 9.33, 9.37, 9.37, 9.41, 9.41, 9.45, 9.45, 9.53, 9.53, 9.61, 9.61, 9.65, 9.63, 9.69, 9.69, 9.73, 9.71, 9.8, 9.71, 9.75, 9.71, 9.75, 9.71, 10.12, 10.12, 10.48, 10.48, 11.32, 11.32, 11.66, 11.66, 11.8, 11.8, 12.16, 12.16, 12.36, 12.36, 12.62, 12.62, 13.16, 13.16, 13.78, 13.78, 13.9, 13.9, 14.18, 14.18, 14.4, 14.4, 15.92, 15.92, 15.97, 15.94, 16.24, 16.24, 16.46, 16.46, 16.82, 16.82, 17.28, 17.74, 17.88, 17.88, 18.16, 18.16, 18.54, 18.54, 18.68, 18.68, 18.9, 18.9, 19.1, 19.1, 19.24, 19.24, 19.38, 19.38, 19.58, 19.58, 19.72, 19.72, 20.5, 20.5, 20.92, 20.92, 21.46, 21.46, 22.02, 22.02, 22.62, 22.62, 23.46, 23.46, 23.62, 23.62, 23.92, 23.92, 24.4, 24.4, 25.16, 25.16, 25.52, 25.52, 25.88, 25.88, 26.36, 27.06, 27.46, 27.46, 28.24, 28.24, 28.68, 28.68, 28.98, 28.98, 29.26, 29.26, 29.42, 29.42, 29.52, 29.52, 30.02, 30.02, 31.04, 31.04, 31.12, 31.12, 31.26, 31.26, 31.64, 31.64, 32.24, 32.24, 32.5, 32.5, 32.9, 32.9, 33.2, 33.2, 33.78, 33.78, 33.9, 33.9, 34.32, 34.32, 34.82, 34.82, 35.2, 35.2, 35.64, 35.64, 36.1, 36.1, 36.86, 37.44, 37.58, 37.58, 38, 38, 38.36, 38.36, 38.48, 38.48, 38.6, 38.6, 39.1, 39.1, 39.64, 39.64, 40.6, 40.6, 41.16, 41.16, 41.38, 41.38, 41.88, 41.88, 42.76, 42.76, 43.14, 43.14, 43.38, 43.38, 43.68, 43.68, 44.16, 44.16, 44.48, 44.48, 44.92, 44.92, 45.7, 45.7, 46.44, 46.44, 47.16, 47.16, 47.82, 47.82, 48.42, 48.56, 49.26, 49.26, 49.68, 49.68, 50.76, 50.76, 50.86, 50.86, 51.3, 51.3, 51.64, 51.64, 52.2, 52.2, 52.78, 52.78, 53.76, 53.76, 54.44, 54.44, 55.02, 55.02, 55.6, 55.6, 55.94, 55.94, 56.48, 56.48, 56.92, 56.92, 57.52, 57.52, 58.08, 58.08, 58.46, 58.46, 59.06, 59.06, 59.64, 59.64, 60.18, 60.18, 60.82, 60.82, 61.36, 61.36, 61.68, 61.68, 62.18, 62.18, 63.08, 63.08, 63.34, 63.34, 63.46, 63.46, 63.88, 63.88, 64.42, 64.42, 65.02, 65.02, 65.32, 65.32, 65.56, 65.56, 65.72, 65.72, 65.86, 65.86, 66.36, 66.36, 66.7, 66.7, 66.84, 66.84, 67.36, 67.36, 67.8, 67.8, 68, 68, 69.08, 69.08, 69.2, 69.2, 69.3, 69.3, 69.54, 69.54, 70.24, 70.24, 70.46, 70.46, 70.96, 70.96, 71.42],
+        "align": "whisper-groq"
+      },
+      "provider": "groq"
+    },
+    {
+      "id": "technology-17t5szl",
+      "track": "technology",
+      "title": "Hackers Used Fake Job Interviews to Steal $6.3 Billion from Binance",
+      "hook": "Imagine a job interview that turned into a $6.3 billion cyber robbery, Binance says hackers used fake recruitment talks to breach its systems.",
+      "segments": [
+        {
+          "text": "Imagine a job interview that turned into a $6.3 billion cyber robbery, Binance says hackers used fake recruitment talks to breach its systems.",
+          "visual": {
+            "kind": "headline",
+            "text": "Fake Interview Heist"
+          }
+        },
+        {
+          "text": "The attackers infected a laptop with malware, exploited internal tools, and posed as company reps during staged interviews, targeting a Binance engineer in Singapore.",
+          "visual": {
+            "kind": "timeline",
+            "items": [
+              {
+                "when": "June",
+                "what": "Malware download"
+              },
+              {
+                "when": "September",
+                "what": "Bogus interview"
+              },
+              {
+                "when": "October",
+                "what": "Crypto theft"
+              }
+            ]
+          }
+        },
+        {
+          "text": "The scheme began in June with a malicious download, escalated in September through the bogus interview, and culminated in the theft of billions of dollars worth of cryptocurrency.",
+          "visual": {
+            "kind": "number",
+            "value": "$6.3bn",
+            "label": "Stolen value"
+          }
+        },
+        {
+          "text": "Cryptocurrency exchanges store digital assets in online wallets, making them attractive targets; security relies on both technology and employee vigilance.",
+          "visual": null
+        },
+        {
+          "text": "Hackers often use social engineering—tricking people into revealing credentials—to bypass defenses, and to gain privileged access inside corporate networks.",
+          "visual": null
+        },
+        {
+          "text": "When a platform handling billions is compromised, investors can lose savings instantly, and confidence in digital finance erodes, affecting everyday transactions.",
+          "visual": null
+        },
+        {
+          "text": "Regulators are likely to tighten oversight of crypto firms, and Binance promises stronger authentication and employee training to prevent future scams.",
+          "visual": null
+        },
+        {
+          "text": "Watch for new security mandates worldwide and Binance’s rollout of tighter login checks as the industry reacts to the massive breach.",
+          "visual": {
+            "kind": "map",
+            "place": "Singapore",
+            "lat": 1.3521,
+            "lon": 103.8198
+          }
+        }
+      ],
+      "whyItMatters": "A breach of this size can wipe out personal savings overnight, and it shakes trust in emerging digital finance. Ordinary users may see tighter rules and stronger security checks on their favorite platforms.",
+      "context": "Binance is the world’s largest cryptocurrency exchange, handling billions of dollars in digital assets. Hackers targeted an employee through a fake job interview, using malware and internal tools to move the crypto.",
+      "coverage": [
+        {
+          "outlet": "Ars Technica",
+          "angle": "Highlights the technical methods like laptop infections and compromised internal tooling.",
+          "url": "https://arstechnica.com/information-technology/2026/11/binance-says-hackers-who-stole-billions-in-crypto-spent-months-planning-heist/",
+          "emphasis": "technical tactics",
+          "headline": "Binance says hackers who stole billions in crypto spent months planning heist",
+          "publishedAt": "2026-11-04T16:06:03.000Z"
+        },
+        {
+          "outlet": "NPR",
+          "angle": "Focuses on the engineer’s experience being lured by a fake job interview.",
+          "url": "https://www.npr.org/2026/11/03/nx-s1-6027799/binance-crypto-exchange-cyber-heist",
+          "emphasis": "human angle",
+          "headline": "A Binance engineer thought he was interviewing for a job. Then the hackers pounced",
+          "publishedAt": "2026-11-03T21:30:20.000Z"
+        },
+        {
+          "outlet": "The Guardian",
+          "angle": "Provides a detailed timeline and mentions the massive $6.3 billion scale.",
+          "url": "https://www.theguardian.com/business/2026/nov/03/hackers-63bn-binance-heist-malware-bogus-job-interviews-cryptocurrency",
+          "emphasis": "scale and timeline",
+          "headline": "Hackers behind $6.3bn Binance heist ‘used malware and bogus job interviews’",
+          "publishedAt": "2026-11-03T19:00:23.000Z"
+        },
+        {
+          "outlet": "BBC News",
+          "angle": "Emphasizes the use of bogus job interviews on a legitimate hiring platform.",
+          "url": "https://www.bbc.co.uk/news/articles/ck5ynwz9gy67o?at_medium=RSS&at_campaign=rss",
+          "emphasis": "recruitment scam",
+          "headline": "Binance says fake job interviews used as part of $6.3bn crypto hack",
+          "publishedAt": "2026-11-03T16:19:29.000Z"
+        }
+      ],
+      "coverageSummary": {
+        "agreement": "All outlets report that North Korean hackers used fake job interviews, malware, and internal tools to steal about $6.3 billion from Binance.",
+        "differences": "Ars Technica stresses technical tools, NPR tells the engineer’s story, The Guardian adds a timeline and AI tool detail, while BBC focuses on the recruitment platform angle."
+      },
+      "sources": [
+        {
+          "outlet": "Ars Technica",
+          "title": "Binance says hackers who stole billions in crypto spent months planning heist",
+          "url": "https://arstechnica.com/information-technology/2026/11/binance-says-hackers-who-stole-billions-in-crypto-spent-months-planning-heist/",
+          "publishedAt": "2026-11-04T16:06:03.000Z"
+        },
+        {
+          "outlet": "NPR",
+          "title": "A Binance engineer thought he was interviewing for a job. Then the hackers pounced",
+          "url": "https://www.npr.org/2026/11/03/nx-s1-6027799/binance-crypto-exchange-cyber-heist",
+          "publishedAt": "2026-11-03T21:30:20.000Z"
+        },
+        {
+          "outlet": "The Guardian",
+          "title": "Hackers behind $6.3bn Binance heist ‘used malware and bogus job interviews’",
+          "url": "https://www.theguardian.com/business/2026/nov/03/hackers-63bn-binance-heist-malware-bogus-job-interviews-cryptocurrency",
+          "publishedAt": "2026-11-03T19:00:23.000Z"
+        },
+        {
+          "outlet": "BBC News",
+          "title": "Binance says fake job interviews used as part of $6.3bn crypto hack",
+          "url": "https://www.bbc.co.uk/news/articles/ck5ynwz9gy67o?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-11-03T16:19:29.000Z"
+        }
+      ],
+      "location": {
+        "place": "Singapore",
+        "lat": 1.3521,
+        "lon": 103.8198
+      },
+      "publishedAt": "2026-11-04T16:06:03.000Z",
+      "generatedAt": "2026-11-05T07:15:49.218Z",
+      "estDurationSec": 71,
+      "audio": {
+        "src": "/audio/ced4fb707ba827bb.mp3",
+        "durationSec": 82.4,
+        "model": "Kokoro-82M",
+        "voice": "af_heart",
+        "key": "ced4fb707ba827bb",
+        "lang": "en",
+        "wordTimes": [0, 0.32, 0.32, 0.62, 0.62, 0.9, 0.9, 1.34, 1.34, 1.68, 1.68, 2, 2, 2.24, 2.24, 2.29, 2.24, 3.78, 3.78, 3.83, 3.78, 4.58, 4.58, 5.3, 5.3, 6.14, 6.14, 6.4, 6.4, 6.82, 6.82, 7.24, 7.24, 7.5, 7.5, 7.96, 7.96, 8.36, 8.36, 8.68, 8.68, 8.92, 8.92, 9.18, 9.18, 9.76, 9.5, 10.22, 10.22, 10.76, 10.76, 11.26, 11.26, 11.46, 11.46, 11.78, 11.78, 12.14, 12.14, 12.78, 12.78, 13.6, 13.6, 14.06, 14.06, 14.74, 14.74, 15.18, 15.18, 15.56, 15.56, 15.78, 15.78, 16.1, 16.1, 16.46, 16.46, 16.78, 16.78, 17.22, 17.22, 17.74, 17.74, 18.54, 18.54, 18.8, 18.8, 19.3, 19.3, 19.74, 19.74, 20.1, 20.1, 20.7, 21, 21.2, 21.2, 21.58, 21.58, 21.96, 21.96, 22.24, 22.24, 22.52, 22.52, 22.8, 22.8, 22.9, 22.9, 23.28, 23.28, 23.9, 23.9, 25.04, 25.04, 25.26, 25.26, 25.64, 25.64, 26.12, 26.12, 26.26, 26.26, 26.6, 26.6, 27.24, 27.24, 27.64, 27.64, 28.3, 28.3, 28.52, 28.52, 28.6, 28.6, 28.9, 28.9, 29.16, 29.16, 29.52, 29.52, 29.72, 29.72, 30.06, 30.06, 30.42, 30.42, 30.62, 31.52, 32.54, 31.52, 32.54, 32.54, 33.14, 33.14, 33.82, 33.82, 34.1, 34.1, 34.66, 34.66, 34.9, 34.9, 35.3, 35.3, 35.94, 35.94, 36.44, 36.44, 36.64, 36.64, 37.06, 37.06, 37.8, 37.8, 38.66, 38.66, 39.2, 39.2, 39.46, 39.46, 39.66, 39.66, 40.32, 40.32, 41, 41, 41.48, 41.48, 42.3, 42.6, 43.08, 43.08, 43.48, 43.48, 43.8, 43.8, 44.12, 44.12, 45.52, 45.52, 45.82, 45.82, 46.12, 46.12, 46.58, 46.58, 47.2, 47.94, 48.26, 48.26, 48.88, 48.88, 49.56, 49.56, 49.68, 49.68, 49.96, 49.96, 50.42, 50.42, 50.98, 50.98, 51.6, 51.6, 52.12, 52.12, 52.66, 53.18, 53.28, 53.28, 53.38, 53.38, 53.82, 53.82, 54.26, 54.26, 54.66, 54.66, 55.02, 55.02, 56, 56, 56.72, 56.72, 57.08, 57.08, 57.36, 57.36, 57.84, 57.84, 58.44, 58.44, 59.18, 59.18, 59.6, 59.6, 59.98, 59.98, 60.3, 60.3, 60.88, 60.88, 61.52, 61.52, 62.14, 62.14, 62.6, 62.6, 63.4, 64.2, 64.64, 64.64, 65, 65, 65.3, 65.3, 65.56, 65.56, 65.92, 65.92, 66.4, 66.4, 66.7, 66.7, 66.96, 66.96, 68.06, 68.06, 68.14, 68.14, 68.6, 68.6, 69.04, 69.04, 69.74, 69.74, 70.36, 70.36, 71.08, 71.08, 71.46, 71.46, 71.92, 71.92, 72.4, 72.4, 72.64, 72.64, 72.98, 72.98, 73.46, 74.04, 74.26, 74.26, 74.5, 74.5, 74.66, 74.66, 75.14, 75.14, 75.62, 75.62, 76.2, 76.2, 76.88, 76.88, 77.52, 77.52, 78.02, 78.02, 78.22, 78.22, 78.64, 78.64, 78.94, 78.94, 79.4, 79.4, 79.98, 79.98, 80.1, 80.1, 80.46, 80.46, 80.92, 80.92, 81.12, 81.12, 81.22, 81.22, 81.56, 81.56, 82.08],
+        "align": "whisper-groq"
+      },
+      "provider": "groq"
+    },
+    {
+      "id": "technology-u9l0iy",
+      "track": "technology",
+      "title": "Google threatens school search access over AI bans",
+      "hook": "A school that blocks AI could lose its internet search engine.",
+      "segments": [
+        {
+          "text": "Imagine a classroom where the internet search engine refuses to work because the school bans AI tools for students seeking help.",
+          "visual": {
+            "kind": "headline",
+            "text": "AI Ban Search"
+          }
+        },
+        {
+          "text": "Google announced it will disable its search service for schools that block AI features, sparking outrage among educators and officials in major districts across the United States.",
+          "visual": {
+            "kind": "map",
+            "place": "United States",
+            "lat": 37.0902,
+            "lon": -95.7129
+          }
+        },
+        {
+          "text": "Meanwhile, privacy‑focused DuckDuckGo is courting those frustrated schools, offering a search engine where AI can be turned off entirely without tracking student data.",
+          "visual": {
+            "kind": "compare",
+            "left": {
+              "label": "Google AI",
+              "value": "Enabled"
+            },
+            "right": {
+              "label": "DuckDuckGo",
+              "value": "Disabled"
+            }
+          }
+        },
+        {
+          "text": "Google says its AI tools will provide answers without giving away full solutions, aiming to balance learning support with academic integrity for teachers nationwide.",
+          "visual": null
+        },
+        {
+          "text": "Critics, including New York City’s mayor and former FTC chair Lina Khan, argue Google’s move resembles monopoly power, forcing schools into a single ecosystem with limited choice.",
+          "visual": {
+            "kind": "headline",
+            "text": "Monopoly Concerns"
+          }
+        },
+        {
+          "text": "If schools lose search, students may struggle to find reliable information, while parents could see fewer free resources for homework help across all grade levels.",
+          "visual": null
+        },
+        {
+          "text": "Watch for district decisions this fall and possible legal challenges, as educators weigh privacy, cost, and control over classroom technology in the coming months.",
+          "visual": null
+        },
+        {
+          "text": "The battle over AI and search is just beginning, and future policies will shape how classrooms access digital knowledge.",
+          "visual": null
+        }
+      ],
+      "whyItMatters": "Students rely on search to research projects, and losing it hampers learning. Parents also depend on free online tools for homework support.",
+      "context": "Google recently announced it will turn off its search service for any school that restricts its artificial intelligence features. The policy aims to push AI adoption, while privacy‑focused DuckDuckGo offers an alternative without AI.",
+      "coverage": [
+        {
+          "outlet": "TechCrunch",
+          "angle": "Focuses on backlash against Google and DuckDuckGo’s school outreach",
+          "url": "https://techcrunch.com/2026/11/04/duckduckgo-pitches-itself-to-schools-amid-backlash-over-googles-ai-policy/",
+          "emphasis": "policy backlash",
+          "headline": "DuckDuckGo pitches itself to schools amid backlash over Google’s AI policy",
+          "publishedAt": "2026-11-04T19:29:52.000Z"
+        },
+        {
+          "outlet": "Ars Technica",
+          "angle": "Highlights Google’s new AI tools and the trade‑off of losing search",
+          "url": "https://arstechnica.com/ai/2026/11/google-will-let-schools-skip-ai-tools-but-they-have-to-give-up-search-too/",
+          "emphasis": "AI tool rollout",
+          "headline": "Google will let schools skip AI tools, but they have to give up search, too",
+          "publishedAt": "2026-11-03T17:54:43.000Z"
+        }
+      ],
+      "coverageSummary": {
+        "agreement": "Both outlets report Google will disable search for schools that block AI and that DuckDuckGo is positioning itself as an alternative.",
+        "differences": "TechCrunch stresses political criticism and DuckDuckGo’s pitch, while Ars Technica emphasizes the AI tool features and the search loss trade‑off."
+      },
+      "sources": [
+        {
+          "outlet": "TechCrunch",
+          "title": "DuckDuckGo pitches itself to schools amid backlash over Google’s AI policy",
+          "url": "https://techcrunch.com/2026/11/04/duckduckgo-pitches-itself-to-schools-amid-backlash-over-googles-ai-policy/",
+          "publishedAt": "2026-11-04T19:29:52.000Z"
+        },
+        {
+          "outlet": "Ars Technica",
+          "title": "Google will let schools skip AI tools, but they have to give up search, too",
+          "url": "https://arstechnica.com/ai/2026/11/google-will-let-schools-skip-ai-tools-but-they-have-to-give-up-search-too/",
+          "publishedAt": "2026-11-03T17:54:43.000Z"
+        }
+      ],
+      "location": {
+        "place": "United States",
+        "lat": 37.0902,
+        "lon": -95.7129
+      },
+      "publishedAt": "2026-11-04T19:29:52.000Z",
+      "generatedAt": "2026-11-05T07:41:33.101Z",
+      "estDurationSec": 76,
+      "audio": {
+        "src": "/audio/0c4e313b8f36afde.mp3",
+        "durationSec": 82.3,
+        "model": "Kokoro-82M",
+        "voice": "af_heart",
+        "key": "0c4e313b8f36afde",
+        "lang": "en",
+        "wordTimes": [0, 0.4, 0.4, 0.6, 0.6, 1, 1, 1.54, 1.54, 1.66, 1.66, 2, 2, 2.32, 2.32, 2.76, 2.76, 3.48, 3.48, 3.8, 3.8, 4.04, 4.04, 4.72, 4.72, 4.92, 4.92, 5.18, 5.18, 5.68, 5.68, 6.04, 6.04, 6.56, 6.56, 6.8, 6.8, 7.12, 7.12, 7.44, 7.44, 7.78, 8.27, 8.54, 8.54, 9.02, 9.02, 9.3, 9.3, 9.4, 9.4, 9.8, 9.8, 10.08, 10.08, 10.38, 10.38, 10.78, 10.78, 11.16, 11.16, 11.56, 11.56, 11.9, 11.9, 12.2, 12.2, 12.62, 12.62, 13.2, 13.88, 14.32, 14.32, 14.78, 14.78, 15.18, 15.18, 15.82, 15.82, 16.12, 16.12, 16.48, 16.48, 16.94, 16.94, 17.26, 17.26, 17.82, 17.82, 18.36, 18.36, 18.62, 18.62, 18.78, 18.78, 19.32, 19.88, 20.66, 20.66, 21.58, 21.58, 22.38, 22.38, 22.68, 22.68, 23.08, 23.08, 23.34, 23.34, 23.82, 23.82, 24.62, 25.04, 25.18, 25.18, 25.44, 25.44, 25.7, 25.7, 26.12, 26.12, 26.72, 26.72, 27.06, 27.06, 27.38, 27.38, 27.5, 27.5, 27.7, 27.7, 27.9, 27.9, 28.46, 28.46, 28.9, 28.9, 29.32, 29.32, 29.68, 29.68, 30.1, 30.54, 30.76, 30.76, 31.14, 31.14, 31.36, 31.36, 31.74, 31.74, 32.2, 32.2, 32.44, 32.44, 32.76, 32.76, 33.22, 33.22, 34.06, 34.06, 34.38, 34.38, 34.66, 34.66, 35.04, 35.04, 35.66, 35.66, 36.5, 36.5, 36.74, 36.74, 37.04, 37.04, 37.42, 37.42, 37.84, 37.84, 38.2, 38.2, 38.7, 38.7, 39.26, 39.26, 39.7, 39.7, 40.06, 40.06, 40.72, 41.42, 41.98, 41.98, 42.38, 42.38, 42.6, 42.6, 42.84, 42.84, 43.24, 43.24, 43.46, 43.46, 43.9, 43.9, 44.26, 44.26, 44.88, 44.88, 45.26, 45.26, 45.46, 45.46, 46.02, 46.02, 46.68, 46.68, 47.2, 47.2, 47.5, 47.5, 48.08, 48.08, 48.62, 48.62, 49.36, 49.36, 49.98, 49.98, 50.38, 50.38, 50.74, 50.74, 50.92, 50.92, 51.22, 51.22, 51.8, 51.8, 52.46, 52.46, 52.72, 52.72, 53.22, 53.82, 53.9, 53.9, 54.26, 54.26, 54.58, 54.58, 55.06, 55.06, 55.64, 55.64, 55.84, 55.84, 56.16, 56.16, 56.42, 56.42, 56.7, 56.7, 57.2, 57.2, 58.64, 58.64, 58.69, 58.66, 59.08, 59.08, 59.32, 59.32, 59.5, 59.5, 59.92, 59.92, 60.22, 60.22, 60.68, 60.68, 61.08, 61.08, 61.46, 61.46, 61.76, 61.76, 62.2, 62.2, 62.56, 62.56, 62.86, 62.86, 63.2, 63.8, 64.04, 64.04, 64.28, 64.28, 64.62, 64.62, 65.08, 65.08, 65.46, 65.46, 65.92, 65.92, 66.18, 66.18, 66.58, 66.58, 66.96, 66.96, 67.92, 67.92, 68.46, 68.46, 69.04, 69.04, 69.36, 69.36, 70.16, 70.16, 70.78, 70.78, 71.22, 71.22, 71.62, 71.62, 71.96, 71.96, 72.38, 72.38, 73.02, 73.02, 73.56, 73.56, 73.66, 73.66, 73.88, 73.88, 74.32, 74.8, 74.88, 74.88, 75.14, 75.14, 75.46, 75.46, 75.86, 75.86, 76.22, 76.22, 76.5, 76.5, 76.8, 76.8, 76.98, 76.98, 77.68, 77.68, 78.16, 78.16, 78.5, 78.5, 78.98, 78.98, 79.32, 79.32, 79.62, 79.62, 79.82, 79.82, 80.3, 80.3, 80.8, 80.8, 81.22, 81.22, 82.24],
+        "align": "whisper-groq"
+      },
+      "provider": "groq"
+    },
+    {
+      "id": "technology-dx1o0t",
+      "track": "technology",
+      "title": "Nothing’s First AI‑First Device Set for December Launch",
+      "hook": "Nothing’s mysterious AI‑first gadget is set to debut next month, sparking buzz across tech circles worldwide after CEO Carl Pei hinted at its capabilities.",
+      "segments": [
+        {
+          "text": "Nothing’s mysterious AI‑first gadget is set to debut next month, sparking buzz across tech circles worldwide after CEO Carl Pei hinted at its capabilities.",
+          "visual": {
+            "kind": "headline",
+            "text": "AI‑first device"
+          }
+        },
+        {
+          "text": "CEO Carl Pei announced on X that Nothing will launch its first AI‑focused device in December, though he withheld specific details during a brief online post.",
+          "visual": null
+        },
+        {
+          "text": "The product is described as a screen‑free device aimed at boosting productivity through artificial intelligence, but its exact form remains unclear and could reshape daily workflows.",
+          "visual": null
+        },
+        {
+          "text": "Nothing, founded by former OnePlus chief Carl Pei, entered the market with minimalist smartphones before pivoting toward AI‑native hardware and a distinctive transparent design.",
+          "visual": {
+            "kind": "headline",
+            "text": "From phones to AI"
+          }
+        },
+        {
+          "text": "Pei announced plans for an AI operating system last year, promising devices that run primarily on machine‑learning algorithms rather than traditional screens to enhance user interaction.",
+          "visual": null
+        },
+        {
+          "text": "If successful, a screen‑free AI assistant could let users manage tasks, messages and schedules hands‑free, changing how everyday tech is used without staring at a phone.",
+          "visual": {
+            "kind": "headline",
+            "text": "Hands‑free productivity"
+          }
+        },
+        {
+          "text": "Watch for a product reveal in December, followed by reviews that will test whether the AI features deliver real productivity gains and justify the hype.",
+          "visual": null
+        },
+        {
+          "text": "Stay tuned for how this could influence future AI gadgets across the industry and what competitors might launch in response.",
+          "visual": null
+        }
+      ],
+      "whyItMatters": "A screen‑free AI device could change how people interact with technology, making everyday tasks easier without looking at a screen. It also signals a shift toward AI‑centric hardware in the consumer market.",
+      "context": "Nothing is a London‑based startup founded by Carl Pei, known for its minimalist smartphones. Over the past year the company has spoken about building AI‑native devices and an AI operating system.",
+      "coverage": [
+        {
+          "outlet": "TechCrunch",
+          "angle": "Emphasized the device’s potential to boost productivity using AI.",
+          "url": "https://techcrunch.com/2026/11/04/nothing-ceo-says-companys-mysterious-ai-first-device-is-dropping-next-month/",
+          "emphasis": "product focus",
+          "headline": "Nothing CEO says company’s mysterious AI-first device is dropping next month",
+          "publishedAt": "2026-11-04T22:13:16.000Z"
+        },
+        {
+          "outlet": "The Verge",
+          "angle": "Highlighted the screen‑free nature of the upcoming AI gadget.",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1026586/nothing-screen-free-ai-device-carl-pei",
+          "emphasis": "design angle",
+          "headline": "Nothing teases a screen-free AI device ahead of launch next month",
+          "publishedAt": "2026-11-04T18:51:06.000Z"
+        }
+      ],
+      "coverageSummary": {
+        "agreement": "Both outlets report that CEO Carl Pei announced a December launch of Nothing’s first AI‑first device and provided few details about its form.",
+        "differences": "TechCrunch stresses productivity benefits, while The Verge focuses on the device being screen‑free and part of an AI‑native strategy."
+      },
+      "sources": [
+        {
+          "outlet": "TechCrunch",
+          "title": "Nothing CEO says company’s mysterious AI-first device is dropping next month",
+          "url": "https://techcrunch.com/2026/11/04/nothing-ceo-says-companys-mysterious-ai-first-device-is-dropping-next-month/",
+          "publishedAt": "2026-11-04T22:13:16.000Z"
+        },
+        {
+          "outlet": "The Verge",
+          "title": "Nothing teases a screen-free AI device ahead of launch next month",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1026586/nothing-screen-free-ai-device-carl-pei",
+          "publishedAt": "2026-11-04T18:51:06.000Z"
+        }
+      ],
+      "location": null,
+      "publishedAt": "2026-11-04T22:13:16.000Z",
+      "generatedAt": "2026-11-05T07:16:46.855Z",
+      "estDurationSec": 79,
+      "audio": {
+        "src": "/audio/325be8819026d2a0.mp3",
+        "durationSec": 86,
+        "model": "Kokoro-82M",
+        "voice": "af_heart",
+        "key": "325be8819026d2a0",
+        "lang": "en",
+        "wordTimes": [0, 0.54, 0.54, 1.02, 1.02, 1.92, 1.92, 2.28, 2.28, 2.8, 2.8, 2.96, 2.96, 3.16, 3.16, 3.42, 3.42, 3.76, 3.76, 4.34, 4.34, 5.02, 5.02, 5.32, 5.32, 5.66, 5.66, 5.98, 5.98, 6.36, 6.36, 6.96, 6.96, 7.7, 7.7, 8.16, 8.16, 8.62, 8.62, 8.94, 8.94, 9.6, 9.6, 9.8, 9.8, 9.94, 9.94, 10.78, 10.5, 11.56, 11.56, 12, 12, 12.28, 12.28, 12.88, 12.88, 13.12, 13.12, 13.38, 13.38, 13.66, 13.66, 14.12, 14.12, 14.24, 14.24, 14.54, 14.54, 14.74, 14.74, 15.12, 15.12, 16.08, 16.08, 16.58, 16.58, 16.82, 16.82, 17.48, 17.48, 17.9, 17.9, 18, 18, 18.36, 18.36, 18.8, 18.8, 19.44, 19.44, 19.82, 19.82, 20.02, 20.02, 20.26, 20.26, 20.58, 20.58, 21.18, 21.02, 21.66, 21.66, 21.96, 21.96, 22.24, 22.24, 22.66, 22.66, 23.1, 23.1, 23.22, 23.22, 23.84, 23.84, 24.34, 24.34, 24.86, 24.86, 25.08, 25.08, 25.4, 25.4, 26.12, 26.12, 26.62, 26.62, 27.18, 27.18, 28.02, 28, 28.66, 28.66, 28.78, 28.78, 29.2, 29.2, 29.6, 29.6, 30.06, 30.06, 30.46, 30.46, 31.16, 31.16, 31.38, 31.38, 31.76, 31.76, 32.14, 32.14, 32.6, 33.28, 33.78, 33.78, 34.12, 34.12, 34.38, 34.38, 34.74, 34.74, 35.08, 35.08, 35.56, 35.56, 35.84, 35.84, 36.34, 36.34, 36.98, 36.98, 37.1, 37.1, 37.38, 37.38, 37.64, 37.64, 38.08, 38.08, 38.66, 38.66, 39.5, 39.5, 39.96, 39.96, 40.24, 40.24, 41.08, 41.08, 41.52, 41.52, 42.18, 42.18, 42.26, 42.26, 42.66, 42.66, 43.3, 43.3, 43.88, 44.37, 44.58, 44.58, 44.98, 44.98, 45.44, 45.44, 45.7, 45.7, 45.84, 45.84, 46.28, 46.28, 46.84, 46.84, 47.22, 47.22, 47.56, 47.56, 47.86, 47.86, 48.8, 48.8, 49.32, 49.32, 49.7, 49.7, 49.92, 49.92, 50.42, 50.42, 50.78, 50.78, 51.46, 51.46, 52.08, 52.08, 52.86, 52.86, 53.14, 53.14, 53.5, 53.5, 54.06, 54.06, 54.64, 54.64, 55.08, 55.08, 55.54, 55.54, 56.12, 56.2, 56.82, 56.82, 57.78, 57.78, 57.9, 57.9, 58.48, 58.48, 58.88, 58.88, 59.52, 59.52, 60.06, 60.06, 60.26, 60.26, 60.68, 60.68, 61.12, 61.12, 61.92, 61.92, 62.9, 62.9, 62.95, 62.94, 63.38, 63.38, 64.14, 64.14, 64.92, 64.92, 65.2, 65.2, 65.6, 65.6, 66.02, 66.02, 66.2, 66.2, 66.5, 66.5, 66.76, 66.76, 67.2, 67.2, 67.46, 67.46, 67.56, 67.56, 67.84, 67.84, 68.6, 68.6, 68.82, 68.82, 68.92, 68.92, 69.28, 69.28, 69.68, 69.68, 69.9, 69.9, 70.58, 70.58, 71.14, 71.14, 71.42, 71.42, 71.9, 71.9, 72.22, 72.22, 72.3, 72.3, 72.72, 72.72, 72.96, 72.96, 73.18, 73.18, 73.52, 73.52, 74.1, 74.1, 74.52, 74.52, 74.94, 74.94, 75.5, 75.5, 76.02, 76.02, 76.66, 76.66, 77.14, 77.14, 77.44, 77.44, 77.72, 77.72, 78.4, 78.4, 78.76, 78.76, 79.02, 79.02, 79.18, 79.18, 79.42, 79.42, 79.6, 79.6, 80.1, 80.1, 80.56, 80.56, 81.04, 81.04, 81.58, 81.58, 82, 82, 82.22, 82.22, 82.66, 82.66, 83.36, 83.36, 83.5, 83.5, 84.04, 84.04, 84.38, 84.38, 84.78, 84.78, 84.96, 84.96, 85.84],
+        "align": "whisper-groq"
+      },
+      "provider": "groq"
+    },
+    {
+      "id": "sports-8lsukz",
+      "track": "sports",
+      "title": "Ravens trade for veteran quarterback Jacoby Brissett",
+      "hook": "Baltimore’s quarterback crisis deepens as the team moves to acquire veteran Jacoby Brissett from Arizona, aiming to steady a faltering season.",
+      "segments": [
+        {
+          "text": "Baltimore’s quarterback crisis deepens as the team moves to acquire veteran Jacoby Brissett from Arizona, aiming to steady a faltering season.",
+          "visual": {
+            "kind": "headline",
+            "text": "Brissett Trade"
+          }
+        },
+        {
+          "text": "Sources say the Cardinals are finalizing a trade that will send Brissett to the Ravens, pending league approval this week.",
+          "visual": null
+        },
+        {
+          "text": "Baltimore’s starter Lamar Jackson is out with a thumb injury, and backup Tyler Huntley will miss the season after a turf‑toe setback.",
+          "visual": {
+            "kind": "compare",
+            "left": {
+              "label": "Jackson",
+              "value": "Out"
+            },
+            "right": {
+              "label": "Huntley",
+              "value": "Out"
+            }
+          }
+        },
+        {
+          "text": "Rookie quarterback Tyler Fagnano is set to start Thursday, but the Ravens hope Brissett’s experience will provide a quicker path to wins.",
+          "visual": {
+            "kind": "headline",
+            "text": "Fagnano to start"
+          }
+        },
+        {
+          "text": "Jacoby Brissett, a 31‑year‑old veteran, has started for multiple teams and posted a career passer rating around 88, showing reliability.",
+          "visual": null
+        },
+        {
+          "text": "The Ravens entered the season with high expectations, yet injuries have left them near the bottom of the AFC North, prompting urgent roster moves.",
+          "visual": null
+        },
+        {
+          "text": "A stable quarterback can keep the Ravens competitive, preserving ticket sales, local business traffic on game days, and fan morale across Baltimore.",
+          "visual": null
+        },
+        {
+          "text": "Watch the league’s official announcement this week, then see Brissett’s first snap in Baltimore’s Thursday matchup, a key test for the season.",
+          "visual": null
+        }
+      ],
+      "whyItMatters": "A reliable quarterback can turn close games into wins, directly affecting the team’s playoff chances. It also impacts local revenue from game‑day activities.",
+      "context": "The Baltimore Ravens have struggled this season after starter Lamar Jackson suffered a thumb injury. Backup Tyler Huntley then went down with a turf‑toe injury, leaving the team scrambling for options.",
+      "coverage": [
+        {
+          "outlet": "ESPN",
+          "angle": "Focuses on the trade mechanics and how the move could salvage the Ravens’ season.",
+          "url": "https://www.espn.com/nfl/story/_/id/50381318/sources-ravens-finalizing-trade-cardinals-qb-brissett",
+          "emphasis": "roster move",
+          "headline": "Sources: Ravens finalizing trade with Cardinals for QB Brissett",
+          "publishedAt": "2026-11-05T06:03:43.000Z"
+        },
+        {
+          "outlet": "The Guardian",
+          "angle": "Highlights the injury crisis driving the trade and its immediate impact on the roster.",
+          "url": "https://www.theguardian.com/sport/2026/nov/04/baltimore-ravens-arizona-cardinals-trade-jacoby-brissett",
+          "emphasis": "injury impact",
+          "headline": "Ravens near trade with Cardinals for Jacoby Brissett amid QB injury crisis",
+          "publishedAt": "2026-11-04T20:50:44.000Z"
+        }
+      ],
+      "coverageSummary": {
+        "agreement": "Both outlets report that veteran quarterback Jacoby Brissett is being sent from the Arizona Cardinals to the Baltimore Ravens and that Lamar Jackson is out with a thumb injury.",
+        "differences": "ESPN emphasizes the trade details and season‑salvage angle, while The Guardian stresses the broader injury emergency prompting the deal."
+      },
+      "sources": [
+        {
+          "outlet": "ESPN",
+          "title": "Sources: Ravens finalizing trade with Cardinals for QB Brissett",
+          "url": "https://www.espn.com/nfl/story/_/id/50381318/sources-ravens-finalizing-trade-cardinals-qb-brissett",
+          "publishedAt": "2026-11-05T06:03:43.000Z"
+        },
+        {
+          "outlet": "The Guardian",
+          "title": "Ravens near trade with Cardinals for Jacoby Brissett amid QB injury crisis",
+          "url": "https://www.theguardian.com/sport/2026/nov/04/baltimore-ravens-arizona-cardinals-trade-jacoby-brissett",
+          "publishedAt": "2026-11-04T20:50:44.000Z"
+        }
+      ],
+      "location": {
+        "place": "Baltimore, Maryland, USA",
+        "lat": 39.2904,
+        "lon": -76.6122
+      },
+      "publishedAt": "2026-11-05T06:03:43.000Z",
+      "generatedAt": "2026-11-05T07:16:58.431Z",
+      "estDurationSec": 69,
+      "audio": {
+        "src": "/audio/d32ca49dd7bcb7b1.mp3",
+        "durationSec": 70.1,
+        "model": "Kokoro-82M",
+        "voice": "af_heart",
+        "key": "d32ca49dd7bcb7b1",
+        "lang": "en",
+        "wordTimes": [0, 0.65, 0.65, 1.36, 1.36, 1.78, 1.78, 2.26, 2.26, 2.46, 2.46, 2.72, 2.72, 3.03, 3.03, 3.4, 3.4, 3.59, 3.59, 4.07, 4.07, 4.56, 4.56, 4.98, 4.98, 5.52, 5.52, 5.83, 5.83, 6.48, 6.48, 6.9, 6.9, 7.1, 7.1, 7.53, 7.53, 7.72, 7.72, 8.32, 8.32, 9.08, 9.38, 9.8, 9.8, 10.1, 10.1, 10.26, 10.26, 10.72, 10.72, 10.98, 10.98, 11.66, 11.66, 11.84, 11.84, 12.18, 12.18, 12.7, 12.7, 12.8, 12.8, 13.12, 13.12, 13.5, 13.5, 13.64, 13.64, 13.76, 13.76, 14.38, 14.38, 14.98, 14.98, 15.26, 15.26, 15.62, 15.62, 16, 16, 16.28, 16.28, 17.32, 17.32, 17.62, 17.62, 18.04, 18.04, 18.5, 18.5, 18.8, 18.8, 19.06, 19.06, 19.24, 19.24, 19.36, 19.36, 19.56, 19.56, 20, 20, 20.7, 20.7, 21, 21, 21.4, 21.4, 21.84, 21.84, 22.2, 22.2, 22.38, 22.38, 22.52, 22.52, 22.82, 22.82, 23.24, 23.24, 23.42, 23.42, 23.94, 23.94, 24.38, 24.42, 25.08, 25.08, 25.56, 25.56, 26.06, 26.06, 26.68, 26.68, 26.98, 26.98, 27.18, 27.18, 27.36, 27.36, 27.64, 27.64, 28.06, 28.06, 28.82, 28.82, 28.94, 28.94, 29.36, 29.36, 29.62, 29.62, 30.06, 30.06, 30.56, 30.56, 31.18, 31.18, 31.48, 31.48, 31.68, 31.68, 31.92, 31.92, 32.36, 32.36, 32.52, 32.52, 33, 33.36, 33.76, 33.76, 34.62, 34.62, 34.74, 34.74, 35.5, 35.5, 36.38, 36.38, 36.52, 36.52, 36.78, 36.78, 37.06, 37.06, 37.42, 37.42, 38, 38, 38.52, 38.52, 38.86, 38.86, 39.02, 39.02, 39.3, 39.3, 39.8, 39.8, 40.22, 40.22, 40.56, 40.56, 41.5, 41.5, 41.9, 41.9, 42.44, 43.22, 43.34, 43.34, 43.82, 43.82, 44.16, 44.16, 44.3, 44.3, 44.6, 44.6, 44.9, 44.9, 45.22, 45.22, 45.86, 45.86, 46.86, 46.86, 47.34, 47.34, 47.56, 47.56, 47.82, 47.82, 48, 48, 48.22, 48.22, 48.38, 48.38, 48.7, 48.7, 48.96, 48.96, 49.1, 49.1, 49.62, 49.62, 50.02, 50.02, 50.9, 50.9, 51.3, 51.3, 51.7, 51.7, 52.08, 52.12, 52.66, 52.66, 53.02, 53.02, 53.46, 53.46, 53.88, 53.88, 54.04, 54.04, 54.16, 54.16, 54.58, 54.58, 55.44, 55.44, 56.04, 56.04, 56.42, 56.42, 57.4, 57.4, 57.64, 57.64, 57.98, 57.98, 58.42, 58.42, 58.7, 58.7, 58.92, 58.92, 59.28, 59.28, 59.82, 59.82, 60.12, 60.12, 60.36, 60.36, 60.84, 60.84, 61.24, 61.92, 62.18, 62.18, 62.4, 62.4, 62.78, 62.78, 63.18, 63.18, 63.62, 63.62, 63.96, 63.96, 64.34, 64.34, 64.78, 64.78, 65, 65, 65.42, 65.42, 65.64, 65.64, 65.96, 65.96, 66.22, 66.22, 66.86, 66.86, 67.2, 67.2, 67.8, 67.8, 68.34, 68.34, 68.54, 68.54, 68.92, 68.92, 69.1, 69.1, 69.22, 69.22, 70.06],
+        "align": "whisper-groq"
+      },
+      "provider": "groq"
+    },
+    {
+      "id": "sports-1e50cc1",
+      "track": "sports",
+      "title": "Record 53 Red Cards Issued in Brazilian Youth Match",
+      "hook": "A chaotic Brazilian under‑20 football match erupted into a record‑breaking melee, ending with fifty‑three red cards.",
+      "segments": [
+        {
+          "text": "A chaotic Brazilian under‑20 football match erupted into a record‑breaking melee, ending with fifty‑three red cards flashing across the field in Brazil.",
+          "visual": {
+            "kind": "headline",
+            "text": "Record Red Cards"
+          }
+        },
+        {
+          "text": "The clash involved Uberlândia and Mamoré teams, their coaches and even board members, all dismissed during the heated under‑20 championship game in Uberlândia.",
+          "visual": {
+            "kind": "map",
+            "place": "Uberlândia, Brazil",
+            "lat": -19.764,
+            "lon": -48.234
+          }
+        },
+        {
+          "text": "A massive brawl broke out after a disputed penalty, prompting referees to issue red cards to 43 players, eight staff and two officials.",
+          "visual": {
+            "kind": "number",
+            "value": "53",
+            "label": "Red cards"
+          }
+        },
+        {
+          "text": "In football, a red card means immediate ejection; matches rarely see more than a handful, making fifty‑three an unprecedented global record ever.",
+          "visual": {
+            "kind": "headline",
+            "text": "Red Card Basics"
+          }
+        },
+        {
+          "text": "Youth tournaments can spark intense emotions, and limited officiating experience sometimes fails to control tempers, leading to escalations like this one today.",
+          "visual": null
+        },
+        {
+          "text": "The incident tarnishes Brazil’s reputation for football discipline, pressures the national federation to review referee training and enforce stricter match‑day protocols now.",
+          "visual": {
+            "kind": "headline",
+            "text": "Federation Response"
+          }
+        },
+        {
+          "text": "Fans worry such disorder could affect ticket prices, broadcast deals and youth participation, as sponsors may shy away from events seen as unsafe.",
+          "visual": {
+            "kind": "compare",
+            "left": {
+              "label": "Fans concern",
+              "value": "Ticket prices"
+            },
+            "right": {
+              "label": "Sponsors",
+              "value": "Safety"
+            }
+          }
+        },
+        {
+          "text": "Watch for the Brazilian Football Confederation’s official statement this week and any disciplinary hearings that could set new sanctions for future tournaments.",
+          "visual": null
+        }
+      ],
+      "whyItMatters": "Such a massive dismissal disrupts the integrity of the sport and could deter fans and sponsors. It also forces authorities to rethink safety and officiating standards.",
+      "context": "In football, a red card ejects a player or staff member for serious offences. Youth championships are usually tightly supervised, making this level of punishment unprecedented.",
+      "coverage": [
+        {
+          "outlet": "BBC Sport",
+          "angle": "Emphasized the record number of individuals sent off, detailing players, staff and board members.",
+          "url": "https://www.bbc.co.uk/sport/football/articles/cmy0rz7741ywo?at_medium=RSS&at_campaign=rss",
+          "emphasis": "record scale",
+          "headline": "World record 53 red cards shown in Brazilian youth game",
+          "publishedAt": "2026-11-05T07:23:08.000Z"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "angle": "Focused on the massive brawl that triggered the red‑card spree.",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/11/5/world-record-53-red-cards-shown-in-brazil-football-match?traffic_source=rss",
+          "emphasis": "brawl focus",
+          "headline": "World record 53 red cards shown in Brazil football match",
+          "publishedAt": "2026-11-05T03:48:19.000Z"
+        }
+      ],
+      "coverageSummary": {
+        "agreement": "Both outlets report that fifty‑three red cards were issued in an under‑20 football match in Brazil.",
+        "differences": "BBC Sport provides the exact breakdown of 43 players, eight staff and two board members; Al Jazeera highlights the brawl as the primary cause."
+      },
+      "sources": [
+        {
+          "outlet": "BBC Sport",
+          "title": "World record 53 red cards shown in Brazilian youth game",
+          "url": "https://www.bbc.co.uk/sport/football/articles/cmy0rz7741ywo?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-11-05T07:23:08.000Z"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "World record 53 red cards shown in Brazil football match",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/11/5/world-record-53-red-cards-shown-in-brazil-football-match?traffic_source=rss",
+          "publishedAt": "2026-11-05T03:48:19.000Z"
+        }
+      ],
+      "location": {
+        "place": "Uberlândia, Brazil",
+        "lat": -19.764,
+        "lon": -48.234
+      },
+      "publishedAt": "2026-11-05T07:23:08.000Z",
+      "generatedAt": "2026-11-05T07:42:53.716Z",
+      "estDurationSec": 72,
+      "audio": {
+        "src": "/audio/6767eaf92941c2d8.mp3",
+        "durationSec": 80.4,
+        "model": "Kokoro-82M",
+        "voice": "af_heart",
+        "key": "6767eaf92941c2d8",
+        "lang": "en",
+        "wordTimes": [0, 0.04, 0.02, 0.07, 0.07, 0.14, 0.14, 0.23, 0.23, 0.28, 0.28, 0.32, 0.32, 0.38, 0.38, 0.42, 0.41, 0.45, 0.43, 0.52, 0.52, 0.58, 0.58, 0.63, 0.63, 0.67, 0.66, 0.73, 0.73, 0.77, 0.76, 0.8, 0.8, 0.85, 0.85, 0.9, 0.85, 10.24, 10.24, 10.28, 10.28, 10.32, 10.3, 10.39, 10.3, 10.34, 10.3, 10.58, 10.58, 11.1, 11.1, 11.96, 11.96, 12.28, 12.28, 12.8, 12.8, 13.44, 13.44, 13.94, 13.94, 14.68, 14.68, 14.9, 14.9, 15.12, 15.12, 15.42, 15.42, 16.2, 16.2, 16.52, 16.52, 16.98, 16.98, 17.38, 17.38, 17.58, 17.58, 17.84, 17.84, 18.38, 18.38, 19, 19, 19.32, 19.32, 19.52, 19.52, 20.14, 20.59, 20.72, 20.72, 21.14, 21.14, 21.5, 21.5, 21.78, 21.78, 21.98, 21.98, 22.3, 22.3, 22.42, 22.42, 22.9, 22.9, 23.52, 23.52, 24.28, 24.28, 24.82, 24.82, 25, 25, 25.28, 25.28, 25.5, 25.5, 25.92, 25.92, 26.16, 26.16, 26.56, 26.56, 27.46, 27.46, 27.86, 27.86, 28.46, 28.46, 28.62, 28.62, 28.8, 28.8, 29.2, 29.3, 29.96, 29.96, 30.76, 30.76, 30.9, 30.9, 31.1, 31.1, 31.4, 31.4, 31.76, 31.76, 32.28, 32.28, 32.96, 32.96, 33.98, 33.98, 34.36, 34.36, 34.68, 34.68, 34.94, 34.94, 35.1, 35.1, 35.22, 35.22, 36.08, 36.08, 36.2, 36.2, 36.76, 36.76, 37.04, 37.04, 37.62, 37.62, 38.2, 38.2, 38.64, 38.64, 39.08, 39.08, 39.64, 39.64, 40, 40, 40.38, 40.38, 40.74, 40.74, 41.28, 41.28, 42.16, 42.16, 42.62, 42.62, 42.94, 42.94, 43.64, 43.64, 44.38, 44.38, 45.12, 45.12, 45.68, 45.68, 45.9, 45.9, 46.32, 46.32, 47.08, 47.08, 47.68, 47.68, 47.9, 47.9, 48.6, 48.6, 48.92, 48.92, 49.16, 49.16, 49.34, 49.34, 49.62, 49.7, 50.26, 50.26, 50.64, 50.64, 51.18, 51.18, 51.88, 51.88, 52.42, 52.42, 52.76, 52.76, 53.1, 53.1, 53.6, 53.6, 54.54, 54.54, 54.82, 54.82, 55.1, 55.1, 55.78, 55.78, 56.44, 56.44, 56.74, 56.74, 57.16, 57.16, 57.58, 57.58, 58.06, 58.06, 58.5, 58.5, 58.9, 58.9, 59.22, 59.4, 59.98, 59.98, 60.34, 60.84, 61.14, 61.14, 61.48, 61.48, 61.76, 61.76, 62.2, 62.2, 62.46, 62.46, 62.76, 62.76, 63.1, 63.1, 64.12, 64.12, 64.62, 64.62, 65.12, 65.12, 65.48, 65.48, 65.7, 65.7, 66.26, 66.26, 67.22, 67.22, 67.58, 67.58, 67.84, 67.84, 68.08, 68.08, 68.4, 68.4, 68.64, 68.64, 69.02, 69.02, 69.32, 69.32, 69.54, 69.54, 69.88, 70.6, 70.84, 70.84, 71.12, 71.12, 71.24, 71.24, 71.68, 71.68, 72.2, 72.2, 73.22, 73.22, 73.86, 73.86, 74.34, 74.34, 74.86, 74.86, 75.14, 75.14, 75.62, 75.62, 75.78, 75.78, 76.32, 76.32, 76.82, 76.82, 77.46, 77.46, 77.58, 77.58, 77.84, 77.84, 78.08, 78.08, 78.54, 78.54, 78.9, 78.9, 79.22, 79.22, 79.64],
+        "align": "whisper-groq"
+      },
+      "provider": "groq"
+    },
+    {
+      "id": "sports-mktf32",
+      "track": "sports",
+      "title": "LIV Golf’s Collapse Leaves Tour in Limbo",
+      "hook": "LIV Golf’s dream of a comeback has crumbled, as its new investor pulls out and the tour faces bankruptcy. Here’s what that means for fans.",
+      "segments": [
+        {
+          "text": "BC Partners withdrew its investment, leaving the rebel LIV Golf tour without a lead backer. The collapse will be addressed at a bankruptcy hearing in London.",
+          "visual": {
+            "kind": "headline",
+            "text": "Investor Walks Away"
+          }
+        },
+        {
+          "text": "LIV Golf launched in 2022 as a breakaway from the PGA, offering higher prize money to attract top talent and.",
+          "visual": {
+            "kind": "headline",
+            "text": "Rebel Tour Begins"
+          }
+        },
+        {
+          "text": "The tour had promised a new era of competition, but struggled to keep star players committed amid uncertainty and financial pressure.",
+          "visual": {
+            "kind": "headline",
+            "text": "Star Players Uncertain"
+          }
+        },
+        {
+          "text": "LIV Golf was created by former PGA Tour officials and attracted players by offering record payouts, challenging the traditional golf structure.",
+          "visual": null
+        },
+        {
+          "text": "Its bankruptcy filing in 2024 left the league in limbo, with players and sponsors uncertain about future events and revenue.",
+          "visual": {
+            "kind": "map",
+            "place": "London",
+            "lat": 51.5074,
+            "lon": -0.1278
+          }
+        },
+        {
+          "text": "Fans who followed LIV’s high‑stakes tournaments now face a void, and sponsors worry about lost exposure for their brand visibility.",
+          "visual": null
+        },
+        {
+          "text": "Stay tuned for the official announcement of LIV’s winding‑down plan and the impact on upcoming majors and player participation globally.",
+          "visual": {
+            "kind": "headline",
+            "text": "What Comes Next"
+          }
+        }
+      ],
+      "whyItMatters": "The collapse means fans lose a high‑profile alternative to traditional golf and sponsors lose a marketing platform. Players must seek other tours to compete.",
+      "context": "LIV Golf was founded in 2022 as a breakaway from the PGA Tour, offering larger prize money to attract top players. It filed for bankruptcy in 2024, leaving its future uncertain.",
+      "coverage": [
+        {
+          "outlet": "The Guardian",
+          "angle": "Investor withdrawal collapses relaunch",
+          "url": "https://www.theguardian.com/sport/2026/nov/04/rory-mcilroy-liv-golf-destroy-dp-world-tour",
+          "emphasis": "Investor withdrawal",
+          "headline": "LIV Golf’s attempted relaunch collapses after new lead investor withdraws, reports say",
+          "publishedAt": "2026-11-04T23:29:01.000Z"
+        },
+        {
+          "outlet": "BBC Sport",
+          "angle": "LIV to wind down after backers withdraw",
+          "url": "https://www.bbc.co.uk/sport/golf/articles/cq70pdjjgy5no?at_medium=RSS&at_campaign=rss",
+          "emphasis": "Winding down",
+          "headline": "LIV to wind down after backers withdraw support",
+          "publishedAt": "2026-11-04T22:33:17.000Z"
+        }
+      ],
+      "coverageSummary": null,
+      "sources": [
+        {
+          "outlet": "The Guardian",
+          "title": "LIV Golf’s attempted relaunch collapses after new lead investor withdraws, reports say",
+          "url": "https://www.theguardian.com/sport/2026/nov/04/rory-mcilroy-liv-golf-destroy-dp-world-tour",
+          "publishedAt": "2026-11-04T23:29:01.000Z"
+        },
+        {
+          "outlet": "BBC Sport",
+          "title": "LIV to wind down after backers withdraw support",
+          "url": "https://www.bbc.co.uk/sport/golf/articles/cq70pdjjgy5no?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-11-04T22:33:17.000Z"
+        }
+      ],
+      "location": null,
+      "publishedAt": "2026-11-04T23:29:01.000Z",
+      "generatedAt": "2026-11-05T07:17:48.289Z",
+      "estDurationSec": 59,
+      "audio": {
+        "src": "/audio/e64aaa85220bf4fe.mp3",
+        "durationSec": 63.2,
+        "model": "Kokoro-82M",
+        "voice": "af_heart",
+        "key": "e64aaa85220bf4fe",
+        "lang": "en",
+        "wordTimes": [0, 0.62, 0.62, 0.9, 0.9, 1.38, 1.38, 1.66, 1.66, 2.58, 2.58, 2.96, 2.96, 3.2, 3.2, 3.52, 3.52, 4.14, 4.14, 4.5, 4.5, 4.84, 4.84, 5.26, 5.26, 5.46, 5.46, 5.6, 5.6, 6.1, 6.1, 6.78, 6.78, 7.16, 7.16, 7.42, 7.42, 7.52, 7.52, 7.9, 7.9, 8.12, 8.12, 8.22, 8.22, 8.54, 8.54, 9.18, 9.18, 9.42, 9.42, 9.8, 9.42, 10.68, 10.68, 11, 11, 11.52, 11.52, 11.74, 11.74, 12.36, 12.36, 13.2, 13.2, 13.32, 13.32, 13.72, 13.72, 13.98, 13.98, 14.12, 14.12, 14.94, 14.94, 15.64, 15.64, 16.06, 16.06, 16.38, 16.38, 16.72, 16.72, 16.96, 16.96, 17.34, 17.34, 17.74, 17.74, 18.1, 18.1, 18.46, 18.46, 19.02, 19.02, 19.28, 19.28, 19.46, 19.46, 19.82, 19.82, 20.14, 20.14, 20.36, 20.36, 20.72, 20.72, 20.94, 20.94, 21.86, 21.86, 22.28, 22.28, 22.62, 22.62, 22.86, 22.86, 23.02, 23.02, 23.32, 23.32, 23.72, 23.72, 24.14, 24.14, 24.5, 24.5, 25.04, 25.04, 25.84, 25.84, 26.28, 26.28, 27, 26.88, 27.8, 27.8, 28.16, 28.16, 28.44, 28.44, 28.78, 28.78, 29.1, 29.1, 29.46, 29.46, 30.16, 30.16, 30.46, 30.46, 30.9, 30.9, 31.66, 31.66, 32.04, 32.04, 32.5, 32.5, 32.96, 32.96, 33.36, 33.36, 33.74, 33.74, 34.5, 34.5, 35.24, 35.24, 35.62, 35.62, 36, 36, 36.34, 36.34, 36.8, 36.8, 37.48, 37.48, 37.9, 37.9, 38.52, 38.52, 38.78, 38.78, 39.3, 39.3, 40.3, 40.3, 40.48, 40.48, 40.62, 40.62, 40.84, 40.84, 41.28, 41.28, 41.86, 41.86, 42.28, 42.28, 42.52, 42.52, 42.94, 42.94, 43.58, 43.58, 43.96, 43.96, 44.34, 44.34, 44.78, 44.78, 45.12, 45.12, 45.46, 45.46, 46.3, 46.3, 46.54, 46.54, 46.96, 46.96, 47.36, 47.36, 48, 48, 48.38, 48.38, 49.06, 49.06, 49.4, 49.4, 49.6, 49.6, 49.8, 49.8, 50.48, 50.48, 50.86, 50.86, 51.24, 51.24, 51.58, 51.58, 51.9, 51.9, 52.44, 52.44, 52.8, 52.8, 52.94, 52.94, 53.26, 53.26, 53.66, 53.78, 54.54, 54.54, 54.9, 54.9, 55.2, 55.2, 55.32, 55.32, 55.72, 55.72, 56.16, 56.16, 56.48, 56.48, 56.92, 56.92, 57.48, 57.66, 57.96, 57.96, 58.74, 58.74, 58.84, 58.84, 59.2, 59.2, 59.54, 59.54, 59.92, 59.92, 60.36, 60.36, 61.02, 61.02, 61.32, 61.32, 62, 62, 62.66],
+        "align": "whisper-groq"
+      },
+      "provider": "groq"
+    },
+    {
+      "id": "finance-1rkkdg6",
+      "track": "finance",
+      "title": "Bank of England Hikes Rates After Three Years",
+      "hook": "London’s financial heart is buzzing—today the Bank of England is set to hike interest rates for the first time in over three years.",
+      "segments": [
+        {
+          "text": "At 12:00 p.m. local time, the central bank will raise its key rate from 3.75% to 4.0%, a move that could ripple markets worldwide.",
+          "visual": null
+        },
+        {
+          "text": "Analysts say the decision responds to climbing energy costs and a hawkish outlook in recent economic data, signaling tighter monetary policy.",
+          "visual": null
+        },
+        {
+          "text": "The move follows a survey showing the UK services sector expanded at an eight‑month high, buoyed by AI spending and post‑war recovery.",
+          "visual": null
+        },
+        {
+          "text": "Interest rates are the cost of borrowing money. When the Bank of England raises them, loans and mortgages become more expensive.",
+          "visual": {
+            "kind": "number",
+            "value": "3.75%",
+            "label": "Previous Rate"
+          }
+        },
+        {
+          "text": "Higher rates slow spending and borrowing, which can cool inflation but also slow economic growth and affect business investment.",
+          "visual": null
+        },
+        {
+          "text": "For everyday people, a rate hike means higher mortgage payments, pricier car loans, and a tougher environment for small‑business borrowing.",
+          "visual": {
+            "kind": "headline",
+            "text": "Higher Borrowing Costs"
+          }
+        },
+        {
+          "text": "Watch the Bank of England’s policy statement after the decision and keep an eye on how stock markets and the pound react.",
+          "visual": {
+            "kind": "map",
+            "place": "London",
+            "lat": 51.5074,
+            "lon": -0.1278
+          }
+        }
+      ],
+      "whyItMatters": "Higher rates mean more expensive loans and mortgages, which can slow household spending and business investment. It also signals the central bank’s stance on inflation control.",
+      "context": "The Bank of England sets the UK’s key interest rate, influencing borrowing costs for consumers and businesses. A rate hike is used to curb inflation but can slow economic growth.",
+      "coverage": [
+        {
+          "outlet": "The Guardian",
+          "angle": "Focus on the first rate hike in three years and the potential surprise in London’s financial markets",
+          "url": "https://www.theguardian.com/business/live/2026/nov/05/bank-of-england-interest-rate-decision-pound-inflation-oil-iran-stock-markets-latest-news-updates",
+          "emphasis": "rate hike",
+          "headline": "Bank of England expected to raise interest rates for first time in three years today – business live",
+          "publishedAt": "2026-11-05T07:23:41.000Z"
+        },
+        {
+          "outlet": "BBC News",
+          "angle": "Highlight the expected increase from 3.75% to 4% as a significant policy move",
+          "url": "https://www.bbc.co.uk/news/articles/ck5ynw45jrgqo?at_medium=RSS&at_campaign=rss",
+          "emphasis": "rate increase",
+          "headline": "Interest rates expected to rise for first time in over three years",
+          "publishedAt": "2026-11-05T00:00:09.000Z"
+        }
+      ],
+      "coverageSummary": {
+        "agreement": "Both outlets report that the Bank of England will raise its key rate from 3.75% to 4% for the first time in over three years.",
+        "differences": "The Guardian adds that the hike is driven by higher energy prices and hawkish macro data, while BBC News focuses solely on the rate change."
+      },
+      "sources": [
+        {
+          "outlet": "The Guardian",
+          "title": "Bank of England expected to raise interest rates for first time in three years today – business live",
+          "url": "https://www.theguardian.com/business/live/2026/nov/05/bank-of-england-interest-rate-decision-pound-inflation-oil-iran-stock-markets-latest-news-updates",
+          "publishedAt": "2026-11-05T07:23:41.000Z"
+        },
+        {
+          "outlet": "BBC News",
+          "title": "Interest rates expected to rise for first time in over three years",
+          "url": "https://www.bbc.co.uk/news/articles/ck5ynw45jrgqo?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-11-05T00:00:09.000Z"
+        }
+      ],
+      "location": {
+        "place": "London",
+        "lat": 51.5074,
+        "lon": -0.1278
+      },
+      "publishedAt": "2026-11-05T07:23:41.000Z",
+      "generatedAt": "2026-11-05T07:42:56.519Z",
+      "estDurationSec": 60,
+      "audio": {
+        "src": "/audio/dc51a105e4e520e3.mp3",
+        "durationSec": 63.2,
+        "model": "Kokoro-82M",
+        "voice": "af_heart",
+        "key": "dc51a105e4e520e3",
+        "lang": "en",
+        "wordTimes": [0, 0.3, 0.3, 1.12, 1.12, 1.94, 1.94, 2.51, 2.51, 3.24, 3.24, 3.29, 3.29, 3.36, 3.36, 3.41, 3.41, 3.45, 3.45, 3.5, 3.5, 3.54, 3.54, 3.58, 3.58, 3.62, 3.62, 3.67, 3.67, 3.74, 3.67, 3.71, 3.67, 3.71, 3.67, 3.71, 9.46, 9.66, 9.66, 9.89, 9.89, 10.17, 10.17, 10.49, 10.49, 10.85, 10.85, 11.55, 11.85, 12.62, 12.62, 12.98, 12.98, 13.03, 13.03, 13.41, 13.41, 13.79, 13.79, 13.93, 13.93, 14.3, 14.3, 14.6, 14.6, 14.86, 14.86, 14.91, 20.08, 20.13, 20.13, 20.24, 20.24, 20.34, 20.34, 20.39, 20.39, 20.48, 20.48, 20.6, 20.6, 20.71, 20.71, 20.84, 20.84, 20.94, 20.94, 21.06, 21.06, 21.23, 21.52, 21.68, 28.04, 28.52, 28.52, 28.98, 28.98, 29.04, 29.04, 29.11, 29.11, 29.18, 29.18, 29.22, 29.22, 29.26, 29.25, 29.34, 29.34, 29.41, 29.41, 29.49, 29.49, 29.53, 29.52, 29.56, 29.55, 29.66, 29.66, 29.73, 29.73, 29.8, 29.8, 29.84, 29.83, 29.87, 29.86, 29.95, 29.95, 29.99, 29.99, 30.06, 30.06, 30.2, 30.06, 30.92, 30.92, 31.16, 31.16, 31.36, 31.36, 31.46, 31.46, 31.8, 31.8, 31.96, 31.96, 32.4, 32.4, 33.08, 33.08, 33.58, 33.58, 33.7, 33.7, 33.82, 33.82, 34.04, 34.04, 34.32, 34.32, 34.82, 34.82, 35.64, 35.64, 35.94, 35.94, 36.2, 36.2, 36.68, 36.68, 37.1, 37.1, 37.38, 37.38, 38.7, 38.7, 38.88, 38.88, 39.24, 39.24, 39.52, 39.52, 40.02, 40.02, 40.3, 40.3, 41, 41, 41.46, 41.46, 41.68, 41.68, 41.9, 41.9, 42.56, 42.56, 43.2, 43.2, 43.5, 43.5, 43.82, 43.82, 44.42, 44.42, 44.88, 44.88, 45.18, 45.18, 45.5, 45.5, 45.82, 45.82, 46.64, 46.64, 47.08, 47.08, 47.42, 47.42, 48.34, 48.34, 48.46, 48.46, 48.68, 48.68, 48.94, 48.94, 49.26, 49.26, 49.66, 49.66, 50.08, 50.08, 51.1, 51.1, 51.48, 51.48, 51.72, 51.72, 52.32, 52.32, 52.72, 52.72, 52.8, 52.8, 53.1, 53.1, 53.66, 53.66, 53.98, 54.34, 54.7, 54.7, 55.26, 55.66, 56, 56, 56.18, 56.18, 56.4, 56.4, 56.56, 56.56, 57, 57, 57.38, 57.38, 57.84, 57.84, 58.24, 58.24, 58.4, 58.4, 58.78, 58.78, 59.48, 59.48, 59.66, 59.66, 59.84, 59.84, 60.06, 60.06, 60.3, 60.3, 60.42, 60.42, 60.78, 60.78, 61.3, 61.3, 61.76, 61.76, 61.86, 61.86, 62.14, 62.14, 62.8],
+        "align": "whisper-groq"
+      },
+      "provider": "groq"
+    },
+    {
+      "id": "finance-g796td",
+      "track": "finance",
+      "title": "Democrats’ Midterm Win Could Revive U.S. Economy and Renewable Energy",
+      "hook": "America’s midterm shock reshapes the economy, and the clean‑energy future could finally catch a break as Democrats take control in Washington now.",
+      "segments": [
+        {
+          "text": "America’s midterm shock reshapes the economy, and the clean‑energy future could finally catch a break as Democrats take control in Washington now.",
+          "visual": {
+            "kind": "headline",
+            "text": "Midterm Shock"
+          }
+        },
+        {
+          "text": "The November 5 elections saw Democrats win a sweeping majority in the House, ending President Donald Trump’s Republican dominance across U.S. districts.",
+          "visual": {
+            "kind": "map",
+            "place": "United States",
+            "lat": 38.9,
+            "lon": -77
+          }
+        },
+        {
+          "text": "Voters cited soaring oil prices, rising tariffs and ballooning national debt as key worries, blaming the Republican agenda for economic strain overall.",
+          "visual": {
+            "kind": "headline",
+            "text": "Economic Concerns"
+          }
+        },
+        {
+          "text": "Under Trump, clean‑energy projects faced regulatory rollbacks and funding cuts, turning the sector into collateral damage of a broader climate‑policy war still.",
+          "visual": {
+            "kind": "headline",
+            "text": "Clean‑energy Setback"
+          }
+        },
+        {
+          "text": "Renewable growth promises cheaper electricity, more jobs in manufacturing and installation, and reduced reliance on volatile fossil‑fuel markets for households across America.",
+          "visual": {
+            "kind": "headline",
+            "text": "Jobs & Bills"
+          }
+        },
+        {
+          "text": "Watch for Congress to pass green subsidies, tax incentives and infrastructure bills; their passage will signal whether the midterm wave translates into policy.",
+          "visual": {
+            "kind": "timeline",
+            "items": [
+              {
+                "when": "Nov 5 2026",
+                "what": "Democrats win House"
+              },
+              {
+                "when": "2027 Q1",
+                "what": "Potential green legislation"
+              }
+            ]
+          }
+        },
+        {
+          "text": "Analysts predict the election could shift corporate investment toward green technologies, accelerating innovation in batteries and solar panels.",
+          "visual": {
+            "kind": "headline",
+            "text": "Green Investment"
+          }
+        },
+        {
+          "text": "International markets are also watching; a U.S. green policy surge could boost global climate finance and set new standards worldwide.",
+          "visual": {
+            "kind": "headline",
+            "text": "Global Watch"
+          }
+        }
+      ],
+      "whyItMatters": "Ordinary Americans could see lower energy bills and new local jobs if renewable policies advance. Conversely, stalled action keeps prices high and climate risks rising.",
+      "context": "Midterm elections determine which party controls the House of Representatives for the next two years. This control shapes federal spending, tax law and energy regulation across the United States.",
+      "coverage": [
+        {
+          "outlet": "DW",
+          "angle": "Focuses on how economic issues like oil prices and debt drove the Republican defeat and what Democrats might do for the broader economy.",
+          "url": "https://www.dw.com/en/what-the-democrats-midterms-win-means-for-the-us-economy-and-trump/a-79853716?maca=en-rss-en-world-4025-rdf",
+          "emphasis": "economic impact",
+          "headline": "What the Democrats' midterms win means for the US economy and Trump",
+          "publishedAt": "2026-11-05T07:03:00.000Z"
+        },
+        {
+          "outlet": "The Guardian",
+          "angle": "Highlights the election as a victory for renewable energy developers, suggesting a rebound for the clean‑energy sector.",
+          "url": "https://www.theguardian.com/business/2026/nov/05/democrats-midterms-triumph-renewable-energy-industry-donald-trump",
+          "emphasis": "renewable sector",
+          "headline": "Will Democrats’ midterms triumph put wind back in sails of the renewables sector?",
+          "publishedAt": "2026-11-05T06:00:55.000Z"
+        }
+      ],
+      "coverageSummary": {
+        "agreement": "Both outlets report that Democrats won a sweeping midterm victory that could change U.S. policy direction.",
+        "differences": "DW emphasizes overall economic concerns, while The Guardian stresses the boost to the renewable energy industry."
+      },
+      "sources": [
+        {
+          "outlet": "DW",
+          "title": "What the Democrats' midterms win means for the US economy and Trump",
+          "url": "https://www.dw.com/en/what-the-democrats-midterms-win-means-for-the-us-economy-and-trump/a-79853716?maca=en-rss-en-world-4025-rdf",
+          "publishedAt": "2026-11-05T07:03:00.000Z"
+        },
+        {
+          "outlet": "The Guardian",
+          "title": "Will Democrats’ midterms triumph put wind back in sails of the renewables sector?",
+          "url": "https://www.theguardian.com/business/2026/nov/05/democrats-midterms-triumph-renewable-energy-industry-donald-trump",
+          "publishedAt": "2026-11-05T06:00:55.000Z"
+        }
+      ],
+      "location": {
+        "place": "United States",
+        "lat": 38.9,
+        "lon": -77
+      },
+      "publishedAt": "2026-11-05T07:03:00.000Z",
+      "generatedAt": "2026-11-05T07:18:11.536Z",
+      "estDurationSec": 68,
+      "audio": {
+        "src": "/audio/2b073deca09a849d.mp3",
+        "durationSec": 80.7,
+        "model": "Kokoro-82M",
+        "voice": "af_heart",
+        "key": "2b073deca09a849d",
+        "lang": "en",
+        "wordTimes": [0, 0.06, 0.06, 0.12, 0.12, 0.16, 0.16, 0.22, 0.22, 0.26, 0.25, 0.32, 0.32, 0.36, 0.32, 9.5, 9.5, 9.58, 9.58, 9.63, 9.63, 9.68, 9.68, 9.73, 9.73, 9.78, 9.78, 9.82, 9.8, 9.84, 9.84, 9.88, 9.87, 9.94, 9.94, 9.98, 9.97, 10.03, 10.03, 10.07, 10.05, 10.13, 10.13, 10.2, 10.13, 10.17, 10.13, 10.17, 10.13, 10.36, 10.36, 10.86, 10.86, 11.52, 11.52, 12.02, 12.02, 12.36, 12.36, 12.5, 12.5, 12.88, 12.88, 13.46, 13.46, 13.68, 13.68, 13.78, 13.78, 14.66, 14.66, 14.92, 14.92, 15.26, 15.26, 15.8, 15.8, 16.38, 16.38, 16.86, 16.86, 17.4, 17.4, 18.08, 18.08, 18.74, 18.74, 19.16, 19.58, 20, 20, 20.42, 20.42, 20.84, 20.84, 21.18, 21.18, 22.28, 22.28, 22.7, 22.7, 23.24, 23.24, 23.56, 23.56, 24, 24, 24.34, 24.34, 24.7, 24.7, 25.1, 25.1, 25.32, 25.32, 25.96, 25.96, 26.56, 26.56, 26.78, 26.78, 27.2, 27.2, 27.72, 27.72, 28.06, 28.06, 28.6, 28.6, 29, 29, 29.38, 30, 30.14, 30.14, 30.92, 30.92, 31.46, 31.46, 32.08, 32.08, 32.48, 32.48, 33.1, 33.1, 33.82, 33.82, 34.08, 34.08, 34.36, 34.36, 34.96, 34.96, 35.58, 35.58, 35.76, 35.76, 36.02, 36.02, 36.32, 36.32, 36.78, 36.78, 37.28, 37.28, 37.74, 37.74, 37.82, 37.82, 38.14, 38.14, 39.04, 39.04, 39.28, 39.28, 39.72, 40.12, 40.64, 40.64, 41.04, 41.04, 41.56, 41.56, 42.08, 42.08, 43, 43, 43.6, 43.6, 44.12, 44.12, 44.34, 44.34, 45, 45, 45.42, 45.42, 46.54, 46.54, 46.78, 46.78, 47.18, 47.18, 47.78, 47.78, 48.08, 48.08, 48.56, 48.56, 49, 49.38, 49.82, 49.82, 50.22, 50.22, 50.72, 50.72, 51.14, 51.14, 51.72, 51.74, 52.44, 52.44, 52.66, 52.66, 53.02, 53.02, 53.3, 53.3, 53.6, 53.6, 53.9, 53.9, 54.88, 54.88, 55.32, 55.32, 56.22, 56.22, 56.34, 56.34, 56.82, 56.82, 57.44, 57.92, 58.02, 58.02, 58.52, 58.52, 58.74, 58.74, 59.18, 59.18, 59.48, 59.48, 59.68, 59.68, 60.06, 60.06, 60.46, 60.46, 61.06, 61.06, 61.4, 61.4, 62.06, 62.32, 62.96, 62.96, 63.28, 63.28, 63.44, 63.44, 63.84, 63.84, 64.12, 64.12, 64.5, 64.5, 64.92, 64.92, 65.54, 65.54, 66.18, 66.18, 66.44, 66.44, 67.6, 67.6, 68.4, 68.4, 69.04, 69.04, 69.32, 69.32, 69.78, 69.78, 70.26, 70.26, 70.6, 70.6, 71.26, 71.56, 72.1, 72.1, 72.58, 72.58, 72.8, 72.8, 73.14, 73.14, 73.88, 73.88, 74.48, 74.48, 75.04, 75.04, 75.24, 75.24, 75.76, 75.76, 76.2, 76.2, 76.48, 76.48, 76.8, 76.8, 77.22, 77.22, 77.62, 77.62, 78.16, 78.16, 78.66, 78.66, 78.92, 78.92, 79.1, 79.1, 79.6, 79.6, 80.68],
+        "align": "whisper-groq"
+      },
+      "provider": "groq"
+    },
+    {
+      "id": "finance-76s2zz",
+      "track": "finance",
+      "title": "Democrats Win Congress, Trump Holds the Key",
+      "hook": "Democrats just won a decisive majority in Congress, but President Trump still holds the key to blocking their agenda for their plans.",
+      "segments": [
+        {
+          "text": "The election took place in Washington, D.C., where voters across the nation turned out to shape the next two years of policy.",
+          "visual": {
+            "kind": "headline",
+            "text": "Washington D.C. Election"
+          }
+        },
+        {
+          "text": "The Democratic Party secured a majority in both the House and Senate, a first since 2006 of legislative control for the upcoming session.",
+          "visual": null
+        },
+        {
+          "text": "Yet the president, a Republican, retains the power to veto legislation and influence key appointments that shape policy on issues like trade.",
+          "visual": {
+            "kind": "headline",
+            "text": "Trump Holds Veto"
+          }
+        },
+        {
+          "text": "Trump’s veto power means any bill must pass with a two‑thirds majority to override unless the congressional majority supports the law strongly.",
+          "visual": {
+            "kind": "map",
+            "place": "Washington D.C.",
+            "lat": 38.9072,
+            "lon": -77.0369
+          }
+        },
+        {
+          "text": "Democrats face obstacles in areas such as Iran policy, tariffs, and foreign aid, where executive authority can sway outcomes for their agenda.",
+          "visual": null
+        },
+        {
+          "text": "For everyday Americans, this means the future of jobs, trade deals, and international security could hinge on political negotiations in the next.",
+          "visual": {
+            "kind": "headline",
+            "text": "Impact on Jobs"
+          }
+        },
+        {
+          "text": "Stay tuned as Congress debates bills and the president weighs his veto options—watch the next week for key votes and their impact.",
+          "visual": {
+            "kind": "headline",
+            "text": "Watch the Votes"
+          }
+        }
+      ],
+      "whyItMatters": "If the Democrats can’t override the president’s vetoes, their plans for economic and foreign policy may stall. This could affect trade deals, jobs, and national security.",
+      "context": "In the 2026 midterm elections, Democrats gained a majority in both chambers of Congress. President Trump, a Republican, still controls veto power and can influence key appointments.",
+      "coverage": [
+        {
+          "outlet": "BBC News",
+          "angle": "Democrats win on affordability, but Trump can block plans",
+          "url": "https://www.bbc.co.uk/news/articles/ck1ex50x5q46o?at_medium=RSS&at_campaign=rss",
+          "emphasis": "affordability",
+          "headline": "Democrats won on affordability. Can they deliver it?",
+          "publishedAt": "2026-11-05T06:01:05.000Z"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "angle": "Democrats win Congress, but Trump can block promises",
+          "url": "https://www.aljazeera.com/news/2026/11/5/democrats-won-congress-but-can-they-deliver-on-their-promises?traffic_source=rss",
+          "emphasis": "policy obstacles",
+          "headline": "Democrats won Congress. But can they deliver on their promises?",
+          "publishedAt": "2026-11-05T00:25:43.000Z"
+        }
+      ],
+      "coverageSummary": {
+        "agreement": "Both outlets report that Democrats won a majority in Congress while President Trump retains veto power.",
+        "differences": "BBC focuses on affordability, Al Jazeera highlights broader policy obstacles like Iran and tariffs."
+      },
+      "sources": [
+        {
+          "outlet": "BBC News",
+          "title": "Democrats won on affordability. Can they deliver it?",
+          "url": "https://www.bbc.co.uk/news/articles/ck1ex50x5q46o?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-11-05T06:01:05.000Z"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Democrats won Congress. But can they deliver on their promises?",
+          "url": "https://www.aljazeera.com/news/2026/11/5/democrats-won-congress-but-can-they-deliver-on-their-promises?traffic_source=rss",
+          "publishedAt": "2026-11-05T00:25:43.000Z"
+        }
+      ],
+      "location": {
+        "place": "Washington, D.C.",
+        "lat": 38.9072,
+        "lon": -77.0369
+      },
+      "publishedAt": "2026-11-05T06:01:05.000Z",
+      "generatedAt": "2026-11-05T07:18:31.726Z",
+      "estDurationSec": 62,
+      "audio": {
+        "src": "/audio/f1dcf4ce53c62ed9.mp3",
+        "durationSec": 63.1,
+        "model": "Kokoro-82M",
+        "voice": "af_heart",
+        "key": "f1dcf4ce53c62ed9",
+        "lang": "en",
+        "wordTimes": [0, 0.04, 0.03, 0.11, 0.11, 0.15, 0.15, 0.2, 0.2, 0.24, 0.22, 0.33, 0.33, 0.38, 0.38, 0.43, 0.43, 0.49, 0.49, 0.54, 0.54, 0.58, 0.58, 0.63, 0.63, 0.69, 0.69, 0.73, 0.72, 0.76, 0.75, 0.8, 0.75, 7.9, 7.9, 7.94, 7.94, 7.98, 7.97, 8.02, 8.02, 8.06, 8.05, 8.15, 8.05, 8.09, 8.05, 8.22, 8.22, 8.78, 8.78, 9.36, 9.36, 9.54, 9.54, 9.96, 9.96, 10.34, 10.34, 10.48, 10.48, 10.7, 10.7, 10.9, 10.9, 11.4, 11.4, 11.74, 11.74, 12.48, 12.48, 12.78, 12.78, 13.06, 13.06, 13.84, 13.84, 14.38, 14.38, 14.82, 14.82, 15.52, 15.52, 16.1, 16.1, 16.24, 16.24, 16.58, 16.58, 17.06, 17.6, 17.78, 17.78, 17.92, 17.92, 18.46, 18.46, 18.76, 18.76, 19.8, 19.8, 20.22, 20.22, 20.36, 20.36, 20.66, 20.66, 20.94, 20.94, 21.24, 21.24, 21.86, 21.86, 22.6, 22.6, 23.1, 23.1, 23.42, 23.42, 23.88, 23.88, 24.52, 24.52, 24.86, 24.86, 25.34, 25.34, 25.6, 25.6, 25.88, 25.88, 26.28, 26.28, 26.64, 27.16, 27.5, 27.5, 27.8, 27.8, 28.22, 28.22, 28.78, 28.78, 29, 29, 29.26, 29.26, 29.6, 29.6, 29.98, 29.98, 30.14, 30.14, 30.28, 30.28, 30.72, 30.72, 31.2, 31.2, 31.48, 31.48, 32.22, 32.22, 32.74, 32.74, 32.98, 32.98, 33.34, 33.34, 33.98, 33.98, 34.56, 34.56, 34.8, 34.8, 34.96, 34.96, 35.44, 35.96, 36.3, 36.3, 36.8, 36.8, 37.3, 37.3, 37.62, 37.62, 37.98, 37.98, 38.22, 38.22, 38.42, 38.42, 38.74, 38.74, 39.68, 39.68, 40.3, 40.3, 40.54, 40.54, 40.84, 40.84, 41.34, 41.34, 41.84, 41.84, 42.26, 42.26, 42.82, 42.82, 43.24, 43.24, 43.48, 43.48, 43.98, 43.98, 44.3, 44.3, 44.44, 44.44, 44.84, 45.34, 45.48, 45.48, 45.84, 45.84, 46.82, 46.82, 47.26, 47.26, 47.52, 47.52, 47.74, 47.74, 48.02, 48.02, 48.26, 48.26, 49.06, 49.06, 49.36, 49.36, 49.72, 49.72, 50.28, 50.28, 50.76, 50.76, 51.32, 51.32, 51.82, 51.82, 52.1, 52.1, 52.4, 52.4, 52.8, 52.8, 53.54, 53.54, 53.96, 53.96, 54.06, 54.06, 54.34, 54.92, 55.06, 55.06, 55.52, 55.52, 55.82, 55.82, 56.26, 56.26, 56.7, 56.7, 57.08, 57.08, 57.36, 57.36, 57.44, 57.44, 57.82, 57.82, 58.26, 58.26, 58.46, 58.46, 58.72, 58.72, 60.12, 60.12, 60.32, 60.32, 60.52, 60.52, 60.8, 60.8, 60.96, 60.96, 61.18, 61.18, 61.58, 61.58, 61.98, 61.98, 62.1, 62.1, 63],
+        "align": "whisper-groq"
+      },
+      "provider": "groq"
+    },
+    {
+      "id": "world-1smbz2h",
+      "track": "world",
+      "title": "Joshua Wong sentenced to ten years under Hong Kong's security law",
+      "hook": "Joshua Wong, Hong Kong’s famed pro‑democracy voice, just received a ten‑year prison term, sparking fresh international outcry under the city’s national security law.",
+      "segments": [
+        {
+          "text": "Joshua Wong, Hong Kong’s famed pro‑democracy voice, just received a ten‑year prison term, sparking fresh international outcry under the city’s national security law.",
+          "visual": {
+            "kind": "headline",
+            "text": "Wong sentenced"
+          }
+        },
+        {
+          "text": "The court in Hong Kong’s capital sentenced the 30‑year‑old activist, marking his second conviction under Beijing‑imposed national security legislation that has been used to silence dissent since 2020.",
+          "visual": {
+            "kind": "map",
+            "place": "Hong Kong",
+            "lat": 22.3193,
+            "lon": 114.1694
+          }
+        },
+        {
+          "text": "Wong, a founding member of the Demosistō party, has been detained since 2020 and now faces a maximum‑security prison term that will keep him behind bars for a decade.",
+          "visual": {
+            "kind": "number",
+            "value": "10 years",
+            "label": "prison term"
+          }
+        },
+        {
+          "text": "The national security law, enacted in 2020, criminalises secession, subversion and foreign collusion, and has been criticized for crushing Hong Kong’s democratic movement.",
+          "visual": {
+            "kind": "timeline",
+            "items": [
+              {
+                "when": "2020",
+                "what": "Law enacted"
+              },
+              {
+                "when": "2020",
+                "what": "Wong detained"
+              },
+              {
+                "when": "2026",
+                "what": "Sentenced to 10 years"
+              }
+            ]
+          }
+        },
+        {
+          "text": "Since the law’s passage, dozens of activists have been arrested, with many sentences ranging from months to years, effectively silencing public protests.",
+          "visual": null
+        },
+        {
+          "text": "For everyday citizens, the crackdown limits free speech, threatens university campuses and could deter foreign businesses wary of political risk in the region.",
+          "visual": {
+            "kind": "compare",
+            "left": {
+              "label": "Free speech",
+              "value": "restricted"
+            },
+            "right": {
+              "label": "Business climate",
+              "value": "uncertain"
+            }
+          }
+        },
+        {
+          "text": "Watch for appeals, possible international sanctions, and how Hong Kong’s civil society adapts as more leaders face severe penalties under the security law.",
+          "visual": null
+        },
+        {
+          "text": "Global human‑rights groups say Wong’s sentence signals a broader erosion of autonomy, urging governments to pressure Beijing for legal reforms.",
+          "visual": {
+            "kind": "headline",
+            "text": "global outcry"
+          }
+        }
+      ],
+      "whyItMatters": "The sentence shows how the security law is being used to silence dissent, affecting everyday freedoms. It also raises concerns for international investors and diplomatic relations.",
+      "context": "Hong Kong’s national security law was imposed by Beijing in 2020 to curb protests. It criminalises acts like secession and foreign collusion, leading to many arrests of pro‑democracy activists.",
+      "coverage": [
+        {
+          "outlet": "BBC News",
+          "angle": "Presented Wong as the emblematic face of Hong Kong’s protest movement.",
+          "url": "https://www.bbc.co.uk/news/articles/cwp9g3rlp8jlo?at_medium=RSS&at_campaign=rss",
+          "emphasis": "protest leader",
+          "headline": "Joshua Wong, face of Hong Kong's pro-democracy protests, jailed for 10 years",
+          "publishedAt": "2026-11-05T06:35:25.000Z"
+        },
+        {
+          "outlet": "NPR",
+          "angle": "Framed the sentencing as part of a broader crackdown on the city’s pro‑democracy movement.",
+          "url": "https://www.npr.org/2026/11/05/g-s1-152032/hong-kong-activist-wong-sentenced",
+          "emphasis": "legal crackdown",
+          "headline": "Hong Kong activist Joshua Wong sentenced to 10 years in prison",
+          "publishedAt": "2026-11-05T05:29:56.000Z"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "angle": "Highlighted Wong’s global profile as the movement’s most recognizable figure.",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/11/5/hong-kong-activist-joshua-wong-sentenced-to-ten-years-in-jail?traffic_source=rss",
+          "emphasis": "global symbol",
+          "headline": "Hong Kong activist Joshua Wong sentenced to ten years in jail",
+          "publishedAt": "2026-11-05T04:04:57.000Z"
+        },
+        {
+          "outlet": "The Guardian",
+          "angle": "Stressed that this is his second conviction, noting the foreign‑collusion charge.",
+          "url": "https://www.theguardian.com/world/2026/nov/05/hong-kong-joshua-wong-sentenced-national-security-case",
+          "emphasis": "legal detail",
+          "headline": "Hong Kong pro-democracy activist Joshua Wong sentenced to 10 years in prison in national security case",
+          "publishedAt": "2026-11-05T04:04:49.000Z"
+        }
+      ],
+      "coverageSummary": {
+        "agreement": "All outlets report that Joshua Wong, aged 30, was sentenced to ten years in prison for a second conviction under Hong Kong’s national security law.",
+        "differences": "BBC mentions hundreds detained, NPR emphasizes the crackdown, Al Jazeera focuses on his global image, and The Guardian adds the foreign‑collusion charge detail."
+      },
+      "sources": [
+        {
+          "outlet": "BBC News",
+          "title": "Joshua Wong, face of Hong Kong's pro-democracy protests, jailed for 10 years",
+          "url": "https://www.bbc.co.uk/news/articles/cwp9g3rlp8jlo?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-11-05T06:35:25.000Z"
+        },
+        {
+          "outlet": "NPR",
+          "title": "Hong Kong activist Joshua Wong sentenced to 10 years in prison",
+          "url": "https://www.npr.org/2026/11/05/g-s1-152032/hong-kong-activist-wong-sentenced",
+          "publishedAt": "2026-11-05T05:29:56.000Z"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Hong Kong activist Joshua Wong sentenced to ten years in jail",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/11/5/hong-kong-activist-joshua-wong-sentenced-to-ten-years-in-jail?traffic_source=rss",
+          "publishedAt": "2026-11-05T04:04:57.000Z"
+        },
+        {
+          "outlet": "The Guardian",
+          "title": "Hong Kong pro-democracy activist Joshua Wong sentenced to 10 years in prison in national security case",
+          "url": "https://www.theguardian.com/world/2026/nov/05/hong-kong-joshua-wong-sentenced-national-security-case",
+          "publishedAt": "2026-11-05T04:04:49.000Z"
+        }
+      ],
+      "location": {
+        "place": "Hong Kong",
+        "lat": 22.3193,
+        "lon": 114.1694
+      },
+      "publishedAt": "2026-11-05T06:35:25.000Z",
+      "generatedAt": "2026-11-05T07:20:02.815Z",
+      "estDurationSec": 76,
+      "audio": {
+        "src": "/audio/9328978d44572172.mp3",
+        "durationSec": 87.6,
+        "model": "Kokoro-82M",
+        "voice": "af_heart",
+        "key": "9328978d44572172",
+        "lang": "en",
+        "wordTimes": [0, 0.54, 0.54, 1.22, 1.22, 1.63, 1.63, 2.12, 2.12, 2.44, 2.44, 3.22, 3.22, 4.14, 4.14, 4.32, 4.32, 4.72, 4.72, 4.88, 4.88, 5.34, 5.34, 5.68, 5.68, 6.2, 6.2, 6.96, 6.96, 7.38, 7.38, 7.94, 7.94, 8.5, 8.5, 8.88, 8.88, 9.06, 9.06, 9.46, 9.46, 9.78, 9.78, 10.28, 10.28, 10.68, 11.04, 11.18, 11.18, 11.52, 11.52, 11.74, 11.74, 12.09, 12.09, 12.5, 12.5, 12.86, 12.86, 13.66, 13.66, 14.02, 14.02, 14.8, 14.8, 15.94, 15.94, 16.24, 16.24, 16.5, 16.5, 16.82, 16.82, 17.34, 17.34, 17.72, 17.72, 18.92, 18.92, 19.36, 19.36, 19.94, 19.94, 20.66, 20.66, 21.44, 21.44, 21.58, 21.58, 21.7, 21.7, 21.98, 21.98, 22.16, 22.16, 22.62, 22.62, 23.14, 23.14, 23.66, 23.66, 24.1, 24.3, 25.3, 25.3, 25.44, 25.44, 25.8, 25.8, 26.14, 26.14, 26.38, 26.38, 26.5, 26.5, 27, 27, 27.98, 27.98, 28.16, 28.16, 28.32, 28.32, 28.76, 28.76, 29.18, 29.18, 29.62, 29.62, 30.46, 30.46, 30.72, 30.72, 31.18, 31.18, 31.44, 31.44, 32.38, 32.38, 32.76, 32.76, 33.14, 33.14, 33.68, 33.68, 33.78, 33.78, 34, 34, 34.2, 34.2, 34.6, 34.6, 35.02, 35.02, 35.38, 35.38, 35.48, 35.48, 35.78, 36.36, 36.5, 36.5, 36.84, 36.84, 37.34, 37.34, 37.7, 37.7, 38.36, 38.36, 38.6, 38.6, 39.74, 39.74, 40.46, 40.46, 41.32, 41.32, 42.3, 42.3, 42.38, 42.38, 42.62, 42.62, 43.08, 43.08, 43.74, 43.74, 43.96, 43.96, 44.12, 44.12, 44.54, 44.54, 45.02, 45.02, 45.38, 45.38, 45.78, 45.78, 46.34, 46.34, 46.74, 46.74, 47.18, 47.28, 47.92, 47.92, 48.16, 48.16, 48.44, 48.44, 49.42, 49.42, 49.72, 49.72, 49.94, 49.94, 50.38, 50.38, 50.7, 50.7, 50.8, 50.8, 51.58, 51.58, 51.96, 51.96, 52.26, 52.26, 52.76, 52.76, 53.36, 53.36, 53.68, 53.68, 54, 54, 54.18, 54.18, 55.14, 55.14, 55.46, 55.46, 56.18, 56.18, 56.66, 56.66, 57.28, 57.84, 58, 58, 58.34, 58.34, 59.14, 59.14, 59.46, 59.46, 59.9, 59.9, 60.24, 60.24, 60.54, 60.54, 61.02, 61.02, 61.84, 61.84, 62.46, 62.46, 62.92, 62.92, 63.56, 63.56, 63.74, 63.74, 64.08, 64.08, 64.5, 64.5, 65, 65, 65.52, 65.52, 65.78, 65.78, 66.14, 66.14, 66.56, 66.56, 66.8, 66.8, 66.88, 66.88, 67.16, 67.22, 67.96, 67.96, 68.22, 68.22, 68.94, 68.94, 69.6, 69.6, 70.18, 70.18, 70.7, 70.7, 71.54, 71.54, 71.74, 71.74, 72.06, 72.06, 72.72, 72.72, 72.86, 72.86, 73.42, 73.42, 74.1, 74.1, 74.48, 74.48, 74.66, 74.66, 75, 75, 75.42, 75.42, 75.8, 75.8, 76.2, 76.2, 76.64, 76.64, 76.78, 76.78, 77.16, 77.16, 77.48, 77.9, 78.24, 78.24, 78.88, 78.88, 79.28, 79.28, 79.66, 79.66, 80.16, 80.16, 80.64, 80.64, 81.48, 81.48, 81.68, 81.68, 82.02, 82.02, 82.48, 82.48, 82.78, 82.78, 83.24, 83.24, 84.16, 84.16, 84.64, 84.64, 84.98, 84.98, 85.3, 85.3, 85.74, 85.74, 86.12, 86.12, 86.4, 86.4, 87.52],
+        "align": "whisper-groq"
+      },
+      "provider": "groq"
+    },
+    {
+      "id": "world-1tzct4j",
+      "track": "world",
+      "title": "Mother and Daughter Killed in Suspected Grizzly Attack in British Columbia",
+      "hook": "A quiet British Columbia community was shattered when a mother and her daughter were found dead, suspected victims of a grizzly bear attack.",
+      "segments": [
+        {
+          "text": "A quiet British Columbia community was shattered when a mother and her daughter were found dead, suspected victims of a grizzly bear attack.",
+          "visual": {
+            "kind": "headline",
+            "text": "Tragic Bear Attack"
+          }
+        },
+        {
+          "text": "Authorities say the women disappeared over the weekend, prompting a search that ended with their bodies recovered near their home.",
+          "visual": {
+            "kind": "map",
+            "place": "British Columbia",
+            "lat": 53.7267,
+            "lon": -127.6476
+          }
+        },
+        {
+          "text": "Conservation officers now believe more than one grizzly may have been involved, based on evidence gathered at the remote scene.",
+          "visual": {
+            "kind": "headline",
+            "text": "Multiple Bears?"
+          }
+        },
+        {
+          "text": "The incident echoes a previous grizzly attack earlier this year that injured a group of schoolchildren in the same province.",
+          "visual": null
+        },
+        {
+          "text": "British Columbia reports roughly 30 bear-related incidents annually, most involving black bears, making grizzly attacks relatively rare but deadly for humans.",
+          "visual": null
+        },
+        {
+          "text": "Locals fear increased human‑bear interactions as development expands into wilderness, prompting calls for better wildlife management and education among communities.",
+          "visual": {
+            "kind": "headline",
+            "text": "Community Concerns"
+          }
+        },
+        {
+          "text": "For ordinary residents, the tragedy highlights the importance of staying alert in bear country and respecting wildlife warnings issued by authorities.",
+          "visual": {
+            "kind": "map",
+            "place": "British Columbia",
+            "lat": 53.7267,
+            "lon": -127.6476
+          }
+        },
+        {
+          "text": "Authorities will continue investigations and monitor bear activity, while families and neighbors mourn the loss and seek answers in this community.",
+          "visual": {
+            "kind": "headline",
+            "text": "Ongoing Investigation"
+          }
+        }
+      ],
+      "whyItMatters": "Grizzly attacks are rare but can be fatal, reminding residents to heed safety guidelines. Understanding wildlife behavior helps prevent future tragedies.",
+      "context": "British Columbia is home to both black and grizzly bears. Human expansion into bear habitats has increased encounters, prompting wildlife officials to issue safety advisories.",
+      "coverage": [
+        {
+          "outlet": "BBC News",
+          "angle": "Focused on the suspected animal involvement and the deaths",
+          "url": "https://www.bbc.co.uk/news/articles/cqvgry8k5d01o?at_medium=RSS&at_campaign=rss",
+          "emphasis": "suspected attack",
+          "headline": "Mother and daughter die after suspected grizzly bear attack in Canada",
+          "publishedAt": "2026-11-04T23:50:40.000Z"
+        },
+        {
+          "outlet": "The Guardian",
+          "angle": "Confirmed the killings and highlighted the possibility of multiple bears",
+          "url": "https://www.theguardian.com/world/2026/nov/04/canada-bear-attack-mother-daughter-killed",
+          "emphasis": "multiple bears",
+          "headline": "Mother and daughter killed in grizzly bear attack, Canadian authorities confirm",
+          "publishedAt": "2026-11-04T19:42:47.000Z"
+        }
+      ],
+      "coverageSummary": {
+        "agreement": "Both outlets report that a mother and her daughter were killed in British Columbia and that a grizzly bear attack is suspected.",
+        "differences": "The Guardian confirms the deaths and suggests multiple bears were involved, while the BBC emphasizes the suspicion of an animal without confirming details."
+      },
+      "sources": [
+        {
+          "outlet": "BBC News",
+          "title": "Mother and daughter die after suspected grizzly bear attack in Canada",
+          "url": "https://www.bbc.co.uk/news/articles/cqvgry8k5d01o?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-11-04T23:50:40.000Z"
+        },
+        {
+          "outlet": "The Guardian",
+          "title": "Mother and daughter killed in grizzly bear attack, Canadian authorities confirm",
+          "url": "https://www.theguardian.com/world/2026/nov/04/canada-bear-attack-mother-daughter-killed",
+          "publishedAt": "2026-11-04T19:42:47.000Z"
+        }
+      ],
+      "location": {
+        "place": "British Columbia, Canada",
+        "lat": 53.7267,
+        "lon": -127.6476
+      },
+      "publishedAt": "2026-11-04T23:50:40.000Z",
+      "generatedAt": "2026-11-05T07:20:36.727Z",
+      "estDurationSec": 66,
+      "audio": {
+        "src": "/audio/189f2ab7863acb3d.mp3",
+        "durationSec": 71.3,
+        "model": "Kokoro-82M",
+        "voice": "af_heart",
+        "key": "189f2ab7863acb3d",
+        "lang": "en",
+        "wordTimes": [0, 0.18, 0.18, 0.5, 0.5, 0.93, 0.93, 1.41, 1.41, 1.94, 1.94, 2.17, 2.17, 2.7, 2.7, 2.98, 2.98, 3.16, 3.16, 3.53, 3.53, 3.76, 3.76, 3.99, 3.99, 4.47, 4.47, 4.75, 4.75, 5.07, 5.07, 5.5, 5.5, 6.03, 6.03, 6.46, 6.46, 6.64, 6.64, 6.82, 6.82, 7.24, 7.24, 7.52, 7.52, 8.2, 8.5, 9.12, 9.12, 9.42, 9.42, 9.58, 9.58, 9.78, 9.78, 10.28, 10.28, 10.6, 10.6, 10.74, 10.74, 11.58, 11.58, 12.12, 12.12, 12.24, 12.24, 12.5, 12.5, 12.86, 12.86, 13.16, 13.16, 13.42, 13.42, 13.58, 13.58, 13.94, 13.94, 14.48, 14.48, 14.76, 14.76, 15.04, 15.04, 15.44, 15.78, 16.22, 16.22, 16.98, 16.98, 17.54, 17.54, 17.94, 17.94, 18.2, 18.2, 18.4, 18.4, 18.64, 18.64, 19.12, 19.12, 19.64, 19.64, 19.78, 19.78, 19.88, 19.88, 20.32, 20.32, 21.18, 21.18, 21.36, 21.36, 21.78, 21.78, 22.26, 22.26, 22.6, 22.6, 22.72, 22.72, 22.96, 22.96, 23.36, 23.42, 23.96, 23.96, 24.36, 24.36, 24.76, 24.76, 25.08, 25.08, 25.58, 25.58, 26.1, 26.1, 26.5, 26.5, 26.9, 26.9, 27.22, 27.22, 27.4, 27.4, 28, 28, 28.28, 28.28, 28.48, 28.48, 28.64, 28.64, 28.82, 28.82, 29.28, 29.28, 29.58, 29.58, 29.66, 29.66, 29.92, 29.92, 30.32, 30.96, 31.16, 31.16, 31.56, 31.56, 32.14, 32.14, 32.54, 32.54, 32.94, 32.94, 33.52, 33.52, 34.04, 34.04, 35.08, 35.08, 35.36, 35.36, 35.84, 35.84, 36.14, 36.14, 36.5, 36.5, 37.28, 37.28, 37.78, 37.78, 38.24, 38.24, 38.82, 38.82, 39.36, 39.36, 39.88, 39.88, 40.22, 40.22, 40.52, 40.52, 40.82, 41.5, 41.84, 41.84, 42.2, 42.2, 42.82, 42.82, 43.32, 43.32, 44, 44, 44.66, 44.66, 45.08, 45.08, 45.76, 45.76, 46.14, 46.14, 46.5, 46.5, 47.68, 47.68, 48.06, 48.06, 48.3, 48.3, 48.62, 48.62, 49.14, 49.14, 49.72, 49.72, 50.28, 50.28, 50.76, 50.76, 51.26, 51.26, 51.78, 52.46, 52.56, 52.56, 53.04, 53.04, 54.24, 54.24, 54.34, 54.34, 54.64, 54.64, 55.22, 55.22, 55.44, 55.44, 55.82, 55.82, 56.1, 56.1, 56.38, 56.38, 56.76, 56.76, 57.1, 57.1, 57.24, 57.24, 57.66, 57.66, 58.36, 58.36, 58.78, 58.78, 59.32, 59.32, 59.82, 59.82, 60.42, 60.42, 60.7, 60.7, 61.28, 61.98, 62.52, 62.52, 62.7, 62.7, 63.16, 63.16, 63.74, 63.74, 64.64, 64.64, 65, 65, 65.32, 65.32, 65.86, 65.86, 66.64, 66.64, 67.12, 67.12, 67.38, 67.38, 67.68, 67.68, 68.38, 68.38, 68.54, 68.54, 68.92, 68.92, 69.14, 69.14, 69.4, 69.4, 69.86, 69.86, 70.14, 70.14, 70.26, 70.26, 71.22],
+        "align": "whisper-groq"
+      },
+      "provider": "groq"
+    },
+    {
+      "id": "world-19g3lpi",
+      "track": "world",
+      "title": "Bob Dylan Meets Pope Leo at the Vatican",
+      "hook": "Bob Dylan, the legendary American singer‑songwriter, stepped into the Vatican today, meeting Pope Leo in a brief, historic encounter.",
+      "segments": [
+        {
+          "text": "Bob Dylan, the legendary American singer‑songwriter, stepped into the Vatican today, meeting Pope Leo in a brief, historic encounter that stunned fans worldwide.",
+          "visual": {
+            "kind": "headline",
+            "text": "Dylan Meets Pope"
+          }
+        },
+        {
+          "text": "Inside the Apostolic Palace, the Pope greeted Dylan in the papal apartments, exchanging a quick handshake before the musician returned to his Italian tour schedule.",
+          "visual": {
+            "kind": "map",
+            "place": "Vatican City",
+            "lat": 41.9029,
+            "lon": 12.4534
+          }
+        },
+        {
+          "text": "Pope Leo has long admired Dylan’s poetry, even quoting his lyrics in a recent anti‑nuclear rearmament book preface, highlighting the artist’s moral influence.",
+          "visual": {
+            "kind": "headline",
+            "text": "Pope Quotes Dylan"
+          }
+        },
+        {
+          "text": "The meeting occurred between two sold‑out concerts in Italy, giving Dylan a rare pause to discuss faith, art, and peace.",
+          "visual": null
+        },
+        {
+          "text": "For believers, the encounter signals a bridge between popular culture and the Catholic Church, while fans see it as validation of Dylan’s enduring relevance.",
+          "visual": {
+            "kind": "headline",
+            "text": "Cultural Bridge"
+          }
+        },
+        {
+          "text": "It underscores the Vatican’s outreach to modern artists, aiming to connect spiritual messages with contemporary audiences amid global tensions over nuclear weapons.",
+          "visual": {
+            "kind": "headline",
+            "text": "Vatican Outreach"
+          }
+        },
+        {
+          "text": "Observers will watch for any joint statements, future collaborations, or policy discussions that might emerge from this brief yet symbolically powerful meeting.",
+          "visual": null
+        },
+        {
+          "text": "The brief handshake may seem small, but its symbolism could echo through future cultural and diplomatic dialogues worldwide.",
+          "visual": null
+        }
+      ],
+      "whyItMatters": "The meeting shows the Catholic Church reaching out to iconic cultural figures, potentially drawing new audiences to its message. It also highlights Dylan’s lasting influence beyond music, touching political and spiritual realms.",
+      "context": "Bob Dylan, a Nobel‑prize‑winning songwriter, has long been known for poetic lyrics that address social issues. Pope Leo, the first American pontiff, frequently references contemporary art in his teachings.",
+      "coverage": [
+        {
+          "outlet": "NPR",
+          "angle": "Emphasizes the surprise visit and brief nature of the encounter during Dylan's tour.",
+          "url": "https://www.npr.org/2026/11/05/g-s1-152035/vatican-pope-bob-dylan",
+          "emphasis": "cultural moment",
+          "headline": "Bob Dylan comes knockin' on pope's door as Leo welcomes legend to Vatican",
+          "publishedAt": "2026-11-05T07:02:12.000Z"
+        },
+        {
+          "outlet": "BBC News",
+          "angle": "Highlights the Pope's earlier citation of Dylan's work in an anti‑nuclear context.",
+          "url": "https://www.bbc.co.uk/news/articles/cm0e035n13ylo?at_medium=RSS&at_campaign=rss",
+          "emphasis": "political link",
+          "headline": "Pope Leo hosts Bob Dylan at official residence in Rome",
+          "publishedAt": "2026-11-05T02:09:23.000Z"
+        }
+      ],
+      "coverageSummary": {
+        "agreement": "Both outlets report that Bob Dylan met Pope Leo at the Vatican and that the encounter was brief.",
+        "differences": "NPR focuses on the timing of the meeting within Dylan's Italy concerts, while BBC stresses the Pope's prior quoting of Dylan regarding nuclear rearmament."
+      },
+      "sources": [
+        {
+          "outlet": "NPR",
+          "title": "Bob Dylan comes knockin' on pope's door as Leo welcomes legend to Vatican",
+          "url": "https://www.npr.org/2026/11/05/g-s1-152035/vatican-pope-bob-dylan",
+          "publishedAt": "2026-11-05T07:02:12.000Z"
+        },
+        {
+          "outlet": "BBC News",
+          "title": "Pope Leo hosts Bob Dylan at official residence in Rome",
+          "url": "https://www.bbc.co.uk/news/articles/cm0e035n13ylo?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-11-05T02:09:23.000Z"
+        }
+      ],
+      "location": {
+        "place": "Vatican City",
+        "lat": 41.9029,
+        "lon": 12.4534
+      },
+      "publishedAt": "2026-11-05T07:02:12.000Z",
+      "generatedAt": "2026-11-05T07:20:57.588Z",
+      "estDurationSec": 71,
+      "audio": {
+        "src": "/audio/cf6c90476b02e5a3.mp3",
+        "durationSec": 77.8,
+        "model": "Kokoro-82M",
+        "voice": "af_heart",
+        "key": "cf6c90476b02e5a3",
+        "lang": "en",
+        "wordTimes": [0, 0.22, 0.22, 0.84, 0.84, 0.96, 0.96, 1.42, 1.42, 2.06, 2.06, 3.44, 3.44, 3.62, 3.62, 3.84, 3.84, 3.94, 3.94, 4.3, 4.3, 5.22, 5.22, 5.46, 5.46, 5.82, 5.82, 6.12, 6.12, 6.32, 6.32, 6.4, 6.4, 7, 7, 7.38, 7.38, 7.92, 7.92, 8.32, 8.32, 8.72, 8.72, 9.16, 9.16, 9.94, 9.94, 10.7, 10.7, 10.9, 10.9, 11.56, 11.56, 12.38, 12.38, 12.52, 12.52, 12.7, 12.7, 13.1, 13.1, 13.46, 13.46, 13.74, 13.74, 13.86, 13.86, 14.14, 14.14, 14.86, 14.86, 15.86, 15.86, 16.08, 16.08, 16.3, 16.3, 16.86, 16.86, 17.26, 17.26, 17.44, 17.44, 17.84, 17.84, 18.38, 18.38, 18.64, 18.64, 18.8, 18.8, 19.28, 19.28, 19.6, 19.6, 20.24, 20, 20.7, 20.7, 21.14, 21.14, 21.42, 21.42, 21.82, 21.82, 22.3, 22.3, 22.8, 22.8, 23.8, 23.8, 24.02, 24.02, 24.38, 24.38, 24.58, 24.58, 24.92, 24.92, 25.2, 25.2, 25.3, 25.3, 25.72, 25.72, 26.62, 26.62, 27.28, 27.28, 27.5, 27.5, 28.58, 28.58, 29, 29, 29.22, 29.22, 29.74, 29.74, 30.16, 30.16, 30.66, 31.2, 31.32, 31.32, 31.6, 31.6, 32, 32, 32.3, 32.3, 32.62, 32.62, 33.1, 33.1, 33.48, 33.48, 33.78, 33.78, 34.3, 34.3, 34.78, 34.78, 35.08, 35.08, 35.32, 35.32, 35.54, 35.54, 35.86, 35.86, 36.06, 36.06, 36.4, 36.4, 37.14, 37.14, 37.58, 37.58, 37.76, 37.76, 38.1, 38.6, 38.74, 38.74, 39.5, 39.5, 39.8, 39.8, 40.22, 40.22, 40.72, 40.72, 40.96, 40.96, 41.26, 41.26, 41.6, 41.6, 42, 42, 42.5, 42.5, 43, 43, 43.1, 43.1, 43.38, 43.38, 43.88, 43.88, 44.56, 44.56, 44.94, 44.94, 45.2, 45.2, 45.34, 45.34, 45.58, 45.58, 45.9, 45.9, 46.4, 46.4, 46.9, 46.9, 47.48, 47.48, 47.92, 48.1, 48.7, 48.7, 49.3, 49.3, 49.52, 49.52, 50.08, 50.08, 50.46, 50.46, 50.92, 50.92, 51.24, 51.24, 52.44, 52.44, 52.64, 52.64, 52.86, 52.86, 53.2, 53.2, 53.72, 53.72, 54.24, 54.24, 54.9, 54.9, 55.38, 55.38, 56.12, 56.12, 56.82, 56.82, 57.26, 57.26, 57.7, 57.7, 58.14, 58.14, 58.56, 58.56, 58.98, 59.56, 60.08, 60.08, 60.32, 60.32, 60.66, 60.66, 60.82, 60.82, 61.04, 61.04, 61.34, 61.34, 62.34, 62.34, 62.66, 62.66, 63.3, 63.3, 64.08, 64.08, 64.54, 64.54, 65.02, 65.02, 65.64, 65.64, 65.9, 65.9, 66.3, 66.3, 66.58, 66.58, 66.74, 66.74, 67.22, 67.22, 67.76, 67.76, 68.5, 68.5, 69.06, 69.06, 69.46, 70.02, 70.14, 70.14, 70.38, 70.38, 70.92, 70.92, 71.16, 71.16, 71.42, 71.42, 72.02, 72.02, 72.5, 72.5, 72.64, 72.64, 73.04, 73.04, 73.36, 73.36, 73.68, 73.68, 74.06, 74.06, 74.48, 74.48, 75, 75, 75.5, 75.5, 75.98, 75.98, 76.66, 76.66, 77.7],
+        "align": "whisper-groq"
+      },
+      "provider": "groq"
+    },
+    {
+      "id": "india-kkuzks",
+      "track": "india",
+      "title": "Delhi Police Files FIR Against Meta Over Child Abuse Content",
+      "hook": "Delhi police filed a formal complaint against Meta, accusing it of hosting child sexual abuse material—a move that could reshape social media oversight in India.",
+      "segments": [
+        {
+          "text": "Delhi police filed a formal complaint against Meta, accusing it of hosting child sexual abuse material—a move that could reshape social media oversight in India.",
+          "visual": {
+            "kind": "headline",
+            "text": "Delhi Police Files FIR Against Meta"
+          }
+        },
+        {
+          "text": "Police received a complaint listing about ten links that allegedly spread the material on Meta’s platforms, prompting an immediate investigation in Delhi.",
+          "visual": {
+            "kind": "number",
+            "value": "10",
+            "label": "Flagged Links"
+          }
+        },
+        {
+          "text": "An official said the police are verifying the claims, while Meta has yet to respond publicly. The case highlights growing scrutiny of online content.",
+          "visual": {
+            "kind": "headline",
+            "text": "Official Confirms Investigation"
+          }
+        },
+        {
+          "text": "Child sexual abuse material is illegal under Indian law, and platforms are required to remove such content promptly. Failure can lead to legal penalties.",
+          "visual": {
+            "kind": "headline",
+            "text": "Illegal Content Under Indian Law"
+          }
+        },
+        {
+          "text": "Meta, the owner of Facebook and Instagram, hosts billions of posts daily. India has tightened rules to curb harmful content on digital spaces.",
+          "visual": {
+            "kind": "headline",
+            "text": "Meta Platforms"
+          }
+        },
+        {
+          "text": "Delhi Police’s FIR is a formal notice that can trigger court action, potentially leading to fines or platform restrictions if the allegations are proven.",
+          "visual": {
+            "kind": "headline",
+            "text": "Potential Court Action"
+          }
+        },
+        {
+          "text": "Parents and users worry that such content could reach children. The investigation signals a push for stricter enforcement and safer online environments.",
+          "visual": {
+            "kind": "headline",
+            "text": "Child Safety Concern"
+          }
+        },
+        {
+          "text": "Stay tuned for Meta’s response and any court orders that may follow. Updates will show how India’s digital policy evolves.",
+          "visual": {
+            "kind": "headline",
+            "text": "Watch for Updates"
+          }
+        }
+      ],
+      "whyItMatters": "Parents and users worry that child sexual abuse material could reach children on popular platforms. The investigation signals a push for stricter enforcement and safer online environments.",
+      "context": "India has strict laws against child sexual abuse material, and social media platforms must remove such content promptly. Delhi Police’s filing of an FIR is a formal step that can lead to legal action against the platform if the allegations are proven.",
+      "coverage": [
+        {
+          "outlet": "The Hindu",
+          "angle": "Delhi Police registers FIR over alleged circulation of child sexual abuse material on Meta platforms",
+          "url": "https://www.thehindu.com/news/cities/Delhi/delhi-police-registers-fir-over-alleged-circulation-of-child-sexual-abuse-material-on-meta-platforms/article71668968.ece",
+          "emphasis": "legal action",
+          "headline": "Delhi Police registers FIR over alleged circulation of child sexual abuse material on Meta platforms",
+          "publishedAt": "2026-11-05T07:32:06.000Z"
+        },
+        {
+          "outlet": "Times of India",
+          "angle": "Meta under scanner as Delhi Police files FIR over child abuse content: NHRC",
+          "url": "https://timesofindia.indiatimes.com/india/meta-under-scanner-as-delhi-police-files-fir-over-child-abuse-content-nhrc/articleshow/135559539.cms",
+          "emphasis": "investigative scrutiny",
+          "headline": "Meta under scanner as Delhi Police files FIR over child abuse content: NHRC",
+          "publishedAt": "2026-11-05T05:06:33.000Z"
+        }
+      ],
+      "coverageSummary": {
+        "agreement": "Both outlets report that Delhi Police has filed a formal complaint against Meta over child sexual abuse content.",
+        "differences": "The Hindu specifies that about ten links were flagged, while the Times of India does not mention the number and adds that the NHRC is involved."
+      },
+      "sources": [
+        {
+          "outlet": "The Hindu",
+          "title": "Delhi Police registers FIR over alleged circulation of child sexual abuse material on Meta platforms",
+          "url": "https://www.thehindu.com/news/cities/Delhi/delhi-police-registers-fir-over-alleged-circulation-of-child-sexual-abuse-material-on-meta-platforms/article71668968.ece",
+          "publishedAt": "2026-11-05T07:32:06.000Z"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Meta under scanner as Delhi Police files FIR over child abuse content: NHRC",
+          "url": "https://timesofindia.indiatimes.com/india/meta-under-scanner-as-delhi-police-files-fir-over-child-abuse-content-nhrc/articleshow/135559539.cms",
+          "publishedAt": "2026-11-05T05:06:33.000Z"
+        }
+      ],
+      "location": {
+        "place": "Delhi",
+        "lat": 28.6139,
+        "lon": 77.209
+      },
+      "publishedAt": "2026-11-05T07:32:06.000Z",
+      "generatedAt": "2026-11-05T07:42:58.962Z",
+      "estDurationSec": 74,
+      "audio": {
+        "src": "/audio/d0a6abf2a9b892fe.mp3",
+        "durationSec": 78.5,
+        "model": "Kokoro-82M",
+        "voice": "af_heart",
+        "key": "d0a6abf2a9b892fe",
+        "lang": "en",
+        "wordTimes": [0, 0.24, 0.24, 0.6, 0.6, 1.16, 1.16, 1.34, 1.34, 1.62, 1.62, 2.16, 2.16, 2.62, 2.62, 3.14, 3.14, 3.82, 3.82, 4.06, 4.06, 4.24, 4.24, 4.58, 4.58, 5.14, 5.14, 5.62, 5.62, 6.06, 6.06, 7.3, 7.3, 7.6, 7.6, 7.86, 7.86, 8.04, 8.04, 8.48, 8.48, 8.84, 8.84, 9.3, 9.3, 9.76, 9.76, 10.12, 10.12, 10.42, 10.96, 11.3, 11.3, 11.76, 11.76, 11.92, 11.92, 12.28, 12.28, 12.72, 12.72, 13.18, 13.18, 13.54, 13.54, 13.86, 13.86, 14.32, 14.32, 14.74, 14.74, 15.16, 15.16, 15.32, 15.32, 15.68, 15.68, 16.04, 16.04, 16.38, 16.38, 16.88, 16.88, 17.92, 17.92, 18.08, 18.08, 18.48, 18.48, 19.16, 19.16, 19.62, 19.62, 19.86, 20.4, 20.5, 20.5, 20.86, 20.86, 21.18, 21.18, 21.32, 21.32, 21.68, 21.68, 21.9, 21.9, 22.46, 22.46, 22.66, 22.66, 23.24, 23.24, 23.66, 23.66, 23.98, 23.98, 24.38, 24.38, 24.56, 24.56, 24.74, 24.74, 25.18, 25.18, 25.7, 26.52, 26.57, 26.56, 26.84, 26.84, 27.42, 27.42, 27.8, 27.8, 28.28, 28.28, 28.54, 28.54, 28.88, 28.88, 29.36, 29.36, 30.26, 30.26, 30.74, 30.74, 31.12, 31.12, 31.58, 31.58, 32.1, 32.1, 32.5, 32.5, 32.86, 32.86, 33.2, 33.2, 33.82, 33.82, 34.24, 34.24, 34.62, 34.62, 34.98, 34.98, 35.34, 35.34, 35.66, 35.66, 36.02, 36.02, 36.36, 36.36, 36.78, 36.78, 38.04, 38.04, 38.5, 38.5, 38.68, 38.68, 38.88, 38.88, 39.1, 39.1, 39.38, 39.38, 39.82, 39.82, 40.98, 40.98, 41.18, 41.18, 41.34, 41.34, 41.58, 41.58, 41.88, 41.88, 42.18, 42.18, 43.16, 43.16, 43.44, 43.44, 43.78, 43.78, 44.1, 44.1, 44.44, 44.44, 44.78, 45.6, 45.82, 45.82, 46.2, 46.2, 46.62, 46.62, 47.06, 47.06, 47.32, 47.32, 47.54, 47.54, 47.94, 47.94, 48.46, 48.46, 48.78, 48.78, 49.12, 49.12, 49.9, 50.2, 50.48, 50.48, 51.22, 51.22, 51.66, 51.66, 52.22, 52.22, 52.34, 52.34, 52.68, 52.68, 53.1, 53.1, 53.54, 53.54, 53.68, 53.68, 53.94, 53.94, 54.3, 54.3, 54.9, 54.9, 55.58, 55.58, 56.04, 56.04, 56.32, 56.32, 56.72, 56.72, 57.22, 57.22, 57.58, 57.58, 58.1, 58.1, 58.8, 58.8, 58.94, 58.94, 59.26, 59.26, 59.82, 59.82, 60.12, 60.62, 61.02, 61.02, 61.24, 61.24, 61.6, 61.6, 62.18, 62.18, 62.44, 62.44, 62.72, 62.72, 63.1, 63.1, 63.38, 63.38, 63.66, 63.66, 64.02, 64.84, 64.98, 64.98, 65.48, 65.48, 66.22, 66.22, 66.42, 66.42, 66.68, 66.68, 66.86, 66.86, 67.22, 67.22, 67.74, 67.74, 68.36, 68.36, 68.72, 68.72, 69.18, 69.18, 69.82, 70.46, 70.7, 70.7, 71, 71, 71.26, 71.26, 71.62, 71.62, 72.12, 72.12, 72.6, 72.6, 72.76, 72.76, 73, 73, 73.34, 73.34, 73.64, 73.64, 73.78, 73.78, 74.16, 74.88, 75.28, 75.28, 75.44, 75.44, 75.68, 75.68, 75.9, 75.9, 76.46, 76.46, 76.86, 76.86, 77.36, 77.36, 78.08],
+        "align": "whisper-groq"
+      },
+      "provider": "groq",
+      "i18n": {
+        "hi": {
+          "title": "दिल्ली पुलिस ने मेटा पर बाल शोषण सामग्री के लिए एफआईआर दायर की",
+          "hook": "दिल्ली पुलिस ने मेटा पर बाल यौन शोषण सामग्री की मेजबानी का आरोप लगाते हुए एक औपचारिक शिकायत दर्ज की, जिससे भारत में सोशल मीडिया निगरानी का ढांचा बदल सकता है।",
+          "segments": [
+            {
+              "text": "दिल्ली पुलिस ने मेटा पर बाल यौन शोषण सामग्री की मेजबानी का आरोप लगाते हुए एक औपचारिक शिकायत दर्ज की, जिससे भारत में सोशल मीडिया निगरानी का ढांचा बदल सकता है।",
+              "visual": {
+                "kind": "headline",
+                "text": "दिल्ली पुलिस ने मेटा पर एफआईआर दायर की"
+              }
+            },
+            {
+              "text": "पुलिस को लगभग दस लिंक की शिकायत मिली, जिन पर आरोप है कि वे मेटा के प्लेटफार्मों पर ऐसी सामग्री फैला रहे हैं, जिससे दिल्ली में तुरंत जांच शुरू हुई।",
+              "visual": {
+                "kind": "number",
+                "value": "10",
+                "label": "फ़्लैग्ड लिंक"
+              }
+            },
+            {
+              "text": "एक अधिकारी ने कहा कि पुलिस दावों की पुष्टि कर रही है, जबकि मेटा ने अभी तक सार्वजनिक रूप से जवाब नहीं दिया है। यह मामला ऑनलाइन सामग्री पर बढ़ते निरीक्षण को दर्शाता है।",
+              "visual": {
+                "kind": "headline",
+                "text": "अधिकारी ने जांच की पुष्टि की"
+              }
+            },
+            {
+              "text": "बाल यौन शोषण सामग्री भारतीय कानून के तहत अवैध है, और प्लेटफार्मों को ऐसी सामग्री को तुरंत हटाना आवश्यक है। विफलता पर कानूनी दंड हो सकता है।",
+              "visual": {
+                "kind": "headline",
+                "text": "भारतीय कानून के तहत अवैध सामग्री"
+              }
+            },
+            {
+              "text": "मेटा, जो फेसबुक और इंस्टाग्राम का मालिक है, रोज़ाना अरबों पोस्ट होस्ट करता है। भारत ने डिजिटल स्पेस पर हानिकारक सामग्री को रोकने के लिए नियम कड़े किए हैं।",
+              "visual": {
+                "kind": "headline",
+                "text": "मेटा प्लेटफार्म"
+              }
+            },
+            {
+              "text": "दिल्ली पुलिस का एफआईआर एक औपचारिक नोटिस है जो अदालत की कार्रवाई को ट्रिगर कर सकता है, जिससे जुर्माना या प्लेटफार्म प्रतिबंध हो सकते हैं यदि आरोप सत्य साबित होते हैं।",
+              "visual": {
+                "kind": "headline",
+                "text": "संभावित अदालत कार्रवाई"
+              }
+            },
+            {
+              "text": "माता-पिता और उपयोगकर्ता चिंतित हैं कि ऐसी सामग्री बच्चों तक पहुँच सकती है। यह जांच सख्त प्रवर्तन और सुरक्षित ऑनलाइन वातावरण के लिए एक धक्का का संकेत देती है।",
+              "visual": {
+                "kind": "headline",
+                "text": "बच्चों की सुरक्षा चिंता"
+              }
+            },
+            {
+              "text": "मेटा के जवाब और किसी भी अदालत आदेश के लिए जुड़े रहें। अपडेट दिखाएंगे कि भारत की डिजिटल नीति कैसे विकसित हो रही है।",
+              "visual": {
+                "kind": "headline",
+                "text": "अपडेट के लिए जुड़े रहें"
+              }
+            }
+          ],
+          "whyItMatters": "माता-पिता और उपयोगकर्ता चिंतित हैं कि बाल यौन शोषण सामग्री लोकप्रिय प्लेटफार्मों पर बच्चों तक पहुँच सकती है। यह जांच सख्त प्रवर्तन और सुरक्षित ऑनलाइन वातावरण के लिए एक धक्का का संकेत देती है।",
+          "context": "भारत में बाल यौन शोषण सामग्री के खिलाफ सख्त कानून हैं, और सोशल मीडिया प्लेटफार्मों को ऐसी सामग्री को तुरंत हटाना आवश्यक है। दिल्ली पुलिस का एफआईआर एक औपचारिक कदम है जो प्लेटफार्म के खिलाफ कानूनी कार्रवाई का कारण बन सकता है यदि आरोप सत्य साबित होते हैं।",
+          "coverage": [
+            {
+              "outlet": "The Hindu",
+              "angle": "दिल्ली पुलिस ने मेटा प्लेटफार्मों पर बाल यौन शोषण सामग्री के प्रसार पर एफआईआर दर्ज किया",
+              "url": "https://www.thehindu.com/news/cities/Delhi/delhi-police-registers-fir-over-alleged-circulation-of-child-sexual-abuse-material-on-meta-platforms/article71668968.ece",
+              "emphasis": "कानूनी कार्रवाई",
+              "headline": "Delhi Police registers FIR over alleged circulation of child sexual abuse material on Meta platforms",
+              "publishedAt": "2026-11-05T07:32:06.000Z"
+            },
+            {
+              "outlet": "Times of India",
+              "angle": "मेटा पर जांच के तहत दिल्ली पुलिस ने बाल शोषण सामग्री पर एफआईआर दायर किया: एनएचआरसी",
+              "url": "https://timesofindia.indiatimes.com/india/meta-under-scanner-as-delhi-police-files-fir-over-child-abuse-content-nhrc/articleshow/135559539.cms",
+              "emphasis": "जांचकारी निरीक्षण",
+              "headline": "Meta under scanner as Delhi Police files FIR over child abuse content: NHRC",
+              "publishedAt": "2026-11-05T05:06:33.000Z"
+            }
+          ],
+          "coverageSummary": {
+            "agreement": "दोनों आउटलेट्स रिपोर्ट करते हैं कि दिल्ली पुलिस ने मेटा पर बाल यौन शोषण सामग्री के लिए औपचारिक शिकायत दर्ज की है।",
+            "differences": "द हिंदू ने बताया कि लगभग दस लिंक फ़्लैग्ड थे, जबकि टाइम्स ऑफ इंडिया ने संख्या का उल्लेख नहीं किया और एनएचआरसी के शामिल होने का उल्लेख किया।"
+          },
+          "estDurationSec": 102,
+          "audio": {
+            "src": "/audio/92e5782e45f15436.mp3",
+            "durationSec": 96.6,
+            "model": "Kokoro-82M",
+            "voice": "hf_alpha",
+            "key": "92e5782e45f15436",
+            "lang": "hi",
+            "wordTimes": [0, 0.38, 0.38, 0.7, 0.7, 0.92, 0.92, 1.3, 1.3, 1.46, 1.46, 1.84, 1.84, 2.44, 2.44, 2.92, 2.92, 3.48, 3.48, 3.66, 3.66, 4.38, 4.38, 4.58, 4.58, 5.2, 5.2, 5.7, 5.7, 5.98, 5.98, 6.54, 6.54, 7.2, 7.2, 7.76, 7.76, 8.08, 8.08, 8.38, 8.38, 8.64, 8.64, 9.04, 9.04, 9.3, 9.3, 9.98, 9.98, 10.46, 10.46, 11.06, 11.06, 11.22, 11.22, 11.7, 11.7, 12.04, 12.04, 12.46, 12.46, 12.7, 13.03, 13.44, 13.44, 13.67, 13.67, 14.02, 14.02, 14.24, 14.24, 14.59, 14.59, 14.81, 14.81, 15.29, 15.29, 15.83, 15.83, 16.12, 16.12, 16.34, 16.34, 16.69, 16.69, 16.92, 16.92, 17.14, 17.14, 17.36, 17.36, 17.71, 17.71, 17.94, 17.94, 18.8, 18.8, 19.02, 19.02, 19.31, 19.31, 19.85, 19.85, 20.2, 20.2, 20.48, 20.48, 20.96, 20.96, 21.38, 21.38, 21.85, 21.85, 22.14, 22.14, 22.55, 22.55, 22.9, 22.9, 23.26, 23.26, 23.92, 24.22, 24.35, 24.35, 24.67, 24.67, 24.8, 24.8, 24.97, 24.97, 25.1, 25.1, 25.34, 25.34, 25.58, 25.58, 25.71, 25.71, 25.99, 25.99, 26.12, 26.12, 26.29, 26.29, 26.53, 26.53, 26.74, 26.74, 26.94, 26.94, 27.07, 27.07, 27.24, 27.24, 27.37, 27.37, 27.76, 27.76, 27.93, 27.93, 28.06, 28.06, 28.27, 28.27, 28.47, 28.47, 28.68, 28.68, 29.03, 29.03, 29.16, 29.16, 29.4, 29.4, 29.68, 29.68, 30, 30, 32.9, 32.9, 33.58, 33.58, 34.56, 34.56, 34.93, 34.93, 35.81, 35.81, 36.8, 37.1, 37.43, 37.43, 37.76, 37.76, 38.22, 38.22, 38.84, 38.84, 39.38, 39.38, 39.9, 39.9, 40.12, 40.12, 40.48, 40.48, 40.96, 40.96, 41.14, 41.14, 41.72, 41.72, 42.52, 42.52, 42.66, 42.66, 43.34, 43.34, 43.92, 43.92, 44.04, 44.04, 44.64, 44.64, 45.18, 45.18, 45.9, 45.9, 46.36, 46.36, 46.86, 46.86, 47.1, 47.1, 47.74, 47.74, 48.04, 48.04, 48.2, 48.2, 48.54, 48.54, 48.84, 49.2, 49.56, 49.56, 49.74, 49.74, 50.32, 50.32, 50.64, 50.64, 51.42, 51.42, 51.66, 51.66, 52.08, 52.08, 52.6, 52.6, 53.12, 53.12, 53.66, 53.66, 54.04, 54.04, 54.34, 54.34, 54.72, 54.72, 55.08, 55.08, 55.48, 55.48, 55.72, 55.72, 56.26, 56.26, 56.58, 56.58, 56.84, 56.84, 57.8, 57.8, 58.36, 58.36, 58.54, 58.54, 59.2, 59.2, 59.4, 59.4, 59.56, 59.56, 59.94, 59.94, 60.2, 60.2, 60.37, 60.37, 60.76, 61.08, 61.44, 61.44, 61.78, 61.78, 61.96, 61.96, 62.72, 62.72, 63.04, 63.04, 63.66, 63.66, 64.1, 64.1, 64.7, 64.7, 64.82, 64.82, 65.38, 65.38, 65.56, 65.56, 66.18, 66.18, 66.38, 66.38, 66.86, 66.86, 67.1, 67.1, 67.5, 67.5, 67.96, 67.96, 68.32, 68.32, 68.84, 68.84, 69.14, 69.14, 69.78, 69.78, 70.42, 70.42, 70.6, 70.6, 71, 71, 71.52, 71.52, 71.76, 71.76, 72.2, 72.2, 72.6, 72.6, 73.02, 73.02, 73.38, 73.38, 73.72, 74.08, 74.8, 74.8, 75.06, 75.06, 75.84, 75.84, 76.38, 76.38, 76.6, 76.6, 76.88, 76.88, 77.26, 77.26, 77.78, 77.78, 78.22, 78.22, 78.42, 78.42, 78.8, 78.8, 79.18, 79.18, 79.74, 79.74, 79.9, 79.9, 80.26, 80.26, 80.66, 80.66, 81.3, 81.3, 81.8, 81.8, 82.44, 82.44, 83.1, 83.1, 83.8, 83.8, 84.02, 84.02, 84.22, 84.22, 84.76, 84.76, 85.14, 85.14, 85.38, 85.38, 85.86, 85.86, 86.24, 86.24, 86.54, 86.54, 87.26, 87.26, 87.46, 87.46, 87.92, 87.92, 88.32, 88.32, 88.66, 88.66, 88.86, 88.86, 89.56, 89.56, 90.08, 90.08, 90.28, 90.28, 90.48, 90.48, 91.16, 91.16, 91.5, 91.5, 91.93, 91.93, 92.55, 92.55, 92.78, 92.78, 93.15, 93.15, 93.38, 93.38, 93.87, 93.87, 94.23, 94.23, 94.59, 94.59, 95.09, 95.09, 95.32, 95.32, 95.61, 95.61, 96.24],
+            "align": "whisper-groq"
+          },
+          "provider": "groq"
+        }
+      }
+    },
+    {
+      "id": "india-xobzuy",
+      "track": "india",
+      "title": "Supreme Court shifts arrest clock to detention moment",
+      "hook": "India’s top court resets the arrest clock, starting the 24‑hour rule at detention, not formal arrest.",
+      "segments": [
+        {
+          "text": "India’s top court just reset the arrest clock, saying the 24‑hour rule starts when police detain you, not when they file a formal charge.",
+          "visual": {
+            "kind": "headline",
+            "text": "Arrest Clock Reset"
+          }
+        },
+        {
+          "text": "The Supreme Court ruled that a person must be produced before a magistrate within a day of detention, ensuring swift judicial oversight.",
+          "visual": {
+            "kind": "headline",
+            "text": "Judge Within 24 hrs"
+          }
+        },
+        {
+          "text": "This decision applies even under stringent statutes like the Unlawful Activities Prevention Act and the Prevention of Money‑Laundering Act, where bail is usually hard to obtain.",
+          "visual": {
+            "kind": "headline",
+            "text": "Applies to UAPA, PMLA"
+          }
+        },
+        {
+          "text": "Lawyers say the ruling reinforces fundamental rights, placing personal liberty above special anti‑terror or financial crime laws that previously limited bail options.",
+          "visual": {
+            "kind": "headline",
+            "text": "Fundamental Rights Boosted"
+          }
+        },
+        {
+          "text": "The Unlawful Activities Prevention Act, often used against alleged terrorists, and the Prevention of Money‑Laundering Act, targeting financial crimes, have long allowed police to hold suspects without bail.",
+          "visual": {
+            "kind": "headline",
+            "text": "Strict Laws Explained"
+          }
+        },
+        {
+          "text": "Previously, courts could delay bail hearings for days, leaving detainees in limbo and raising concerns among human‑rights groups about due‑process violations.",
+          "visual": {
+            "kind": "headline",
+            "text": "Human Rights Concern"
+          }
+        },
+        {
+          "text": "For ordinary citizens, the change means quicker access to a judge, reducing the chance of prolonged detention without charge and protecting liberty.",
+          "visual": {
+            "kind": "headline",
+            "text": "Impact on Citizens"
+          }
+        },
+        {
+          "text": "Watch how lower courts implement the rule and whether police adjust their detention practices, which could reshape law‑enforcement procedures nationwide.",
+          "visual": {
+            "kind": "headline",
+            "text": "Next Steps"
+          }
+        }
+      ],
+      "whyItMatters": "People will see a judge within a day of being taken into custody. This reduces the risk of indefinite detention without bail.",
+      "context": "The Unlawful Activities Prevention Act and the Prevention of Money‑Laundering Act are strict anti‑terror and anti‑financial crime laws that limit bail. Critics argued they erode basic freedoms. The Supreme Court’s ruling reasserts constitutional rights over these statutes.",
+      "coverage": [
+        {
+          "outlet": "The Hindu",
+          "angle": "Emphasized that fundamental rights outweigh special anti‑terror and money‑laundering statutes.",
+          "url": "https://www.thehindu.com/news/national/24-hour-to-produce-before-magistrate-starts-from-detention-not-formal-arrest-supreme-court/article71668833.ece",
+          "emphasis": "rights priority",
+          "headline": "24-hour to produce before Magistrate starts from detention, not ‘formal arrest’: Supreme Court",
+          "publishedAt": "2026-11-05T06:36:52.000Z"
+        },
+        {
+          "outlet": "Times of India",
+          "angle": "Focused on the procedural change that the arrest clock starts at detention.",
+          "url": "https://timesofindia.indiatimes.com/india/24-hour-arrest-clock-starts-from-detention-not-formal-arrest-supreme-court/articleshow/135560387.cms",
+          "emphasis": "procedural shift",
+          "headline": "24-hour arrest clock starts from detention, not formal arrest: Supreme Court",
+          "publishedAt": "2026-11-05T05:30:20.000Z"
+        }
+      ],
+      "coverageSummary": {
+        "agreement": "Both outlets report the Supreme Court said the 24‑hour arrest clock begins when a person is detained, not when a formal arrest is recorded.",
+        "differences": "The Hindu highlighted the ruling’s impact on fundamental rights versus special laws, while Times of India concentrated solely on the timing change."
+      },
+      "sources": [
+        {
+          "outlet": "The Hindu",
+          "title": "24-hour to produce before Magistrate starts from detention, not ‘formal arrest’: Supreme Court",
+          "url": "https://www.thehindu.com/news/national/24-hour-to-produce-before-magistrate-starts-from-detention-not-formal-arrest-supreme-court/article71668833.ece",
+          "publishedAt": "2026-11-05T06:36:52.000Z"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "24-hour arrest clock starts from detention, not formal arrest: Supreme Court",
+          "url": "https://timesofindia.indiatimes.com/india/24-hour-arrest-clock-starts-from-detention-not-formal-arrest-supreme-court/articleshow/135560387.cms",
+          "publishedAt": "2026-11-05T05:30:20.000Z"
+        }
+      ],
+      "location": {
+        "place": "New Delhi, India",
+        "lat": 28.6139,
+        "lon": 77.209
+      },
+      "publishedAt": "2026-11-05T06:36:52.000Z",
+      "generatedAt": "2026-11-05T07:21:17.657Z",
+      "estDurationSec": 74,
+      "audio": {
+        "src": "/audio/ba55e77cf4aec777.mp3",
+        "durationSec": 82.6,
+        "model": "Kokoro-82M",
+        "voice": "af_heart",
+        "key": "ba55e77cf4aec777",
+        "lang": "en",
+        "wordTimes": [0, 0.44, 0.44, 0.66, 0.66, 0.98, 0.98, 1.42, 1.42, 1.8, 1.8, 1.98, 1.98, 2.32, 2.32, 3.06, 3.06, 3.44, 3.44, 3.62, 3.62, 4.4, 4.4, 4.76, 4.76, 5.1, 5.1, 5.3, 5.3, 5.62, 5.62, 6.06, 6.06, 6.42, 6.42, 6.88, 6.88, 7.04, 7.04, 7.18, 7.18, 7.48, 7.48, 7.64, 7.64, 7.88, 7.88, 8.48, 8.89, 9.02, 9.02, 9.24, 9.24, 9.7, 9.7, 10.32, 10.32, 10.54, 10.54, 10.62, 10.62, 10.94, 10.94, 11.24, 11.24, 11.4, 11.4, 11.84, 11.84, 12.22, 12.22, 12.4, 12.4, 13, 13, 13.24, 13.24, 13.4, 13.4, 13.54, 13.54, 13.7, 13.7, 14.66, 14.66, 15.3, 15.3, 15.84, 15.84, 16.42, 16.42, 16.94, 17.4, 17.62, 17.62, 18.04, 18.04, 18.66, 18.66, 19.06, 19.06, 19.34, 19.34, 19.86, 19.86, 20.42, 20.42, 21, 21, 21.2, 21.2, 21.72, 21.72, 22.28, 22.28, 22.58, 22.58, 23.1, 23.1, 23.68, 23.68, 23.8, 23.8, 24.02, 24.02, 24.48, 24.74, 25.18, 25.18, 25.6, 25.6, 26.16, 26.16, 26.46, 26.46, 26.78, 26.78, 27.04, 27.04, 27.4, 27.4, 27.62, 27.62, 28, 28.04, 28.96, 28.96, 29.16, 29.16, 29.3, 29.3, 29.6, 29.6, 30.52, 30.52, 31.04, 31.04, 32.14, 32.14, 32.4, 32.4, 32.84, 32.84, 33.28, 33.28, 33.86, 33.86, 34.3, 34.3, 35.16, 35.16, 35.76, 35.76, 36.28, 36.28, 36.7, 36.7, 37.06, 37.06, 37.58, 37.58, 38.12, 38.12, 38.6, 38.6, 38.92, 38.92, 39.34, 39.97, 40.1, 40.1, 40.68, 40.68, 41.24, 41.24, 41.54, 41.54, 42.26, 42.26, 42.8, 42.8, 43.18, 43.18, 43.56, 43.56, 43.98, 43.98, 45.14, 45.14, 45.24, 45.24, 45.34, 45.34, 45.66, 45.66, 46.02, 46.3, 46.76, 46.76, 47.2, 47.2, 47.88, 47.88, 48.52, 48.52, 49.6, 49.6, 49.72, 49.72, 50.04, 50.04, 50.42, 50.42, 50.78, 50.78, 51.04, 51.04, 51.28, 51.28, 51.86, 51.86, 52.24, 52.24, 52.76, 53.2, 53.96, 53.96, 54.32, 54.32, 54.5, 54.5, 54.76, 54.76, 55.1, 55.1, 55.46, 55.46, 55.72, 55.72, 56.5, 56.5, 56.9, 56.9, 57.54, 57.54, 57.8, 57.8, 58.16, 58.16, 58.56, 58.56, 58.88, 58.88, 59.48, 59.48, 59.9, 59.9, 60.56, 60.56, 60.9, 60.9, 61.34, 61.6, 62.04, 62.04, 62.68, 63.35, 63.52, 63.52, 63.94, 63.94, 64.74, 64.74, 65.08, 65.08, 65.4, 65.4, 65.74, 65.74, 66.1, 66.1, 66.5, 66.5, 66.8, 66.8, 67, 67, 67.5, 67.5, 68.22, 68.22, 68.44, 68.44, 68.82, 68.82, 69, 69, 69.46, 69.46, 70.02, 70.02, 70.64, 70.64, 71.2, 71.2, 71.54, 71.54, 72, 72, 72.46, 72.44, 73.16, 73.16, 73.42, 73.42, 73.74, 73.74, 74.14, 74.14, 74.52, 74.52, 74.72, 74.72, 75, 75, 75.54, 75.54, 75.76, 75.76, 76.3, 76.3, 76.78, 76.78, 77, 77, 77.42, 77.42, 78.3, 78.3, 78.84, 78.84, 79.04, 79.04, 79.5, 79.84, 80.44, 80.44, 81.04, 81.04, 82.2],
+        "align": "whisper-groq"
+      },
+      "provider": "groq",
+      "i18n": {
+        "hi": {
+          "title": "सुप्रीम कोर्ट ने गिरफ्तारी घड़ी को हिरासत के क्षण पर बदल दिया",
+          "hook": "भारत के शीर्ष न्यायालय ने गिरफ्तारी घड़ी को रीसेट किया, २४‑घंटे का नियम अब हिरासत के समय से शुरू होता है, न कि औपचारिक गिरफ्तारी से।",
+          "segments": [
+            {
+              "text": "भारत के शीर्ष न्यायालय ने अभी गिरफ्तारी घड़ी को रीसेट किया, यह कहा कि चौबीस घंटे का नियम तब शुरू होता है जब पुलिस आपको हिरासत में लेती है, न कि जब वे औपचारिक आरोप दर्ज करते हैं।",
+              "visual": {
+                "kind": "headline",
+                "text": "गिरफ्तारी घड़ी रीसेट"
+              }
+            },
+            {
+              "text": "सुप्रीम कोर्ट ने फैसला सुनाया कि हिरासत के एक दिन के भीतर व्यक्ति को न्यायाधीश के सामने पेश किया जाना चाहिए, जिससे तेज़ न्यायिक निगरानी सुनिश्चित हो।",
+              "visual": {
+                "kind": "headline",
+                "text": "Judge Within 24 hrs"
+              }
+            },
+            {
+              "text": "यह निर्णय कड़े कानूनों जैसे अनलॉफ़ुल एक्टिविटीज़ प्रिवेंशन एक्ट और प्रिवेंशन ऑफ़ मनी‑लॉन्डरिंग एक्ट पर भी लागू होता है, जहाँ आमतौर पर जमानत मिलना कठिन होता है।",
+              "visual": {
+                "kind": "headline",
+                "text": "UAPA, PMLA पर लागू"
+              }
+            },
+            {
+              "text": "वकीलों का कहना है कि यह रूलिंग मौलिक अधिकारों को सुदृढ़ करती है, व्यक्तिगत स्वतंत्रता को विशेष आतंकवाद या वित्तीय अपराध कानूनों से ऊपर रखती है, जो पहले जमानत विकल्पों को सीमित करते थे।",
+              "visual": {
+                "kind": "headline",
+                "text": "मौलिक अधिकारों को बढ़ावा"
+              }
+            },
+            {
+              "text": "अनलॉफ़ुल एक्टिविटीज़ प्रिवेंशन एक्ट, जो अक्सर कथित आतंकियों के खिलाफ इस्तेमाल होता है, और प्रिवेंशन ऑफ़ मनी‑लॉन्डरिंग एक्ट, जो वित्तीय अपराधों को लक्षित करता है, लंबे समय से पुलिस को बिना जमानत के संदिग्धों को हिरासत में रखने की अनुमति देते हैं।",
+              "visual": {
+                "kind": "headline",
+                "text": "कठोर कानूनों की व्याख्या"
+              }
+            },
+            {
+              "text": "पहले, अदालतें जमानत सुनवाई को कई दिनों तक टाल सकती थीं, जिससे हिरासत में रहने वाले लोगों को अनिश्चित स्थिति में छोड़ दिया जाता था और मानवाधिकार समूहों ने प्रक्रिया के उल्लंघन की चिंता जताई थी।",
+              "visual": {
+                "kind": "headline",
+                "text": "मानवाधिकार चिंता"
+              }
+            },
+            {
+              "text": "आम नागरिकों के लिए, यह बदलाव तेज़ न्यायाधीश तक पहुँच का मतलब है, जिससे बिना आरोप के लंबे समय तक हिरासत में रहने का जोखिम कम होता है और स्वतंत्रता की रक्षा होती है।",
+              "visual": {
+                "kind": "headline",
+                "text": "नागरिकों पर प्रभाव"
+              }
+            },
+            {
+              "text": "देखें कि निचली अदालतें इस नियम को कैसे लागू करती हैं और क्या पुलिस अपनी हिरासत प्रथाओं को समायोजित करती है, जिससे देश भर में कानून‑प्रवर्तन प्रक्रियाओं में बदलाव आ सकता है।",
+              "visual": {
+                "kind": "headline",
+                "text": "आगे के कदम"
+              }
+            }
+          ],
+          "whyItMatters": "लोगों को हिरासत में ले जाने के एक दिन के भीतर न्यायाधीश मिलेंगे। इससे बिना जमानत के अनिश्चित हिरासत का जोखिम कम हो जाता है।",
+          "context": "अनलॉफ़ुल एक्टिविटीज़ प्रिवेंशन एक्ट और प्रिवेंशन ऑफ़ मनी‑लॉन्डरिंग एक्ट कड़े आतंकवाद और वित्तीय अपराध कानून हैं जो जमानत को सीमित करते हैं। आलोचकों का कहना था कि ये बुनियादी स्वतंत्रताओं को घटाते हैं। सुप्रीम कोर्ट के फैसले ने इन statutes के ऊपर संवैधानिक अधिकारों को फिर से स्थापित किया है।",
+          "coverage": [
+            {
+              "outlet": "The Hindu",
+              "angle": "जोर दिया गया कि मौलिक अधिकार विशेष आतंकवाद और मनी‑लॉन्डरिंग कानूनों से ऊपर हैं।",
+              "url": "https://www.thehindu.com/news/national/24-hour-to-produce-before-magistrate-starts-from-detention-not-formal-arrest-supreme-court/article71668833.ece",
+              "emphasis": "अधिकारों की प्राथमिकता",
+              "headline": "24-hour to produce before Magistrate starts from detention, not ‘formal arrest’: Supreme Court",
+              "publishedAt": "2026-11-05T06:36:52.000Z"
+            },
+            {
+              "outlet": "Times of India",
+              "angle": "प्रक्रियात्मक बदलाव पर ध्यान केंद्रित किया गया कि गिरफ्तारी घड़ी हिरासत से शुरू होती है।",
+              "url": "https://timesofindia.indiatimes.com/india/24-hour-arrest-clock-starts-from-detention-not-formal-arrest-supreme-court/articleshow/135560387.cms",
+              "emphasis": "प्रक्रियात्मक बदलाव",
+              "headline": "24-hour arrest clock starts from detention, not formal arrest: Supreme Court",
+              "publishedAt": "2026-11-05T05:30:20.000Z"
+            }
+          ],
+          "coverageSummary": {
+            "agreement": "दोनों आउटलेट्स रिपोर्ट करते हैं कि सुप्रीम कोर्ट ने कहा कि २४‑घंटे की गिरफ्तारी घड़ी तब शुरू होती है जब व्यक्ति को हिरासत में लिया जाता है, न कि जब औपचारिक रूप से गिरफ्तारी दर्ज की जाती है।",
+            "differences": "द हिंदू ने रूलिंग के मौलिक अधिकारों पर प्रभाव को उजागर किया, जबकि टाइम्स ऑफ़ इंडिया ने केवल समय परिवर्तन पर ध्यान दिया।"
+          },
+          "estDurationSec": 117,
+          "audio": {
+            "src": "/audio/9e0c98ff41d9536a.mp3",
+            "durationSec": 114.7,
+            "model": "Kokoro-82M",
+            "voice": "hf_alpha",
+            "key": "9e0c98ff41d9536a",
+            "lang": "hi",
+            "wordTimes": [0, 0.48, 0.48, 0.64, 0.64, 1.08, 1.08, 1.64, 1.64, 1.76, 1.76, 2.36, 2.36, 3.04, 3.04, 3.4, 3.4, 3.52, 3.52, 4.22, 4.22, 4.48, 4.48, 4.7, 4.7, 4.98, 4.98, 5.36, 5.36, 5.86, 5.86, 6.26, 6.26, 6.42, 6.42, 6.74, 6.74, 6.98, 6.98, 7.44, 7.44, 7.78, 7.78, 7.96, 7.96, 8.5, 8.5, 8.86, 8.86, 9.32, 9.32, 9.92, 9.92, 10.08, 10.08, 10.44, 10.44, 10.94, 10.94, 11.06, 11.06, 11.22, 11.22, 11.48, 11.48, 11.64, 11.64, 12.4, 12.4, 12.82, 12.82, 13.04, 13.04, 13.42, 13.42, 13.7, 14, 14.46, 14.46, 14.82, 14.82, 15, 15, 15.48, 15.48, 16.1, 16.1, 16.24, 16.24, 16.86, 16.86, 17.08, 17.08, 17.4, 17.4, 17.66, 17.66, 17.88, 17.88, 18.3, 18.3, 18.7, 18.7, 18.88, 18.88, 19.96, 19.96, 20.16, 20.16, 20.62, 20.62, 20.96, 20.96, 21.28, 21.28, 21.68, 21.68, 22.34, 22.34, 22.64, 22.64, 22.98, 22.98, 23.62, 23.62, 24.16, 24.16, 24.74, 24.74, 25.08, 25.08, 25.6, 25.6, 26.04, 26.04, 26.38, 26.38, 26.98, 26.98, 27.34, 27.34, 28.12, 28.12, 28.9, 28.9, 28.97, 28.97, 29.01, 29.01, 29.05, 29.01, 29.82, 29.82, 29.86, 29.85, 29.92, 29.85, 30.08, 30.08, 30.58, 30.58, 31.09, 31.09, 31.59, 31.59, 32.1, 32.1, 33.03, 33.03, 33.54, 33.54, 34.33, 34.33, 34.83, 34.83, 35.63, 35.63, 36.27, 36.27, 36.92, 36.92, 37.43, 37.43, 37.93, 38.23, 38.64, 38.64, 38.95, 38.95, 39.36, 39.36, 39.67, 39.67, 39.99, 39.99, 40.3, 40.3, 40.71, 40.71, 41.12, 41.12, 41.61, 41.61, 41.93, 41.93, 42.33, 42.33, 42.74, 42.74, 43.32, 43.32, 44, 44, 44.78, 44.78, 44.96, 44.96, 45.72, 45.72, 46.52, 46.52, 46.78, 46.78, 47.24, 47.24, 47.8, 47.8, 48.44, 48.44, 48.64, 48.64, 49.24, 49.24, 49.6, 49.6, 50.16, 50.16, 50.26, 50.26, 50.66, 50.66, 51.24, 51.24, 51.9, 51.9, 52.06, 52.06, 52.54, 52.54, 52.9, 52.9, 53.24, 53, 54.14, 54.14, 54.94, 54.94, 55.64, 55.64, 56.18, 56.18, 56.42, 56.42, 56.88, 56.88, 57.34, 57.34, 58.06, 58.06, 58.22, 58.22, 58.7, 58.7, 59.38, 59.38, 59.76, 59.76, 59.9, 59.9, 60.46, 60.46, 61.1, 61.1, 61.44, 61.44, 62.28, 62.28, 63.02, 63.02, 63.32, 63.32, 63.82, 63.82, 64.56, 64.56, 64.66, 64.66, 65.06, 65.06, 65.48, 65.48, 65.74, 65.74, 66.24, 66.24, 66.58, 66.58, 66.9, 66.9, 67.28, 67.28, 67.5, 67.5, 68.02, 68.02, 68.56, 68.56, 68.76, 68.76, 69.54, 69.54, 69.7, 69.7, 70.52, 70.52, 70.76, 70.76, 71.38, 71.38, 71.62, 71.62, 72.09, 72.09, 72.39, 72.39, 72.69, 72.99, 73.68, 73.68, 74.18, 74.18, 74.68, 74.68, 75.18, 75.18, 75.5, 75.5, 75.82, 75.82, 76.14, 76.14, 76.46, 76.46, 76.78, 76.78, 77.2, 77.2, 77.79, 77.79, 78.2, 78.2, 78.7, 78.7, 79.02, 79.02, 79.44, 79.44, 79.76, 79.76, 80.08, 80.08, 80.39, 80.39, 80.99, 80.99, 81.4, 81.4, 81.72, 81.72, 82.04, 82.04, 82.36, 82.36, 82.68, 82.68, 83, 83, 83.24, 83.24, 84.12, 84.12, 84.86, 84.86, 85.02, 85.02, 85.5, 85.5, 85.64, 85.64, 86.4, 86.4, 86.6, 86.6, 87.02, 87.02, 87.4, 87.4, 87.78, 87.78, 88.36, 88.36, 88.98, 88.98, 89.16, 89.16, 89.34, 89.34, 89.82, 89.82, 90.32, 90.32, 90.6, 90.6, 91.38, 91.38, 91.62, 91.62, 92.04, 92.04, 92.22, 92.22, 92.58, 92.58, 93.14, 93.14, 93.5, 93.5, 93.78, 93.78, 94.28, 94.28, 94.46, 94.46, 94.88, 94.88, 95.2, 95.2, 95.46, 95.46, 96.14, 96.14, 96.3, 96.3, 96.92, 96.92, 97.08, 97.08, 97.56, 97.56, 97.78, 97.78, 98.12, 98.12, 98.32, 98.32, 98.82, 98.82, 99.58, 99.58, 99.72, 99.72, 100.06, 100.06, 100.36, 100.36, 100.52, 100.96, 101.29, 101.29, 101.62, 101.62, 102.04, 102.04, 102.56, 102.56, 102.89, 102.89, 103.31, 103.31, 103.64, 103.64, 103.97, 103.97, 104.3, 104.3, 104.72, 104.72, 105.05, 105.05, 105.38, 105.38, 105.71, 105.71, 106.14, 106.14, 106.56, 106.56, 107.08, 107.08, 107.59, 107.59, 107.92, 107.92, 108.53, 108.53, 108.96, 108.96, 109.57, 109.57, 109.99, 109.99, 110.32, 110.32, 110.65, 110.65, 110.98, 110.98, 111.97, 111.97, 112.67, 112.67, 113, 113, 113.52, 113.52, 113.68, 113.68, 114.1, 114.1, 114.74],
+            "align": "whisper-groq"
+          },
+          "provider": "groq"
+        }
+      }
+    },
+    {
+      "id": "india-1dlixcf",
+      "track": "india",
+      "title": "Rijiju’s Seven‑Point Warning to Rahul Gandhi",
+      "hook": "India’s political drama heats up as a senior minister publicly scolds opposition leader Rahul Gandhi, issuing seven stark warnings about parliamentary conduct.",
+      "segments": [
+        {
+          "text": "India’s political drama heats up as a senior minister publicly scolds opposition leader Rahul Gandhi, issuing seven stark warnings about parliamentary conduct.",
+          "visual": {
+            "kind": "headline",
+            "text": "Political Clash"
+          }
+        },
+        {
+          "text": "Union Minister Kiren Rijiju released a seven‑point list urging Rahul Gandhi to respect seniors, curb BJP‑RSS hostility, and engage earnestly in debates.",
+          "visual": {
+            "kind": "compare",
+            "left": {
+              "label": "Rijiju",
+              "value": "7 points"
+            },
+            "right": {
+              "label": "Gandhi",
+              "value": "advice"
+            }
+          }
+        },
+        {
+          "text": "The advice was delivered in New Delhi, targeting the national parliament where Rahul Gandhi and his party regularly contest legislation and policy.",
+          "visual": null
+        },
+        {
+          "text": "Rijiju, a member of Prime Minister’s party, often clashes with Gandhi’s Congress, reflecting long‑standing rivalry between the ruling coalition and opposition today.",
+          "visual": {
+            "kind": "headline",
+            "text": "Rival Parties"
+          }
+        },
+        {
+          "text": "If senior politicians ignore parliamentary decorum, lawmaking stalls, affecting services like health, education, and jobs that everyday Indians rely on for them.",
+          "visual": {
+            "kind": "headline",
+            "text": "Public Impact"
+          }
+        },
+        {
+          "text": "Watch how Rahul Gandhi responds—whether he adopts the tips, challenges them publicly, or shifts strategy ahead of the upcoming parliamentary session next.",
+          "visual": null
+        },
+        {
+          "text": "Why it matters: Parliament shapes policies that affect daily life, from jobs to healthcare. Disruptions can delay reforms citizens need.",
+          "visual": null
+        },
+        {
+          "text": "What to watch: Gandhi’s next move, party reactions, and any shifts in parliamentary dynamics before the session begins.",
+          "visual": null
+        }
+      ],
+      "whyItMatters": "Parliamentary conduct determines how quickly laws pass, influencing everything from infrastructure projects to social programs. When leaders clash, ordinary citizens may face delayed services.",
+      "context": "Kiren Rijiju, a minister from the ruling Bharatiya Janata Party, issued a public seven‑point advisory aimed at Rahul Gandhi of the opposition Congress. The advice touches on respect for seniority, avoiding partisan hatred, and engaging constructively in debates.",
+      "coverage": [
+        {
+          "outlet": "Times of India",
+          "angle": "Emphasized respect for seniors and ending BJP‑RSS hostility in the advice",
+          "url": "https://timesofindia.indiatimes.com/india/respect-seniors-end-bjp-rss-hatred-rijijus-seven-point-advice-to-rahul-gandhi/articleshow/135558335.cms",
+          "emphasis": "political etiquette",
+          "headline": "'Respect seniors, end BJP-RSS hatred': Rijiju's seven-point advice to Rahul Gandhi",
+          "publishedAt": "2026-11-05T04:11:41.000Z"
+        },
+        {
+          "outlet": "NDTV",
+          "angle": "Highlighted the call to avoid secret foreign vacations and take parliamentary duties seriously",
+          "url": "https://www.ndtv.com/india-news/how-congress-can-win-more-mps-kiren-rijijus-advice-for-rahul-gandhi-12285370#publisher=newsstand",
+          "emphasis": "parliamentary conduct",
+          "headline": "\"Avoid Secret Foreign Vacations\": Kiren Rijiju's 7 Tips For Rahul Gandhi",
+          "publishedAt": "2026-11-05T04:10:57.000Z"
+        }
+      ],
+      "coverageSummary": {
+        "agreement": "Both outlets report that Minister Rijiju gave Rahul Gandhi a seven‑point list urging better parliamentary behavior.",
+        "differences": "Times of India focused on senior‑respect and BJP‑RSS hatred, while NDTV stressed secret foreign vacations and overall seriousness in parliament."
+      },
+      "sources": [
+        {
+          "outlet": "Times of India",
+          "title": "'Respect seniors, end BJP-RSS hatred': Rijiju's seven-point advice to Rahul Gandhi",
+          "url": "https://timesofindia.indiatimes.com/india/respect-seniors-end-bjp-rss-hatred-rijijus-seven-point-advice-to-rahul-gandhi/articleshow/135558335.cms",
+          "publishedAt": "2026-11-05T04:11:41.000Z"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "\"Avoid Secret Foreign Vacations\": Kiren Rijiju's 7 Tips For Rahul Gandhi",
+          "url": "https://www.ndtv.com/india-news/how-congress-can-win-more-mps-kiren-rijijus-advice-for-rahul-gandhi-12285370#publisher=newsstand",
+          "publishedAt": "2026-11-05T04:10:57.000Z"
+        }
+      ],
+      "location": {
+        "place": "New Delhi, India",
+        "lat": 28.6139,
+        "lon": 77.209
+      },
+      "publishedAt": "2026-11-05T04:11:41.000Z",
+      "generatedAt": "2026-11-05T07:21:43.487Z",
+      "estDurationSec": 68,
+      "audio": {
+        "src": "/audio/0870c76d9b19d42a.mp3",
+        "durationSec": 81.2,
+        "model": "Kokoro-82M",
+        "voice": "af_heart",
+        "key": "0870c76d9b19d42a",
+        "lang": "en",
+        "wordTimes": [0, 0.44, 0.44, 1.06, 1.06, 1.45, 1.45, 1.83, 1.83, 2.04, 2.04, 2.24, 2.24, 2.45, 2.45, 2.89, 2.89, 3.45, 3.45, 4.01, 4.01, 4.45, 4.45, 5.13, 5.13, 5.57, 5.57, 5.96, 5.96, 6.58, 6.58, 7.08, 7.08, 7.46, 7.46, 7.85, 7.85, 8.41, 8.41, 8.79, 8.79, 9.65, 9.65, 10.5, 10.8, 11, 11, 11.52, 11.52, 12.04, 12.04, 12.54, 12.54, 13.12, 13.12, 13.36, 13.36, 13.94, 13.94, 14.3, 14.3, 14.9, 14.9, 15.34, 15.34, 15.76, 15.76, 15.98, 15.98, 16.36, 16.36, 17.54, 17.54, 17.88, 17.88, 19.22, 19.22, 20.02, 20.02, 20.38, 20.38, 20.8, 20.8, 21.24, 21.24, 21.52, 21.52, 21.84, 21.96, 22.58, 22.58, 22.98, 22.98, 23.24, 23.24, 23.66, 23.66, 23.96, 23.96, 24.12, 24.12, 24.96, 24.96, 25.3, 25.3, 25.56, 25.56, 25.94, 25.94, 26.36, 26.36, 26.96, 26.96, 27.3, 27.3, 27.74, 27.74, 27.94, 27.94, 28.08, 28.08, 28.42, 28.42, 29.34, 29.34, 30, 30, 30.7, 30.7, 31.12, 31.12, 31.76, 32.1, 32.84, 32.84, 33.06, 33.06, 33.28, 33.28, 33.56, 33.56, 33.9, 33.9, 34.36, 34.36, 35.28, 35.28, 35.52, 35.52, 36.06, 36.06, 36.36, 36.36, 36.82, 36.82, 37.18, 37.18, 38.2, 38.2, 39.1, 39.1, 39.6, 39.6, 40.18, 40.18, 40.4, 40.4, 40.68, 40.68, 41.2, 41.2, 41.68, 41.68, 42.22, 42.22, 42.62, 42.68, 43.26, 43.26, 43.6, 43.6, 44.26, 44.26, 44.84, 44.84, 45.52, 45.52, 46.64, 46.64, 47.04, 47.04, 48.14, 48.14, 48.36, 48.36, 48.94, 48.94, 49.32, 49.32, 50.04, 50.04, 50.62, 50.62, 51.3, 51.3, 51.74, 51.74, 52.02, 52.02, 52.34, 52.34, 52.9, 52.9, 53.34, 53.34, 53.64, 53.64, 53.8, 53.8, 54, 54.46, 54.74, 54.74, 54.9, 54.9, 55.3, 55.3, 55.7, 55.7, 56.92, 56.92, 57.12, 57.12, 57.5, 57.5, 57.68, 57.68, 58.16, 58.16, 58.74, 58.74, 59.08, 59.08, 59.5, 59.5, 60.18, 60.18, 60.54, 60.54, 60.96, 60.96, 61.34, 61.34, 61.56, 61.56, 61.66, 61.66, 62.08, 62.08, 62.66, 62.66, 63.22, 63.22, 63.6, 64.14, 64.34, 64.34, 64.48, 64.48, 64.82, 64.82, 65.68, 65.68, 66.12, 66.12, 66.6, 66.6, 66.88, 66.88, 67.2, 67.2, 67.5, 67.5, 68.22, 68.22, 68.32, 68.32, 68.8, 68.8, 69, 69, 69.28, 70.26, 70.84, 70.84, 71.04, 71.04, 71.34, 71.34, 71.96, 71.96, 72.36, 72.36, 73.32, 73.32, 73.42, 73.42, 73.56, 73.56, 74.18, 74.44, 74.98, 74.98, 75.2, 75.2, 75.7, 75.7, 76.12, 76.12, 76.98, 76.98, 77.34, 77.34, 77.5, 77.5, 77.88, 77.88, 78.12, 78.12, 78.58, 78.58, 79.32, 79.32, 79.68, 79.68, 79.88, 79.88, 80.14, 80.14, 80.52],
+        "align": "whisper-groq"
+      },
+      "provider": "groq",
+      "i18n": {
+        "hi": {
+          "title": "रिजीजू की सात‑बिंदु चेतावनी राहुल गांधी को",
+          "hook": "भारत की राजनीतिक ड्रामा गरम हो रहा है जब एक वरिष्ठ मंत्री सार्वजनिक रूप से विपक्षी नेता राहुल गांधी को संसद के आचरण पर सात कठोर चेतावनियाँ देते हैं।",
+          "segments": [
+            {
+              "text": "भारत की राजनीतिक ड्रामा गरम हो रहा है जब एक वरिष्ठ मंत्री सार्वजनिक रूप से विपक्षी नेता राहुल गांधी को संसद के आचरण पर सात कठोर चेतावनियाँ देते हैं।",
+              "visual": {
+                "kind": "headline",
+                "text": "राजनीतिक टकराव"
+              }
+            },
+            {
+              "text": "केंद्रीय मंत्री किरन रिजीजू ने सात‑बिंदु सूची जारी की, जिसमें राहुल गांधी से बड़ों का सम्मान, बीजेपी‑आरएसएस के बीच की शत्रुता को कम करना और बहसों में ईमानदारी से भाग लेना कहा गया है।",
+              "visual": {
+                "kind": "compare",
+                "left": {
+                  "label": "रिजीजू",
+                  "value": "7 points"
+                },
+                "right": {
+                  "label": "गांधी",
+                  "value": "advice"
+                }
+              }
+            },
+            {
+              "text": "यह सलाह नई दिल्ली में दी गई, जिसका लक्ष्य राष्ट्रीय संसद है जहाँ राहुल गांधी और उनकी पार्टी नियमित रूप से विधायी कार्य और नीतियों पर बहस करती है।",
+              "visual": null
+            },
+            {
+              "text": "रिजीजू, जो प्रधान मंत्री की पार्टी के सदस्य हैं, अक्सर गांधी की कांग्रेस के साथ टकराते हैं, जो आज सत्ताधारी गठबंधन और विपक्ष के बीच लंबे समय से चलती प्रतिद्वंद्विता को दर्शाता है।",
+              "visual": {
+                "kind": "headline",
+                "text": "प्रतिद्वंद्वी पार्टियाँ"
+              }
+            },
+            {
+              "text": "यदि वरिष्ठ राजनेता संसद के शिष्टाचार को नज़रअंदाज़ करें, तो कानून बनाने की प्रक्रिया रुक जाती है, जिससे स्वास्थ्य, शिक्षा और रोजगार जैसी सेवाओं पर असर पड़ता है, जिन पर आम भारतीय निर्भर होते हैं।",
+              "visual": {
+                "kind": "headline",
+                "text": "जनता पर प्रभाव"
+              }
+            },
+            {
+              "text": "देखिए राहुल गांधी कैसे प्रतिक्रिया देते हैं—क्या वे इन सुझावों को अपनाते हैं, सार्वजनिक रूप से चुनौती देते हैं, या आगामी संसद सत्र से पहले अपनी रणनीति बदलते हैं।",
+              "visual": null
+            },
+            {
+              "text": "क्यों महत्वपूर्ण है: संसद नीतियों को आकार देती है जो रोज़मर्रा की ज़िंदगी को प्रभावित करती हैं, जैसे रोजगार से लेकर स्वास्थ्य देखभाल तक। व्यवधान से आवश्यक सुधारों में देरी हो सकती है।",
+              "visual": null
+            },
+            {
+              "text": "क्या देखना है: गांधी की अगली चाल, पार्टी की प्रतिक्रियाएँ, और सत्र शुरू होने से पहले संसद की गतिशीलता में कोई बदलाव।",
+              "visual": null
+            }
+          ],
+          "whyItMatters": "संसदीय आचरण यह तय करता है कि कानून कितनी जल्दी पास होते हैं, जिससे बुनियादी ढांचा परियोजनाओं से लेकर सामाजिक कार्यक्रमों तक सब कुछ प्रभावित होता है। जब नेताओं के बीच टकराव होता है, तो आम नागरिकों को सेवाओं में देरी का सामना करना पड़ सकता है।",
+          "context": "किरन रिजीजू, जो सत्ताधारी भारतीय जनता पार्टी के मंत्री हैं, ने विपक्षी कांग्रेस के राहुल गांधी को सार्वजनिक रूप से सात‑बिंदु सलाह दी। इस सलाह में बड़ों का सम्मान, पार्टियों के बीच नफ़रत से बचना और बहसों में रचनात्मक रूप से भाग लेना शामिल है।",
+          "coverage": [
+            {
+              "outlet": "Times of India",
+              "angle": "सलाह में बड़ों के सम्मान और बीजेपी‑आरएसएस की शत्रुता को समाप्त करने पर ज़ोर दिया गया",
+              "url": "https://timesofindia.indiatimes.com/india/respect-seniors-end-bjp-rss-hatred-rijijus-seven-point-advice-to-rahul-gandhi/articleshow/135558335.cms",
+              "emphasis": "राजनीतिक शिष्टाचार",
+              "headline": "'Respect seniors, end BJP-RSS hatred': Rijiju's seven-point advice to Rahul Gandhi",
+              "publishedAt": "2026-11-05T04:11:41.000Z"
+            },
+            {
+              "outlet": "NDTV",
+              "angle": "गुप्त विदेशी यात्राओं से बचने और संसद के कर्तव्यों को गंभीरता से लेने की पुकार को उजागर किया गया",
+              "url": "https://www.ndtv.com/india-news/how-congress-can-win-more-mps-kiren-rijijus-advice-for-rahul-gandhi-12285370#publisher=newsstand",
+              "emphasis": "संसदीय आचरण",
+              "headline": "\"Avoid Secret Foreign Vacations\": Kiren Rijiju's 7 Tips For Rahul Gandhi",
+              "publishedAt": "2026-11-05T04:10:57.000Z"
+            }
+          ],
+          "coverageSummary": {
+            "agreement": "दोनों आउटलेट रिपोर्ट करते हैं कि मंत्री रिजीजू ने राहुल गांधी को बेहतर संसद व्यवहार के लिए सात‑बिंदु सूची दी।",
+            "differences": "टाइम्स ऑफ इंडिया ने बड़ों के सम्मान और बीजेपी‑आरएसएस की नफ़रत पर फोकस किया, जबकि एनडीटीवी ने गुप्त विदेशी यात्राओं और संसद में समग्र गंभीरता पर ज़ोर दिया।"
+          },
+          "estDurationSec": 106,
+          "audio": {
+            "src": "/audio/0fb32c90f7d78136.mp3",
+            "durationSec": 104.1,
+            "model": "Kokoro-82M",
+            "voice": "hf_alpha",
+            "key": "0fb32c90f7d78136",
+            "lang": "hi",
+            "wordTimes": [0, 0.48, 0.48, 0.66, 0.66, 1.42, 1.42, 1.86, 1.86, 2.24, 2.24, 2.4, 2.4, 2.7, 2.7, 2.8, 2.8, 3.42, 3.42, 3.68, 3.68, 4.1, 4.1, 4.54, 4.54, 5.26, 5.26, 5.56, 5.56, 5.74, 5.74, 6.52, 6.52, 6.88, 6.88, 7.36, 7.36, 8, 8, 8.16, 8.16, 8.76, 8.76, 8.96, 8.96, 9.5, 9.5, 9.76, 9.76, 10.16, 10.16, 10.68, 10.68, 11.38, 11.38, 11.66, 11.66, 11.98, 12.25, 12.77, 12.77, 13.2, 13.2, 13.62, 13.62, 14.05, 14.05, 14.38, 14.38, 14.89, 14.89, 15.22, 15.22, 15.55, 15.55, 16.17, 16.17, 16.59, 16.59, 17.02, 17.02, 17.35, 17.35, 17.68, 17.68, 18.01, 18.01, 18.34, 18.34, 19.14, 19.14, 20.13, 20.13, 20.46, 20.46, 20.79, 20.79, 21.12, 21.12, 21.64, 21.64, 21.97, 21.97, 22.3, 22.3, 22.72, 22.72, 23.05, 23.05, 23.48, 23.48, 23.81, 23.81, 24.42, 24.42, 24.75, 24.75, 25.08, 25.08, 25.41, 25.41, 25.74, 25.74, 26.07, 26.07, 26.4, 26.7, 26.91, 26.91, 27.19, 27.19, 27.4, 27.4, 27.68, 27.68, 27.89, 27.89, 28.11, 28.11, 28.5, 28.5, 28.78, 28.78, 29.11, 29.11, 29.51, 29.51, 29.79, 29.79, 30, 30, 31.6, 31.6, 31.96, 31.96, 32.44, 32.44, 32.94, 32.94, 33.28, 33.28, 33.74, 33.74, 34.24, 34.24, 34.52, 34.52, 34.76, 34.76, 35.46, 35.46, 35.88, 35.88, 36.4, 36.4, 36.84, 36.84, 37, 37, 37.36, 37.36, 37.72, 37.72, 38.02, 38.02, 38.82, 38.82, 38.98, 38.98, 39.56, 39.56, 40, 40, 40.16, 40.16, 40.58, 40.58, 40.72, 40.72, 41.26, 41.26, 41.8, 41.8, 42.18, 42.18, 42.68, 42.68, 42.86, 42.86, 43.32, 43.32, 43.56, 43.56, 43.84, 43.84, 44.46, 44.46, 44.96, 44.96, 45.12, 45.12, 45.5, 45.5, 46.52, 46.52, 47.28, 47.28, 47.72, 47.72, 48.18, 48.18, 48.36, 48.36, 48.69, 48.69, 49.03, 49.03, 49.46, 49.46, 49.79, 49.79, 50.22, 50.22, 51.13, 51.13, 51.46, 51.46, 51.99, 51.99, 52.32, 52.62, 52.93, 52.93, 53.42, 53.42, 53.92, 53.92, 54.32, 54.32, 54.63, 54.63, 55.21, 55.21, 55.53, 55.53, 56.2, 56.2, 56.78, 56.78, 57.09, 57.09, 57.5, 57.5, 57.9, 57.9, 58.21, 58.21, 58.79, 58.79, 59.11, 59.11, 59.42, 59.42, 60, 60, 60.36, 60.36, 60.94, 60.94, 61.38, 61.38, 61.9, 61.9, 62.4, 62.4, 62.86, 62.86, 63.42, 63.42, 63.62, 63.62, 64.12, 64.12, 64.52, 64.52, 64.64, 64.64, 65.2, 65.2, 65.4, 65.4, 65.72, 65.72, 66.2, 66.2, 66.68, 66.68, 67, 67, 67.34, 67.62, 68.05, 68.05, 68.47, 68.47, 68.8, 68.8, 69.13, 69.13, 69.84, 69.84, 70.18, 70.18, 70.6, 70.6, 70.93, 70.93, 71.26, 71.26, 71.69, 71.69, 72.02, 72.02, 72.54, 72.54, 73.16, 73.16, 73.87, 73.87, 74.2, 74.2, 74.53, 74.53, 74.96, 74.96, 75.29, 75.29, 75.9, 75.9, 76.23, 76.23, 76.66, 76.66, 77.09, 77.09, 77.51, 77.51, 77.84, 77.84, 78.27, 78.27, 78.69, 78.69, 79.22, 79.22, 79.74, 79.74, 80.07, 80.37, 80.69, 80.69, 81.47, 81.47, 82.06, 82.06, 82.48, 82.48, 82.89, 82.89, 83.21, 83.21, 83.62, 83.62, 83.95, 83.95, 84.27, 84.27, 84.59, 84.59, 85.18, 85.18, 85.5, 85.5, 85.92, 85.92, 86.24, 86.24, 86.84, 86.84, 87.25, 87.25, 87.84, 87.84, 88.17, 88.17, 88.67, 88.67, 88.99, 88.99, 89.4, 89.4, 90, 90, 90.48, 90.48, 90.76, 90.76, 91.44, 91.44, 91.68, 91.68, 92.5, 92.5, 93.08, 93.08, 93.2, 93.2, 93.7, 93.7, 93.82, 93.82, 94.26, 94.26, 94.56, 94.56, 95.08, 95.08, 95.52, 95.52, 95.7, 95.7, 96.24, 96.24, 96.42, 96.42, 96.88, 96.88, 97.2, 97.2, 97.72, 97.72, 97.9, 97.9, 98.72, 98.72, 99.16, 99.16, 99.54, 99.54, 99.92, 99.92, 100.26, 100.26, 100.46, 100.46, 101.1, 101.1, 101.64, 101.64, 101.8, 101.8, 102.58, 102.58, 102.74, 102.74, 103.12, 103.12, 103.62],
+            "align": "whisper-groq"
+          },
+          "provider": "groq"
+        }
+      }
+    },
+    {
+      "id": "science-t65kj7",
+      "track": "science",
+      "title": "Coal Plant to Power Britain’s Biggest AI Hub",
+      "hook": "Imagine a coal‑fired plant turning into the heart of Britain’s biggest AI hub—powering data, jobs, and a controversial future for.",
+      "segments": [
+        {
+          "text": "At Drax in North Yorkshire, the FTSE 250 owner signed a £20 billion deal with Brookfield and Radiant to build new AI infrastructure on the site.",
+          "visual": {
+            "kind": "map",
+            "place": "Drax, North Yorkshire",
+            "lat": 54.1,
+            "lon": -0.4
+          }
+        },
+        {
+          "text": "The plan includes converting the plant’s gas‑fired turbines into power for the data centre, while keeping the existing coal units running.",
+          "visual": {
+            "kind": "headline",
+            "text": "Power Conversion Plan"
+          }
+        },
+        {
+          "text": "Brookfield says the investment will create up to 1,200 new jobs and boost the local economy, but critics warn about carbon emissions.",
+          "visual": null
+        },
+        {
+          "text": "AI data centres need massive electricity, often from gas or coal, raising questions about whether the UK’s net‑zero targets can still be met.",
+          "visual": null
+        },
+        {
+          "text": "Britain plans to build four hyperscale data centres, and each could use gas‑fired power, according to a BBC report, sparking debate.",
+          "visual": {
+            "kind": "timeline",
+            "items": [
+              {
+                "when": "2026",
+                "what": "Four hyperscale centres planned"
+              },
+              {
+                "when": "2026",
+                "what": "Potential gas‑fired power use"
+              }
+            ]
+          }
+        },
+        {
+          "text": "For everyday people, the shift means more tech jobs but also the risk of higher carbon footprints, affecting climate goals and local air quality.",
+          "visual": null
+        },
+        {
+          "text": "Keep an eye on the next update: will the plant’s new role meet emissions targets, or will it push Britain further from net‑zero?",
+          "visual": null
+        }
+      ],
+      "whyItMatters": "The project could create thousands of tech jobs and boost local economies. However, it also risks increasing carbon emissions, challenging the UK’s climate goals.",
+      "context": "Drax is Britain’s most polluting power plant. A £20 billion deal will transform it into a hub for AI data centres, using gas‑fired power. This raises questions about balancing economic growth with environmental targets.",
+      "coverage": [
+        {
+          "outlet": "The Guardian",
+          "angle": "Deal to turn coal plant into AI power hub",
+          "url": "https://www.theguardian.com/business/2026/nov/03/uk-drax-power-station-ai-datacentre",
+          "emphasis": "economic investment",
+          "headline": "UK’s most polluting power plant could power country’s largest AI datacentre",
+          "publishedAt": "2026-11-03T11:55:28.000Z"
+        },
+        {
+          "outlet": "BBC News",
+          "angle": "Data centres could undermine UK emissions goals",
+          "url": "https://www.bbc.co.uk/news/articles/cqvgrvx6ekl2o?at_medium=RSS&at_campaign=rss",
+          "emphasis": "environmental impact",
+          "headline": "AI data centres could undermine UK's emissions goals",
+          "publishedAt": "2026-11-03T06:27:17.000Z"
+        }
+      ],
+      "coverageSummary": {
+        "agreement": "Both outlets report that the new AI data centres will use gas‑fired power.",
+        "differences": "The Guardian focuses on the investment and job creation, while the BBC highlights the potential emissions risk."
+      },
+      "sources": [
+        {
+          "outlet": "The Guardian",
+          "title": "UK’s most polluting power plant could power country’s largest AI datacentre",
+          "url": "https://www.theguardian.com/business/2026/nov/03/uk-drax-power-station-ai-datacentre",
+          "publishedAt": "2026-11-03T11:55:28.000Z"
+        },
+        {
+          "outlet": "BBC News",
+          "title": "AI data centres could undermine UK's emissions goals",
+          "url": "https://www.bbc.co.uk/news/articles/cqvgrvx6ekl2o?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-11-03T06:27:17.000Z"
+        }
+      ],
+      "location": {
+        "place": "Drax, North Yorkshire",
+        "lat": 54.1,
+        "lon": -0.4
+      },
+      "publishedAt": "2026-11-03T11:55:28.000Z",
+      "generatedAt": "2026-11-05T07:43:01.216Z",
+      "estDurationSec": 64,
+      "audio": {
+        "src": "/audio/89583e00790b33a4.mp3",
+        "durationSec": 63.8,
+        "model": "Kokoro-82M",
+        "voice": "af_heart",
+        "key": "89583e00790b33a4",
+        "lang": "en",
+        "wordTimes": [0, 0.18, 0.18, 0.52, 0.52, 0.74, 0.74, 0.94, 0.94, 1.72, 1.72, 2, 2, 2.34, 2.34, 3.26, 3.26, 3.72, 3.72, 4.26, 4.26, 4.4, 4.4, 5.2, 5.2, 5.25, 5.2, 5.76, 5.76, 6.08, 6.08, 6.54, 6.54, 6.9, 6.9, 7.32, 7.32, 7.86, 7.86, 8.06, 8.06, 8.38, 8.38, 8.76, 8.76, 9.38, 9.38, 9.84, 9.84, 9.98, 9.98, 10.26, 10.74, 10.88, 10.88, 11.16, 11.16, 11.62, 11.62, 12.08, 12.08, 12.3, 12.3, 12.72, 12.72, 13.4, 13.4, 13.86, 13.86, 14.18, 14.18, 14.54, 14.54, 14.8, 14.8, 14.94, 14.94, 15.1, 15.1, 15.54, 15.54, 16.18, 16.18, 16.48, 16.48, 16.7, 16.7, 17.12, 17.12, 17.5, 17.5, 17.84, 17.84, 18.14, 18.68, 19.12, 19.12, 19.38, 19.38, 19.56, 19.56, 20.08, 20.08, 20.36, 20.36, 20.72, 20.72, 20.94, 20.94, 21.12, 21.12, 22.02, 22.02, 22.3, 22.3, 22.78, 22.78, 23.32, 23.32, 23.68, 23.68, 23.88, 23.88, 24.1, 24.1, 24.6, 25.2, 25.38, 25.38, 25.72, 25.72, 26.14, 26.14, 26.5, 26.5, 26.9, 26.9, 27.32, 27.54, 28.26, 28.26, 28.66, 28.66, 29.12, 29.12, 29.58, 29.58, 29.98, 29.98, 30.88, 30.88, 31.5, 31.5, 31.78, 31.78, 32.26, 32.26, 32.54, 32.54, 33.18, 33.18, 33.76, 33.76, 34.24, 34.24, 34.64, 34.64, 34.88, 34.88, 35.1, 35.1, 35.4, 35.4, 35.96, 35.96, 36.48, 36.48, 36.7, 36.7, 36.94, 36.94, 37.1, 37.1, 37.44, 37.78, 38.04, 38.04, 38.56, 38.56, 38.76, 38.76, 39, 39, 39.34, 39.34, 40, 40, 40.34, 40.34, 41, 41, 41.46, 41.46, 41.66, 41.66, 41.84, 41.84, 42.08, 42.08, 42.82, 42.82, 43.16, 43.16, 43.92, 43.92, 44.18, 44.18, 44.3, 44.3, 44.58, 44.58, 45.24, 45.24, 46.06, 46.06, 46.36, 46.98, 47.1, 47.1, 47.42, 47.42, 48.08, 48.08, 48.42, 48.42, 48.74, 48.74, 49.06, 49.06, 49.28, 49.28, 49.56, 49.56, 50.04, 50.04, 50.58, 50.58, 50.88, 50.88, 51.1, 51.1, 51.42, 51.42, 51.62, 51.62, 51.9, 51.9, 52.2, 52.2, 52.7, 52.7, 53.68, 53.68, 54.1, 54.1, 54.52, 54.52, 54.82, 54.82, 55.08, 55.08, 55.36, 55.36, 55.72, 56.32, 56.38, 56.38, 56.64, 56.64, 56.88, 56.88, 57.14, 57.14, 57.24, 57.24, 57.48, 57.48, 58.08, 58.08, 58.54, 58.54, 58.66, 58.66, 59.06, 59.06, 59.22, 59.22, 59.52, 59.52, 59.78, 59.78, 60.24, 60.24, 60.72, 60.72, 61.36, 61.36, 61.56, 61.56, 61.66, 61.66, 61.88, 61.88, 62.1, 62.1, 62.46, 62.46, 62.78, 62.78, 63.46],
+        "align": "whisper-groq"
+      },
+      "provider": "groq"
+    },
+    {
+      "id": "science-o4trhz",
+      "track": "science",
+      "title": "Enceladus Shines in NASA’s Daily Space Photo",
+      "hook": "Tonight we glimpse Saturn’s moon Enceladus, silhouetted against the starry void, a stunning reminder of our solar system’s hidden wonders in space.",
+      "segments": [
+        {
+          "text": "Tonight we glimpse Saturn’s moon Enceladus, silhouetted against the starry void, a stunning reminder of our solar system’s hidden wonders in space.",
+          "visual": null
+        },
+        {
+          "text": "NASA’s Astronomy Picture of the Day featured a new image captured by the Cassini spacecraft, showing Enceladus’s icy ridge illuminated by distant sunlight.",
+          "visual": {
+            "kind": "headline",
+            "text": "Enceladus Silhouette"
+          }
+        },
+        {
+          "text": "The photograph was taken during a flyby over Enceladus’s south polar region, where geysers spew water vapor into space, hinting at subsurface oceans.",
+          "visual": {
+            "kind": "headline",
+            "text": "South Polar Flyby"
+          }
+        },
+        {
+          "text": "Enceladus, only 500 kilometers across, is one of Saturn’s most reflective moons, its bright surface composed of fresh ice constantly renewed by plume activity.",
+          "visual": {
+            "kind": "headline",
+            "text": "Ice Reflectivity"
+          }
+        },
+        {
+          "text": "Scientists study Enceladus because its hidden ocean may harbor conditions suitable for life, offering clues about habitability beyond Earth in our universe.",
+          "visual": {
+            "kind": "headline",
+            "text": "Potential Life"
+          }
+        },
+        {
+          "text": "Upcoming missions like NASA’s Europa Clipper will use Enceladus’s findings to design instruments that could directly sample icy moons for biosignatures soon.",
+          "visual": {
+            "kind": "headline",
+            "text": "Future Missions"
+          }
+        },
+        {
+          "text": "Enceladus shows that even tiny worlds can host liquid water, expanding the places we might find life. Understanding these moons helps us protect Earth’s own fragile environment.",
+          "visual": null
+        },
+        {
+          "text": "Enceladus orbits Saturn every 1.4 days and gained fame after Cassini discovered plumes of water vapor in 2005. Its bright icy cliffs reflect sunlight, making it a favorite target for imaging.",
+          "visual": null
+        }
+      ],
+      "whyItMatters": "Enceladus shows that even tiny worlds can host liquid water, expanding the places we might find life. Understanding these moons helps us protect Earth’s own fragile environment.",
+      "context": "Enceladus orbits Saturn every 1.4 days and gained fame after Cassini discovered plumes of water vapor in 2005. Its bright icy cliffs reflect sunlight, making it a favorite target for imaging.",
+      "coverage": [],
+      "coverageSummary": null,
+      "sources": [
+        {
+          "outlet": "NASA",
+          "title": "APOD: 2026 November 5 – Enceladus in Silhouette",
+          "url": "https://science.nasa.gov/image-article/apod-2026-november-5-enceladus-in-silhouette/",
+          "publishedAt": "2026-11-05T05:05:00.000Z"
+        }
+      ],
+      "location": null,
+      "publishedAt": "2026-11-05T05:05:00.000Z",
+      "generatedAt": "2026-11-05T07:23:29.139Z",
+      "estDurationSec": 78,
+      "audio": {
+        "src": "/audio/097773e035f31888.mp3",
+        "durationSec": 87.6,
+        "model": "Kokoro-82M",
+        "voice": "af_heart",
+        "key": "097773e035f31888",
+        "lang": "en",
+        "wordTimes": [0, 0.3, 0.3, 0.54, 0.54, 0.86, 0.86, 1.46, 1.46, 1.74, 1.74, 2.94, 2.94, 3.6, 3.6, 3.98, 3.98, 4.2, 4.2, 4.58, 4.58, 5.38, 5.38, 5.46, 5.46, 5.82, 5.82, 6.3, 6.3, 6.6, 6.6, 6.72, 6.72, 7, 7, 7.62, 7.62, 7.82, 7.82, 8.24, 8.24, 8.5, 8.5, 9.04, 9, 9.74, 9.74, 10.3, 10.3, 10.86, 10.86, 10.94, 10.94, 11.06, 11.06, 11.28, 11.28, 11.88, 11.88, 12.08, 12.08, 12.22, 12.22, 12.78, 12.78, 13.32, 13.32, 13.56, 13.56, 13.72, 13.72, 14.16, 14.16, 15.6, 15.6, 15.76, 15.76, 16.66, 16.66, 17, 17, 17.48, 17.48, 18.14, 18.14, 18.64, 18.64, 19, 19, 19.66, 19.5, 20.08, 20.08, 20.46, 20.46, 20.76, 20.76, 21.04, 21.04, 21.36, 21.36, 21.56, 21.56, 21.98, 21.98, 22.36, 22.36, 23.24, 23.24, 23.58, 23.58, 23.98, 23.98, 24.64, 24.64, 25.1, 25.1, 25.62, 25.62, 26.04, 26.04, 26.3, 26.3, 26.8, 26.8, 26.88, 26.88, 27.48, 27.48, 28.1, 28.1, 28.3, 28.3, 28.88, 28.88, 29.56, 29.78, 31.02, 31.02, 31.14, 31.14, 31.68, 31.68, 32.22, 32.22, 33.02, 33.02, 33.46, 33.46, 33.58, 33.58, 33.7, 33.7, 34.28, 34.28, 34.5, 34.5, 35.02, 35.02, 36.08, 36.08, 36.16, 36.16, 36.44, 36.44, 36.92, 36.92, 37.36, 37.36, 37.64, 37.64, 37.96, 37.96, 38.36, 38.36, 39, 39, 39.48, 39.48, 39.74, 39.74, 40.06, 40.06, 40.78, 40.78, 41.52, 41.52, 42.12, 42.12, 42.92, 42.92, 43.48, 43.48, 43.68, 43.68, 43.92, 43.92, 44.34, 44.34, 44.72, 44.72, 45.04, 45.04, 45.64, 45.64, 46.04, 46.04, 46.32, 46.32, 47.18, 47.18, 47.52, 47.52, 47.92, 47.92, 48.2, 48.2, 48.92, 48.92, 49.4, 49.4, 49.78, 49.78, 50.04, 50.04, 50.14, 50.14, 50.78, 50.84, 51.54, 51.54, 52.28, 52.28, 52.42, 52.42, 52.82, 52.82, 53.28, 53.28, 54.22, 54.22, 54.36, 54.36, 54.6, 54.6, 55.4, 55.4, 55.8, 55.8, 56.24, 56.24, 56.58, 56.58, 57.08, 57.08, 57.82, 57.82, 57.94, 57.94, 58.4, 58.4, 58.88, 58.88, 59.3, 59.3, 59.62, 59.62, 60, 60, 60.88, 60.88, 61.34, 61.02, 62.38, 62.38, 62.64, 62.64, 62.86, 62.86, 63.16, 63.16, 63.64, 63.64, 64, 64, 64.22, 64.22, 64.52, 64.52, 64.9, 64.9, 65.48, 65.48, 66.32, 66.32, 66.54, 66.54, 66.86, 66.86, 67.2, 67.2, 67.4, 67.4, 67.68, 67.68, 68.18, 68.32, 69.3, 69.3, 69.66, 69.66, 70, 70, 70.44, 70.44, 70.66, 70.66, 71.02, 71.02, 71.6, 71.6, 71.84, 71.84, 72.3, 72.3, 73.14, 73.52, 74.2, 74.2, 74.5, 74.5, 74.92, 74.92, 75.36, 75.36, 76.3, 76.3, 76.68, 76.68, 77.24, 77.24, 77.48, 77.48, 77.86, 77.86, 78.4, 78.4, 78.9, 78.9, 79.48, 79.48, 79.86, 79.86, 80.02, 80.02, 80.28, 80.28, 80.62, 80.62, 80.92, 80.92, 81.64, 81.64, 82.68, 82.68, 83.02, 83.02, 83.36, 83.36, 83.8, 83.8, 84.26, 84.26, 84.92, 84.92, 85.4, 85.4, 85.56, 85.56, 85.66, 85.66, 85.94, 85.94, 86.38, 86.38, 86.66, 86.66, 87.22],
+        "align": "whisper-groq"
+      },
+      "provider": "groq"
+    },
+    {
+      "id": "science-a2yz0z",
+      "track": "science",
+      "title": "Cyprus Reveals Ancient Ocean Crust and Wild Cats",
+      "hook": "Imagine stepping onto a Mediterranean island where the ground beneath you is ancient ocean crust, and stray cats roam among hidden snakes.",
+      "segments": [
+        {
+          "text": "Scientists from the University of Cyprus have mapped the island’s ophiolite complex, confirming that Cyprus exposes a slice of the Earth’s former seafloor.",
+          "visual": {
+            "kind": "map",
+            "place": "Cyprus",
+            "lat": 35.1264,
+            "lon": 33.4299
+          }
+        },
+        {
+          "text": "The ophiolite, a rare rock formation, includes basalt and serpentine, remnants of tectonic plates that once lay beneath the Mediterranean waves.",
+          "visual": {
+            "kind": "headline",
+            "text": "Plate Tectonics Insight"
+          }
+        },
+        {
+          "text": "While researchers study the geology, locals note dozens of feral cats hunting native snake species, creating an unusual wildlife balance on the island.",
+          "visual": null
+        },
+        {
+          "text": "Ophiolites are key to understanding plate tectonics because they expose deep‑sea crust and mantle that are normally hidden beneath ocean basins.",
+          "visual": {
+            "kind": "headline",
+            "text": "Ancient Crust"
+          }
+        },
+        {
+          "text": "Cyprus’s ophiolite is among the world’s largest and best studied, offering scientists a natural laboratory to test theories about Earth’s formation.",
+          "visual": null
+        },
+        {
+          "text": "Understanding this ancient crust helps predict seismic activity and mineral resources, which can affect building safety and economic development for residents.",
+          "visual": {
+            "kind": "headline",
+            "text": "Why It Matters"
+          }
+        },
+        {
+          "text": "Future expeditions will drill core samples and use drones to map hidden faults, so stay tuned for new discoveries beneath Cyprus’s rugged terrain.",
+          "visual": {
+            "kind": "timeline",
+            "items": [
+              {
+                "when": "2026",
+                "what": "Drone mapping begins"
+              },
+              {
+                "when": "2027",
+                "what": "Core drilling scheduled"
+              }
+            ]
+          }
+        }
+      ],
+      "whyItMatters": "The ancient ocean floor gives clues about earthquakes and where valuable minerals may lie. That knowledge can keep homes safer and boost the local economy.",
+      "context": "An ophiolite is a section of oceanic crust and upper mantle that has been thrust onto continental land. Cyprus hosts one of the largest and most studied ophiolite belts, making it a prime site for geologists. The island’s unique wildlife, including many stray cats, adds an unexpected ecological twist.",
+      "coverage": [],
+      "coverageSummary": null,
+      "sources": [
+        {
+          "outlet": "NASA",
+          "title": "Cyprus: Island of Snakes, Cats, and Ophiolites",
+          "url": "https://science.nasa.gov/earth/earth-observatory/cyprus-island-of-snakes-cats-and-ophiolites/",
+          "publishedAt": "2026-11-05T05:01:00.000Z"
+        }
+      ],
+      "location": {
+        "place": "Cyprus",
+        "lat": 35.1264,
+        "lon": 33.4299
+      },
+      "publishedAt": "2026-11-05T05:01:00.000Z",
+      "generatedAt": "2026-11-05T07:23:47.832Z",
+      "estDurationSec": 61,
+      "audio": {
+        "src": "/audio/237e55313dcc51f9.mp3",
+        "durationSec": 69.3,
+        "model": "Kokoro-82M",
+        "voice": "af_heart",
+        "key": "237e55313dcc51f9",
+        "lang": "en",
+        "wordTimes": [0, 0.64, 0.64, 0.88, 0.88, 1.04, 1.04, 1.54, 1.54, 1.82, 1.82, 2.24, 2.24, 2.8, 2.8, 3.12, 3.12, 3.32, 3.32, 3.82, 3.82, 4.54, 4.54, 5.3, 5.3, 6.08, 6.08, 6.36, 6.36, 6.82, 6.82, 7.5, 7.5, 7.72, 7.72, 8.12, 8.12, 8.34, 8.34, 8.48, 8.48, 8.92, 8.92, 9.24, 9.24, 9.94, 9.86, 10.44, 10.44, 11.22, 11.22, 11.52, 11.52, 11.82, 11.82, 12.18, 12.18, 13.2, 13.2, 13.56, 13.56, 14.12, 14.12, 14.38, 14.38, 15.24, 15.24, 15.98, 15.98, 16.2, 16.2, 16.66, 16.66, 17.04, 17.04, 17.36, 17.36, 17.6, 17.6, 17.84, 17.84, 18.22, 18.22, 18.46, 18.46, 18.82, 18.82, 19.8, 19.74, 20.28, 20.28, 20.74, 20.74, 21.18, 21.18, 21.34, 21.34, 22.18, 22.18, 22.78, 22.78, 23.12, 23.12, 23.54, 23.54, 23.82, 23.82, 24.14, 24.14, 24.6, 24.6, 25.18, 25.18, 25.56, 25.56, 25.92, 25.92, 26.94, 26.94, 27.47, 27.47, 27.66, 27.66, 28.13, 28.13, 28.66, 28.66, 29.13, 29.13, 29.33, 29.33, 29.58, 29.58, 30.33, 30.63, 31.42, 31.42, 31.47, 31.44, 31.7, 31.7, 32.02, 32.02, 32.6, 32.6, 32.88, 32.88, 33.76, 33.76, 34.2, 34.2, 34.4, 34.4, 34.84, 34.84, 35.5, 35.5, 35.86, 35.86, 36.12, 36.12, 36.48, 36.48, 37.1, 37.1, 37.22, 37.22, 37.5, 37.5, 37.86, 37.86, 38.28, 38.28, 38.74, 38.74, 39.42, 39.4, 40.4, 40.4, 41.16, 41.16, 41.46, 41.46, 41.6, 41.6, 41.8, 41.8, 42.14, 42.14, 42.6, 42.6, 42.94, 42.94, 43.18, 43.18, 43.78, 43.78, 44.46, 44.46, 45.02, 45.02, 45.36, 45.36, 45.74, 45.74, 46.24, 46.24, 46.76, 46.76, 47.02, 47.02, 47.42, 47.42, 47.98, 47.98, 48.38, 48.38, 49.04, 49.48, 49.82, 49.82, 50.32, 50.32, 50.76, 50.76, 51.14, 51.14, 51.7, 51.7, 52.1, 52.1, 52.82, 52.82, 53.26, 53.26, 53.68, 53.68, 53.9, 53.9, 54.8, 54.8, 55.34, 55.34, 55.52, 55.52, 55.86, 55.86, 56.2, 56.2, 56.76, 56.76, 57.24, 57.24, 57.78, 57.78, 58.26, 58.26, 58.54, 58.54, 59.24, 59.08, 59.92, 59.92, 60.68, 60.68, 60.98, 60.98, 61.28, 61.28, 61.58, 61.58, 62.04, 62.04, 62.62, 62.62, 62.8, 62.8, 63.24, 63.24, 63.5, 63.5, 63.74, 63.74, 64, 64, 64.64, 64.64, 65.14, 65.14, 65.4, 65.4, 65.7, 65.7, 65.92, 65.92, 66.06, 66.06, 66.6, 66.6, 67.18, 67.18, 67.96, 67.96, 68.3, 68.3, 68.96],
+        "align": "whisper-groq"
+      },
+      "provider": "groq"
+    }
+  ]
+}
