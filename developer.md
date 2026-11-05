@@ -43,7 +43,7 @@ Measured on this project's actual keys and a 4-core CPU sandbox (2026-11-04/05).
 |---|---|
 | Kokoro-native timestamps | The `onnx-community/Kokoro-82M-v1.0-ONNX` graph has a single output (`waveform`); no durations are exposed (verified with `InferenceSession.outputNames`). The Python `kokoro` package does expose token timestamps but pulls PyTorch (GBs), which is unacceptable for CI |
 | **Per-segment synthesis** (chosen, always on) | Each script segment is synthesised separately and the sample counts give **exact segment boundaries**. Word timing inside a segment is then constrained to its window |
-| **Groq `whisper-large-v3-turbo`** word timestamps (chosen, first choice) | Free; ~1–3 s per clip. English: 165/166 words matched on the test short. Hindi ≈ 70–95% (Whisper normalises Hindi spelling) |
+| **Groq `whisper-large-v3-turbo`** word timestamps (chosen, first choice) | Free; ~1–3 s per clip. English: 165/166 words matched on the test short. Hindi typically 70–95%, worst seen 43% (Whisper normalises Hindi spelling) |
 | **Local Whisper** (`Xenova/whisper-base.en`, transformers.js) (fallback) | No API at all; 17 s of audio in 4.8 s, including the first-run download |
 | Estimate from text | Last resort (device voice, old data). Same as v1 |
 
@@ -208,7 +208,7 @@ Other S3-compatible options work with the same variables (Backblaze B2, Supabase
 
 - **Narration speed on small runners:** Kokoro is ~1.8× realtime on 4 cores and slower on 2. The time budget makes this incremental rather than failing, but a cold start spans two runs.
 - **Voice quality:** Kokoro is good but audibly synthetic; Hindi is graded lower than English by its authors. The Gemini provider (optional) sounds better when quota is available.
-- **Hindi timing:** Whisper normalises Hindi spellings (nukta, conjuncts), so ≈70–95% of words match; the rest are interpolated inside their exact segment window, which keeps error small. Hindi stories are also long (≈100 s). Hindi script quality is whatever the free LLM produces: read before posting.
+- **Hindi timing:** Whisper normalises Hindi spellings (nukta, conjuncts), so typically 70–95% of words match (one clip in testing only 43%); the rest are interpolated inside their exact segment window, which keeps error small. Hindi stories are also long (≈100 s). Hindi script quality is whatever the free LLM produces: read before posting.
 - **LLM factual slips:** numbers on screen are grounded, but descriptive details in the narration are not machine-checked (e.g. a wrong job title for a public figure). Every short shows its sources and an "AI can make mistakes" note.
 - **Partial runs:** `--tracks=x` keeps the other tracks' shorts from the previous feed, but clusters are built only from the chosen tracks' feeds, so the picks can differ from a full run.
 - **Clustering is still imperfect.** Many stories are single-outlet because feeds simply don't overlap. At 0.60 a few loosely related items merge; tune `EMBED_THRESHOLD`.
@@ -276,7 +276,7 @@ Other S3-compatible options work with the same variables (Backblaze B2, Supabase
   6. **Dataset refreshed:** 21 shorts (all 21 written by Groq and narrated by Kokoro, all with Whisper-aligned word timings; 3 India stories also in Hindi with their own narration; 19 of 21 cite 2+ outlets and 18 carry an agree/differ comparison). It was produced by a full run and then an incremental run that reused 16 shorts straight from cache; screenshots updated.
   7. **Storage:** `AudioStore` (local/git or S3-compatible), SigV4 signer, upload-and-rewrite migration, documented R2 setup.
 - **Tests:** 88 vitest tests (RSS, clustering incl. semantic + picks, embedding cache, script guards, alignment, timeline + cues, playlist, LLM fallback and retry-after, TTS text/audio utils, storage + SigV4 vector, narration cache, Hindi validation and localisation). Typecheck, lint and production build are clean.
-- **Clean-room check:** @@CLEANROOM@@
+- **Clean-room check:** fresh `git clone` of this branch → `npm ci` → typecheck, lint, 88 tests, build → `pipeline/run.ts --tracks=india,sports --max=1 --fresh` with `GEMINI_API_KEY` removed from the environment and an empty model cache: weights downloaded on first use, Groq wrote 2 scripts + 1 Hindi adaptation, Kokoro narrated 3 clips, Whisper aligned all of them, other tracks were kept. This mirrors what the Actions job does (same Node 22, `espeak-ng` + `ffmpeg` from apt).
 
 ### In progress
 - Nothing. Pick up from "Next".
