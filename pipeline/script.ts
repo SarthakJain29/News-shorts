@@ -24,8 +24,8 @@ const visualSchema = z.discriminatedUnion("kind", [
 ]);
 
 export const scriptSchema = z.object({
-  title: z.string().min(5).max(90),
-  hook: z.string().min(5).max(140),
+  title: z.string().min(5).max(110),
+  hook: z.string().min(5).max(220),
   segments: z
     .array(z.object({ text: z.string().min(3).max(400), visual: z.unknown().optional().nullable() }))
     .min(4)
@@ -33,9 +33,11 @@ export const scriptSchema = z.object({
   whyItMatters: z.string().min(10).max(500),
   context: z.string().min(10).max(600),
   coverage: z
-    .array(z.object({ outlet: z.string(), angle: z.string().min(3).max(220) }))
+    .array(z.object({ outlet: z.string(), angle: z.string().min(3).max(240), emphasis: z.string().max(40).optional().nullable() }))
     .optional()
     .default([]),
+  agreement: z.string().max(300).optional().nullable(),
+  differences: z.string().max(360).optional().nullable(),
   location: z
     .object({ place: z.string(), lat: z.number().min(-90).max(90), lon: z.number().min(-180).max(180) })
     .nullable()
@@ -49,6 +51,13 @@ export function wordCount(s: string): number {
   return s.split(/\s+/).filter(Boolean).length;
 }
 
+/** Up to 8 articles for the prompt: one per outlet first (so every outlet is represented), then extras. */
+export function promptSources(c: Cluster, max = 8): Cluster["items"] {
+  const firstPerOutlet = c.outlets.map((o) => c.items.find((i) => i.outlet === o)!).filter(Boolean);
+  const rest = c.items.filter((i) => !firstPerOutlet.includes(i));
+  return [...firstPerOutlet, ...rest].slice(0, max);
+}
+
 export function buildPrompt(track: TrackId, c: Cluster): { system: string; user: string } {
   const isPolitics = track === "politics";
   const system = [
@@ -57,14 +66,14 @@ export function buildPrompt(track: TrackId, c: Cluster): { system: string; user:
     "Only state facts supported by the snippets. If a detail is uncertain, say so plainly. No speculation, no sensationalism, no opinions.",
     "Write for the ear: short sentences, active voice, conversational but precise. Spell out abbreviations the first time.",
     isPolitics
-      ? "This is POLITICS: use strictly neutral framing. Attribute claims to who made them. Avoid loaded words. Give each side's stated position fairly. Fill `coverage` with how each outlet framed the story (paraphrased angle, one sentence each)."
-      : "Fill `coverage` only if outlets meaningfully differ in emphasis; otherwise return an empty array.",
+      ? "This is POLITICS: use strictly neutral framing. Attribute claims to who made them. Avoid loaded words. Give each side's stated position fairly. Always fill `coverage`, `agreement` and `differences` (when 2+ outlets)."
+      : "When 2+ outlets cover the story, fill `coverage` (one entry per outlet), `agreement` and `differences`.",
+    "COVERAGE COMPARISON RULES: base it only on the per-outlet headlines/snippets provided. `angle` = one sentence, in your own words, on what that outlet emphasised or how it framed the story. `emphasis` = a 2–4 word label (e.g. \"economic impact\", \"legal angle\", \"human cost\"). `agreement` = one sentence on the facts every outlet reports. `differences` = one sentence on where emphasis, framing or detail differs; if the snippets show no meaningful difference say so plainly. Never quote, never invent details an outlet did not report, never judge which outlet is right.",
     "Return ONLY a JSON object matching the requested schema.",
   ].join("\n");
 
-  const sources = c.items
-    .slice(0, 6)
-    .map((it, i) => `[${i + 1}] ${it.outlet} — ${it.publishedAt.slice(0, 10)}\nHEADLINE: ${it.title}\nSNIPPET: ${it.summary.slice(0, 500) || "(none)"}`)
+  const sources = promptSources(c)
+    .map((it, i) => `[${i + 1}] OUTLET: ${it.outlet} — ${it.publishedAt.slice(0, 10)}\nHEADLINE: ${it.title}\nSNIPPET: ${it.summary.slice(0, 450) || "(none)"}`)
     .join("\n\n");
 
   const user = `Track: ${TRACKS[track].label}
@@ -83,7 +92,9 @@ JSON schema:
   "segments": [ { "text": string (two spoken sentences, 20–28 words), "visual": Visual | null } ] (8 segments in this order: 1 hook; 2–4 what happened, who and where; 5–6 background a newcomer needs; 7 why it matters to ordinary people; 8 what to watch next),
   "whyItMatters": string (2 sentences, plain language),
   "context": string ("Context if you're new to this": 2–3 sentences of background),
-  "coverage": [ { "outlet": string (one of the outlets above), "angle": string } ],
+  "coverage": [ { "outlet": string (exactly as listed above), "angle": string, "emphasis": string } ] ([] if only one outlet),
+  "agreement": string ("" if only one outlet),
+  "differences": string ("" if only one outlet),
   "location": { "place": string, "lat": number, "lon": number } | null (main place the story is about)
 }
 Visual is one of:
@@ -175,10 +186,15 @@ export function draftToShort(raw: unknown, track: TrackId, c: Cluster, provider:
 
   const segments: Segment[] = draft.segments.map((s) => ({ text: s.text.trim(), visual: sanitizeVisual(s.visual, sourceText) }));
   const sources = sourcesOf(c);
-  const urlFor = (outlet: string) => sources.find((s) => s.outlet.toLowerCase() === outlet.toLowerCase())?.url;
-  const coverage: Coverage[] = draft.coverage
-    .map((cv) => ({ outlet: cv.outlet, angle: cv.angle, url: urlFor(cv.outlet) ?? "" }))
-    .filter((cv) => cv.url);
+  const seenOutlets = new Set<string>();
+  const coverage: Coverage[] = [];
+  for (const cv of draft.coverage) {
+    const src = sources.find((s) => s.outlet.toLowerCase() === cv.outlet.toLowerCase());
+    if (!src || seenOutlets.has(src.outlet)) continue;
+    seenOutlets.add(src.outlet);
+    coverage.push({ outlet: src.outlet, angle: cv.angle.trim(), url: src.url, emphasis: cv.emphasis?.trim() || undefined, headline: src.title, publishedAt: src.publishedAt });
+  }
+  const coverageSummary = sources.length > 1 && coverage.length > 1 && draft.agreement?.trim() ? { agreement: draft.agreement.trim(), differences: (draft.differences ?? "").trim() } : null;
 
   return {
     id: `${track}-${c.id}`,
@@ -189,6 +205,7 @@ export function draftToShort(raw: unknown, track: TrackId, c: Cluster, provider:
     whyItMatters: draft.whyItMatters.trim(),
     context: draft.context.trim(),
     coverage,
+    coverageSummary,
     sources,
     location: draft.location ?? null,
     publishedAt: c.latest,

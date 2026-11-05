@@ -1,3 +1,4 @@
+import type { TrackId } from "../src/lib/types";
 import type { RawItem } from "./rss";
 
 const STOP = new Set(
@@ -45,18 +46,33 @@ export function canonicalUrl(u: string): string {
 
 /** Drop exact duplicates (same canonical URL) and same-outlet near-identical headlines. */
 export function dedupe(items: RawItem[]): RawItem[] {
-  const seen = new Set<string>();
+  const seen = new Map<string, RawItem>();
   const out: RawItem[] = [];
+  const mergeTracks = (into: RawItem, from: RawItem) => {
+    if (from.tracks?.length) into.tracks = [...new Set([...(into.tracks ?? []), ...from.tracks])];
+  };
   for (const it of items) {
     const key = canonicalUrl(it.url);
-    if (seen.has(key)) continue;
+    const dup = seen.get(key);
+    if (dup) {
+      mergeTracks(dup, it);
+      continue;
+    }
     const tk = tokens(it.title);
-    if (out.some((o) => o.outlet === it.outlet && jaccard(tokens(o.title), tk) > 0.85)) continue;
-    seen.add(key);
-    out.push(it);
+    const near = out.find((o) => o.outlet === it.outlet && jaccard(tokens(o.title), tk) > 0.85);
+    if (near) {
+      mergeTracks(near, it);
+      continue;
+    }
+    const copy = { ...it, tracks: it.tracks ? [...it.tracks] : undefined };
+    seen.set(key, copy);
+    out.push(copy);
   }
   return out;
 }
+
+/** When a story is carried by several tracks' feeds, the more specific desk wins; "world" is the catch-all. */
+export const TRACK_SPECIFICITY: TrackId[] = ["politics", "india", "science", "finance", "technology", "sports", "world"];
 
 export interface Cluster {
   id: string;
@@ -64,6 +80,10 @@ export interface Cluster {
   outlets: string[];
   score: number;
   latest: string;
+  /** How many member articles each track's feeds contributed. */
+  tracks: Partial<Record<TrackId, number>>;
+  /** Track that "owns" the story (most votes, ties broken by specificity). */
+  primary: TrackId | null;
 }
 
 export function similar(a: RawItem, b: RawItem): boolean {
@@ -87,47 +107,122 @@ export function hashId(s: string): string {
   return (h >>> 0).toString(36);
 }
 
-/** Single-link clustering with union-find; ranks by outlet breadth, then recency. */
-export function cluster(items: RawItem[], now = Date.now()): Cluster[] {
+/** Turn a group of articles into a ranked, identified cluster. */
+export function finalize(group: RawItem[], now: number): Cluster {
+  const g = [...group].sort((a, b) => b.publishedAt.localeCompare(a.publishedAt));
+  const outlets = [...new Set(g.map((x) => x.outlet))];
+  const latest = g[0].publishedAt;
+  const ageH = Math.max(0, (now - Date.parse(latest)) / 3.6e6);
+  const recency = Math.max(0, 1 - ageH / 48);
+  const score = outlets.length * 2 + Math.min(g.length, 6) * 0.3 + recency * 2;
+  const votes: Partial<Record<TrackId, number>> = {};
+  for (const it of g) for (const t of it.tracks ?? []) votes[t] = (votes[t] ?? 0) + 1;
+  const primary = TRACK_SPECIFICITY.reduce<TrackId | null>((best, t) => ((votes[t] ?? 0) > (best ? (votes[best] ?? 0) : 0) ? t : best), null);
+  // Anchor the id to the oldest article: stable as later outlets join the story.
+  const oldest = [...g].sort((a, b) => a.publishedAt.localeCompare(b.publishedAt) || canonicalUrl(a.url).localeCompare(canonicalUrl(b.url)))[0];
+  return { id: hashId(canonicalUrl(oldest.url)), items: g, outlets, score, latest, tracks: votes, primary };
+}
+
+function rank(clusters: Cluster[]): Cluster[] {
+  return clusters.sort((a, b) => b.score - a.score || b.latest.localeCompare(a.latest));
+}
+
+/** Single-link clustering on headline/summary token overlap (no API needed). */
+export function clusterLexical(items: RawItem[], now = Date.now()): Cluster[] {
   const parent = items.map((_, i) => i);
   const find = (i: number): number => (parent[i] === i ? i : (parent[i] = find(parent[i])));
-  for (let i = 0; i < items.length; i++)
-    for (let j = i + 1; j < items.length; j++) if (similar(items[i], items[j])) parent[find(i)] = find(j);
-
+  for (let i = 0; i < items.length; i++) for (let j = i + 1; j < items.length; j++) if (similar(items[i], items[j])) parent[find(i)] = find(j);
   const groups = new Map<number, RawItem[]>();
   items.forEach((it, i) => {
     const r = find(i);
     groups.set(r, [...(groups.get(r) ?? []), it]);
   });
+  return rank([...groups.values()].map((g) => finalize(g, now)));
+}
 
-  const clusters: Cluster[] = [];
-  for (const g of groups.values()) {
-    g.sort((a, b) => b.publishedAt.localeCompare(a.publishedAt));
-    const outlets = [...new Set(g.map((x) => x.outlet))];
-    const latest = g[0].publishedAt;
-    const ageH = Math.max(0, (now - Date.parse(latest)) / 3.6e6);
-    const recency = Math.max(0, 1 - ageH / 48);
-    const score = outlets.length * 2 + Math.min(g.length, 6) * 0.3 + recency * 2;
-    clusters.push({ id: hashId(g.map((x) => canonicalUrl(x.url)).sort()[0]), items: g, outlets, score, latest });
-  }
-  return clusters.sort((a, b) => b.score - a.score || b.latest.localeCompare(a.latest));
+/** Embedding similarity above which two articles are treated as the same story (calibrated on real feeds). */
+export const DEFAULT_EMBED_THRESHOLD = 0.6;
+export const MAX_CLUSTER_SIZE = 14;
+
+function dot(a: number[], b: number[]): number {
+  let s = 0;
+  for (let i = 0; i < a.length; i++) s += a[i] * b[i];
+  return s;
 }
 
 /**
- * Pull in matching articles from other tracks' feeds (e.g. a world desk covering a politics story)
- * so each short can cite — and compare — more outlets.
+ * Average-linkage agglomerative clustering over unit vectors. Average linkage (not single link)
+ * stops a chain of loosely-related headlines from fusing unrelated stories.
+ * Returns groups of indices.
  */
-export function enrich(c: Cluster, pool: RawItem[]): Cluster {
-  const have = new Set(c.items.map((i) => canonicalUrl(i.url)));
-  const extra = pool.filter((p) => !have.has(canonicalUrl(p.url)) && !c.outlets.includes(p.outlet) && c.items.some((i) => similar(i, p)));
-  const byOutlet = new Map<string, RawItem>();
-  for (const e of extra) if (!byOutlet.has(e.outlet)) byOutlet.set(e.outlet, e);
-  if (byOutlet.size === 0) return c;
-  const items = [...c.items, ...byOutlet.values()];
-  return { ...c, items, outlets: [...new Set(items.map((i) => i.outlet))] };
+export function agglomerate(vectors: number[][], threshold = DEFAULT_EMBED_THRESHOLD, maxSize = MAX_CLUSTER_SIZE): number[][] {
+  const n = vectors.length;
+  const S = new Float32Array(n * n);
+  for (let i = 0; i < n; i++) for (let j = i + 1; j < n; j++) S[i * n + j] = S[j * n + i] = dot(vectors[i], vectors[j]);
+  const members: number[][] = vectors.map((_, i) => [i]);
+  const active = new Set(vectors.map((_, i) => i));
+  for (;;) {
+    let best = -1;
+    let ba = -1;
+    let bb = -1;
+    const ids = [...active];
+    for (let x = 0; x < ids.length; x++)
+      for (let y = x + 1; y < ids.length; y++) {
+        const a = ids[x];
+        const b = ids[y];
+        const v = S[a * n + b];
+        if (v > best && v >= threshold && members[a].length + members[b].length <= maxSize) {
+          best = v;
+          ba = a;
+          bb = b;
+        }
+      }
+    if (ba < 0) break;
+    const sa = members[ba].length;
+    const sb = members[bb].length;
+    for (const k of active) {
+      if (k === ba || k === bb) continue;
+      const v = (sa * S[ba * n + k] + sb * S[bb * n + k]) / (sa + sb);
+      S[ba * n + k] = S[k * n + ba] = v;
+    }
+    members[ba].push(...members[bb]);
+    active.delete(bb);
+  }
+  return [...active].map((i) => members[i]);
 }
 
-/** True if two clusters cover the same story (used to avoid cross-track repeats). */
-export function sameStory(a: Cluster, b: Cluster): boolean {
-  return a.items.some((x) => b.items.some((y) => canonicalUrl(x.url) === canonicalUrl(y.url) || similar(x, y)));
+/** Semantic clustering: `vectors[i]` must be the unit-length embedding of `items[i]`. */
+export function clusterSemantic(items: RawItem[], vectors: number[][], now = Date.now(), threshold = DEFAULT_EMBED_THRESHOLD): Cluster[] {
+  if (vectors.length !== items.length) throw new Error("vectors/items length mismatch");
+  return rank(agglomerate(vectors, threshold).map((idx) => finalize(idx.map((i) => items[i]), now)));
+}
+
+/** Cluster with embeddings when provided, else the lexical method. */
+export function cluster(items: RawItem[], now = Date.now(), vectors?: number[][], threshold = DEFAULT_EMBED_THRESHOLD): Cluster[] {
+  return vectors ? clusterSemantic(items, vectors, now, threshold) : clusterLexical(items, now);
+}
+
+/**
+ * Pick stories per track from globally-clustered news. Each story goes to the track that owns it
+ * (most feed votes); tracks that come up short are topped up with stories their feeds also carried.
+ */
+export function pickStories(clusters: Cluster[], tracks: TrackId[], perTrack: number): { track: TrackId; c: Cluster }[] {
+  const picked: { track: TrackId; c: Cluster }[] = [];
+  const taken = new Set<Cluster>();
+  const byTrack = new Map<TrackId, Cluster[]>();
+  for (const t of tracks) {
+    const own = clusters.filter((c) => c.primary === t).slice(0, perTrack);
+    byTrack.set(t, own);
+    own.forEach((c) => taken.add(c));
+  }
+  for (const t of tracks) {
+    const list = byTrack.get(t) ?? [];
+    if (list.length < perTrack) {
+      const extra = clusters.filter((c) => !taken.has(c) && (c.tracks[t] ?? 0) > 0).slice(0, perTrack - list.length);
+      extra.forEach((c) => taken.add(c));
+      list.push(...extra);
+    }
+    for (const c of list) picked.push({ track: t, c });
+  }
+  return picked;
 }

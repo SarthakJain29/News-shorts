@@ -15,6 +15,11 @@ export interface TimedSegment {
   visual: Visual | null;
 }
 
+/** The one tokenisation of narration text into words — pipeline timings and the player must agree on it. */
+export function splitWords(text: string): string[] {
+  return text.split(/\s+/).filter(Boolean);
+}
+
 /** Relative "speaking cost" of a word: characters plus a pause after punctuation. */
 export function wordWeight(w: string): number {
   let weight = Math.max(2, w.replace(/[^\p{L}\p{N}]/gu, "").length) + 1.5;

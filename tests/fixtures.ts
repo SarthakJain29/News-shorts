@@ -13,6 +13,8 @@ export const binanceCluster: Cluster = {
   outlets: ["The Guardian", "BBC News"],
   score: 5,
   latest: "2026-11-04T10:00:00.000Z",
+  tracks: { technology: 2 },
+  primary: "technology",
   items: [
     item({ outlet: "The Guardian", title: "Hackers behind $6.3bn Binance heist used malware and bogus job interviews", url: "https://theguardian.com/x", summary: "The exchange said attackers stole 6.3bn after an employee downloaded malware in June and an engineer was targeted in September." }),
     item({ outlet: "BBC News", title: "Binance reveals how hackers stole billions", url: "https://bbc.co.uk/y", summary: "Fake job interviews on a recruitment platform were used to reach staff, the company said." }),

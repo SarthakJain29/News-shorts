@@ -1,4 +1,5 @@
 import { XMLParser } from "fast-xml-parser";
+import type { TrackId } from "../src/lib/types";
 
 export interface RawItem {
   outlet: string;
@@ -6,6 +7,8 @@ export interface RawItem {
   url: string;
   summary: string;
   publishedAt: string;
+  /** Tracks whose feeds carried this article. */
+  tracks?: TrackId[];
 }
 
 const parser = new XMLParser({

@@ -1,11 +1,12 @@
 import { describe, expect, it } from "vitest";
 import { completeWithFallback, LlmError, providerChain, type LlmProvider } from "../pipeline/llm";
-import { pcmToWav, wavDuration } from "../pipeline/tts";
+import { retryAfterSeconds } from "../pipeline/llm/groq";
 
 describe("providerChain", () => {
   it("orders by preference and filters missing keys", () => {
-    expect(providerChain({ GEMINI_API_KEY: "g", GROQ_API_KEY: "q" }).map((p) => p.name)).toEqual(["gemini", "groq"]);
-    expect(providerChain({ GEMINI_API_KEY: "g", GROQ_API_KEY: "q", LLM_PROVIDER: "groq" }).map((p) => p.name)).toEqual(["groq", "gemini"]);
+    expect(providerChain({ GEMINI_API_KEY: "g", GROQ_API_KEY: "q" }).map((p) => p.name)).toEqual(["groq", "gemini"]);
+    expect(providerChain({ GEMINI_API_KEY: "g", GROQ_API_KEY: "q", LLM_PROVIDER: "gemini" }).map((p) => p.name)).toEqual(["gemini", "groq"]);
+    expect(providerChain({ GEMINI_API_KEY: "g", GROQ_API_KEY: "q", LLM_PROVIDER: "groq" }).map((p) => p.name)).toEqual(["groq"]);
     expect(providerChain({ GROQ_API_KEY: "q" }).map((p) => p.name)).toEqual(["groq"]);
     expect(providerChain({ GEMINI_API_KEY: "g", LLM_PROVIDER: "mock" })).toEqual([]);
     expect(providerChain({})).toEqual([]);
@@ -32,11 +33,12 @@ describe("completeWithFallback", () => {
   });
 });
 
-describe("wav helpers", () => {
-  it("wraps PCM and reads duration back", () => {
-    const pcm = Buffer.alloc(24000 * 2 * 3); // 3s of 24kHz mono 16-bit
-    const wav = pcmToWav(pcm);
-    expect(wav.toString("ascii", 0, 4)).toBe("RIFF");
-    expect(wavDuration(wav)).toBeCloseTo(3, 5);
+describe("retryAfterSeconds", () => {
+  const h = (v: string | null) => ({ get: () => v });
+  it("reads the header, then the message", () => {
+    expect(retryAfterSeconds(h("12"), "")).toBe(12);
+    expect(retryAfterSeconds(h(null), "Rate limit reached. Please try again in 7.5s.")).toBeCloseTo(7.5);
+    expect(retryAfterSeconds(h(null), "try again in 1m30s")).toBe(90);
+    expect(retryAfterSeconds(h(null), "nothing useful")).toBeNull();
   });
 });
